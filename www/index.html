@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>祭りナビ - MatsuriNavi</title>
+
+    <!-- ── Google OAuth Client ID ───────────────────────────────────────────
+         ① Google Cloud Console (https://console.cloud.google.com/) へアクセス
+         ② 「APIとサービス」→「認証情報」→「OAuthクライアントID作成」
+         ③ アプリケーションの種類: 「ウェブアプリケーション」
+         ④ 生成された「クライアントID」を以下 982642152853-sj2t98l3obh57gu7ftpadivtc3kdck46.apps.googleusercontent.com に貼り付け
+    ──────────────────────────────────────────────────────────────────────── -->
+    <meta name="google-signin-client_id" content="982642152853-sj2t98l3obh57gu7ftpadivtc3kdck46.apps.googleusercontent.com">
+
+    <!-- CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Google Identity Services（本物のGoogleログイン） -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- 全国イベントデータ -->
+    <script src="events-data.js"></script>
+    <script src="events-extra.js"></script>
+    <script src="events-yatai.js"></script>
+    <!-- 四国・中国地方 実在祭りデータ 深掘りリサーチ版 -->
+    <script src="matsuri_data.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+        * { box-sizing: border-box; }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+            margin: 0; padding: 0;
+            /* iOS のバウンススクロールを無効化 */
+            overscroll-behavior: none;
+        }
+
+        /* ── アプリコンテナ ── */
+        .app-container {
+            max-width: 430px;
+            width: 100%;
+            height: 100vh;
+            height: 100dvh; /* Dynamic Viewport Height: notchを考慮 */
+            margin: 0 auto;
+            background: #0B0F19;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0,0,0,0.9);
+        }
+
+        /* ── 各タブ: 全画面 absolute ── */
+        .tab-pane {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            display: none;
+        }
+        .tab-pane.active { display: block; }
+
+        /* 検索・マイページタブはスクロール可能 */
+        .tab-scroll {
+            position: absolute;
+            inset: 0;
+            overflow-y: auto;
+            padding-top: 64px;   /* ヘッダー高さ分 */
+            padding-bottom: 110px; /* フローティングナビ分 */
+        }
+
+        /* ── フローティングヘッダー ── */
+        .floating-header {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            z-index: 1500;
+            background: rgba(11,15,25,0.88);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+            padding: 10px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ── フローティングナビバー ── */
+        .floating-nav {
+            position: absolute;
+            left: 16px; right: 16px;
+            bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+            z-index: 4000;
+            background: rgba(10,14,26,0.85);
+            -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(24px);
+            border-radius: 9999px;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 8px 16px;
+        }
+
+        /* ── マーカークラスタ ── */
+        .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+            background-color: rgba(255,48,64,0.22) !important;
+        }
+        .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+            background-color: rgba(255,48,64,0.88) !important;
+            color: #fff !important;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .custom-marker {
+            background: #0B0F19;
+            border: 2px solid #FF3040;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(255,48,64,0.45);
+        }
+
+        /* ── 開催日バッジ ── */
+        .date-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(56,189,248,0.12);
+            border: 1px solid rgba(56,189,248,0.38);
+            border-radius: 9999px;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #38BDF8;
+        }
+
+        /* ── イベントカード ── */
+        .event-card {
+            margin: 0 12px 12px;
+            background: rgba(18,22,36,0.96);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        ::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+<div class="app-container">
+
+    <!-- ── フローティングヘッダー ── -->
+    <div class="floating-header">
+        <h2 class="text-xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+            MatsuriNavi
+        </h2>
+        <select id="regionSelector" onchange="changeRegionFilter(this.value)"
+            class="bg-[#1F2937]/60 text-white px-3 py-1.5 rounded-full font-bold text-xs border border-gray-800 outline-none cursor-pointer">
+            <option value="全国">🗺️ 全国（四国・中国85件）</option>
+            <option value="北海道・東北">❄️ 北海道・東北</option>
+            <option value="関東">🗼 関東</option>
+            <option value="中部">🗻 中部</option>
+            <option value="近畿">⛩️ 近畿</option>
+            <option value="中国・四国">🌊 中国・四国</option>
+            <option value="九州・沖縄">🌴 九州・沖縄</option>
+        </select>
+    </div>
+
+    <!-- ── マップタブ（フルスクリーン） ── -->
+    <div id="tab-map" class="tab-pane active">
+        <!-- カテゴリチップ（ヘッダー直下に浮かせる） -->
+        <div class="absolute left-0 right-0 z-[1200] flex gap-2 px-4 overflow-x-auto"
+             style="top: 68px; padding-bottom: 8px;">
+            <button onclick="filterCategory('全体')" class="cat-chip bg-white text-black px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap shadow-lg">全体</button>
+            <button onclick="filterCategory('祭り')" class="cat-chip bg-black/60 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap backdrop-blur-sm border border-white/10">🏮 祭り</button>
+            <button onclick="filterCategory('花火')" class="cat-chip bg-black/60 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap backdrop-blur-sm border border-white/10">🎆 花火</button>
+            <button onclick="filterCategory('屋台')" class="cat-chip bg-black/60 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap backdrop-blur-sm border border-white/10">🍡 屋台</button>
+        </div>
+        <!-- マップ本体: absolute inset-0 で画面全体に -->
+        <div id="map" style="position:absolute; inset:0; width:100%; height:100%;"></div>
+    </div>
+
+    <!-- ── タイムラインタブ ── -->
+    <div id="tab-search" class="tab-pane bg-[#000]">
+        <div class="tab-scroll">
+            <div id="searchList" class="flex flex-col pt-3"></div>
+        </div>
+    </div>
+
+    <!-- ── マイページタブ ── -->
+    <div id="tab-mypage" class="tab-pane bg-[#0B0F19]">
+        <div class="tab-scroll p-4">
+            <!-- 未ログイン -->
+            <div id="loggedOutView" class="flex flex-col items-center justify-center min-h-[60vh] text-center p-6">
+                <i class="fa-solid fa-torii-gate text-5xl text-gray-700 mb-4"></i>
+                <h4 class="text-base font-bold mb-1">あなた専用のマイカレンダー</h4>
+                <p class="text-gray-500 text-xs mb-6 max-w-[280px]">サインインすると、いいね・カレンダー登録がクラウドに保存されます。</p>
+                <button onclick="triggerLogin()"
+                    class="bg-gradient-to-r from-[#FF3040] to-[#FF7000] text-white px-8 py-3 rounded-2xl font-bold text-sm shadow-lg">
+                    1秒でサインインする
+                </button>
+            </div>
+
+            <!-- ログイン済み -->
+            <div id="loggedInView" class="hidden flex-col h-full">
+                <div class="flex items-center gap-4 mb-6 px-2">
+                    <div id="profileAvatar"
+                        class="w-16 h-16 rounded-full bg-gradient-to-tr from-gray-700 to-gray-900 flex items-center justify-center text-2xl overflow-hidden border-2 border-[#FF3040]/40">
+                        👤
+                    </div>
+                    <div>
+                        <h4 id="profileName" class="font-bold text-lg">ゲスト</h4>
+                        <p id="profileEmail" class="text-xs text-gray-500"></p>
+                        <p class="text-xs text-[#FF7000] font-semibold mt-0.5">✅ Googleアカウントで認証済み</p>
+                    </div>
+                </div>
+                <div class="flex border-b border-gray-900 mb-4">
+                    <button onclick="switchMyPageSubTab('calendar')" id="subTabCal"
+                        class="flex-1 py-2.5 text-center font-bold text-xs text-[#FF3040] border-b-2 border-[#FF3040]">📅 スケジュール</button>
+                    <button onclick="switchMyPageSubTab('liked')" id="subTabLike"
+                        class="flex-1 py-2.5 text-center font-bold text-xs text-gray-500">❤️ いいね</button>
+                </div>
+                <div id="myPageList" class="flex flex-col gap-3 px-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── 詳細ボトムシート ── -->
+    <div id="detailBottomSheet"
+        class="absolute bottom-0 left-0 right-0 bg-[#0B0F19] border-t border-gray-900 rounded-t-[2.5rem] p-6 z-[6000] transform translate-y-full transition-transform duration-300 ease-out shadow-2xl">
+        <div class="w-12 h-1.5 bg-gray-700 rounded-full mx-auto mb-5" onclick="closeBottomSheet()"></div>
+        <img id="sheetImage" src="" class="w-full h-44 object-cover rounded-2xl mb-4" alt="イベント画像">
+        <div class="flex items-center justify-between mb-3">
+            <span id="sheetDate" class="date-badge"><i class="fa-solid fa-calendar-days"></i> 開催日未定</span>
+            <span id="sheetScore"
+                class="shrink-0 bg-gradient-to-r from-[#FF7000] to-[#FF3040] text-white text-[10px] font-extrabold px-3 py-1.5 rounded-full">🔥 9000</span>
+        </div>
+        <h3 id="sheetName" class="text-xl font-extrabold text-white tracking-tight mb-2">イベント名</h3>
+        <p id="sheetDesc" class="text-gray-400 text-xs leading-relaxed mb-5">詳細文</p>
+        <div class="grid grid-cols-2 gap-3 mb-3">
+            <a id="sheetWebBtn" href="#" target="_blank"
+                class="bg-[#1F2937] text-white py-3 rounded-2xl font-bold text-xs text-center flex items-center justify-center gap-1.5 border border-gray-800">
+                <i class="fa-solid fa-globe"></i> WEB検索
+            </a>
+            <button onclick="launchNav()"
+                class="bg-[#10B981] text-white py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-location-arrow"></i> ナビ起動
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <button id="sheetLikeBtn" onclick="toggleLikeClick()"
+                class="border border-gray-800 text-white py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5">
+                <i class="fa-regular fa-heart"></i> いいね
+            </button>
+            <button id="sheetCalBtn" onclick="toggleCalClick()"
+                class="bg-white text-black py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-calendar-plus"></i> カレンダー登録
+            </button>
+        </div>
+    </div>
+
+    <!-- ── ログインモーダル ── -->
+    <div id="loginPromptModal"
+        class="absolute inset-0 bg-black/80 z-[7000] hidden flex-col justify-end backdrop-blur-sm">
+        <div class="bg-[#0B0F19] rounded-t-[2.5rem] p-6 border-t border-gray-900">
+            <div class="w-12 h-1.5 bg-gray-700 rounded-full mx-auto mb-5" onclick="closeLoginPrompt()"></div>
+            <h3 class="text-xl font-extrabold mb-1 text-center">❤️ コレクションを保存</h3>
+            <p class="text-gray-400 text-xs mb-6 text-center max-w-[280px] mx-auto">
+                Googleアカウントでサインインすると、マイページに保存されます。
+            </p>
+
+            <!-- Google Identity Services ボタンのコンテナ -->
+            <div id="googleBtnContainer" class="flex justify-center mb-3">
+                <div id="googleSignInBtn"></div>
+            </div>
+
+            <!-- フォールバック: GIS未ロード時 -->
+            <button id="fallbackGoogleBtn" onclick="handleFallbackLogin()"
+                class="w-full h-12 bg-white text-black font-bold rounded-2xl flex items-center justify-center gap-2 text-sm hidden">
+                <i class="fa-brands fa-google text-base"></i> Googleでサインイン
+            </button>
+
+            <button onclick="closeLoginPrompt()"
+                class="w-full mt-3 py-3 text-gray-500 text-xs font-bold">キャンセル</button>
+        </div>
+    </div>
+
+    <!-- ── フローティングナビゲーションバー ── -->
+    <div class="floating-nav">
+        <button onclick="switchTab('map')" id="navMap"
+            class="nav-btn text-[#FF3040] flex flex-col items-center justify-center gap-1 w-16 h-12 rounded-2xl">
+            <i class="fa-solid fa-compass text-xl"></i>
+            <span class="text-[9px] font-bold">マップ</span>
+        </button>
+        <button onclick="switchTab('search')" id="navSearch"
+            class="nav-btn text-gray-500 flex flex-col items-center justify-center gap-1 w-16 h-12 rounded-2xl">
+            <i class="fa-solid fa-square-rss text-xl"></i>
+            <span class="text-[9px] font-bold">タイムライン</span>
+        </button>
+        <button onclick="switchTab('mypage')" id="navMypage"
+            class="nav-btn text-gray-500 flex flex-col items-center justify-center gap-1 w-16 h-12 rounded-2xl">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="text-[9px] font-bold">マイページ</span>
+        </button>
+    </div>
+
+</div><!-- /.app-container -->
+
+<script>
+// ════════════════════════════════════════════════════════════════
+//  状態変数
+// ════════════════════════════════════════════════════════════════
+let currentRegionName = "全国";
+let map, markerLayer;
+let activeCategory = "全体";
+let isLoggedIn = false;
+let currentUser = null;
+let likedIds = [];
+let calendarIds = [];
+let currentSelectedEvent = null;
+let currentMyPageSubTab = "calendar";
+
+const regionCenters = {
+    "北海道・東北": [40.5, 141.0, 6],
+    "関東":         [35.8, 139.7, 8],
+    "中部":         [35.8, 137.5, 7],
+    "近畿":         [34.7, 135.5, 8],
+    "中国・四国":   [34.0, 133.0, 7],
+    "九州・沖縄":   [31.5, 130.5, 7],
+};
+
+// ════════════════════════════════════════════════════════════════
+//  Capacitorプラグインヘルパー
+// ════════════════════════════════════════════════════════════════
+function getPlugin(name) {
+    return window.Capacitor?.Plugins?.[name] ?? null;
+}
+
+async function hapticImpact(style) {
+    try {
+        const H = getPlugin('Haptics');
+        if (H) await H.impact({ style: style || 'Medium' });
+    } catch (e) { /* webでは無視 */ }
+}
+
+async function hapticNotification(type) {
+    try {
+        const H = getPlugin('Haptics');
+        if (H) await H.notification({ type: type || 'Success' });
+    } catch (e) {}
+}
+
+async function scheduleLocalNotification(title, body) {
+    try {
+        const LN = getPlugin('LocalNotifications');
+        if (!LN) return;
+        // 通知権限をリクエスト
+        const { display } = await LN.checkPermissions();
+        if (display !== 'granted') {
+            const result = await LN.requestPermissions();
+            if (result.display !== 'granted') return;
+        }
+        await LN.schedule({
+            notifications: [{
+                id: Math.floor(Math.random() * 1000000),
+                title: title,
+                body: body,
+                schedule: { at: new Date(Date.now() + 3000) }, // 3秒後に通知
+                sound: null,
+                smallIcon: 'ic_stat_icon_config_sample',
+            }]
+        });
+    } catch (e) {
+        console.log('LocalNotification error:', e);
+    }
+}
+
+// ════════════════════════════════════════════════════════════════
+//  Google Sign-In (Google Identity Services)
+//  ※ 982642152853-sj2t98l3obh57gu7ftpadivtc3kdck46.apps.googleusercontent.com を実際のクライアントIDに差し替えること
+// ════════════════════════════════════════════════════════════════
+const GOOGLE_CLIENT_ID = '982642152853-sj2t98l3obh57gu7ftpadivtc3kdck46.apps.googleusercontent.com';
+
+// ════════════════════════════════════════════════════════════════
+//  クラウドデータ取得 URL
+//  ▼ GitHubにプッシュ後、下のURLを自分のユーザー名/リポジトリ名に書き換える
+//  例: "https://raw.githubusercontent.com/YourName/matsuri-navi/main/matsuri-data.json"
+// ════════════════════════════════════════════════════════════════
+const API_URL = "https://YOUR-CLOUD-SERVER.com/matsuri-data.json";
+
+function initGoogleSignIn() {
+    if (typeof google === 'undefined' || !google.accounts) {
+        // GIS未ロードならフォールバックボタンを表示
+        document.getElementById('fallbackGoogleBtn')?.classList.remove('hidden');
+        return;
+    }
+    google.accounts.id.initialize({
+        client_id: GOOGLE_CLIENT_ID,
+        callback: handleGoogleCredential,
+        auto_select: false,
+        cancel_on_tap_outside: true,
+    });
+    // ログインモーダル内のボタンをレンダリング
+    google.accounts.id.renderButton(
+        document.getElementById('googleSignInBtn'),
+        { theme: 'outline', size: 'large', width: 300, text: 'signin_with', shape: 'pill' }
+    );
+}
+
+function handleGoogleCredential(response) {
+    try {
+        // JWT の payload 部分を Base64デコードしてユーザー情報を取得
+        const base64 = response.credential.split('.')[1]
+            .replace(/-/g, '+').replace(/_/g, '/');
+        const payload = JSON.parse(decodeURIComponent(
+            atob(base64).split('').map(c =>
+                '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+            ).join('')
+        ));
+        onGoogleLoginSuccess({
+            name: payload.name,
+            email: payload.email,
+            picture: payload.picture,
+        });
+    } catch (e) {
+        console.error('Google credential parse error:', e);
+    }
+}
+
+function handleFallbackLogin() {
+    // GIS未ロード時のモックログイン（開発用）
+    onGoogleLoginSuccess({ name: 'MatsuriUser', email: '', picture: '' });
+}
+
+function onGoogleLoginSuccess(user) {
+    isLoggedIn = true;
+    currentUser = user;
+    closeLoginPrompt();
+
+    // プロフィール欄を実際のGoogleアカウント情報で更新
+    const nameEl = document.getElementById('profileName');
+    const emailEl = document.getElementById('profileEmail');
+    const avatarEl = document.getElementById('profileAvatar');
+    if (nameEl) nameEl.textContent = user.name || 'MatsuriUser';
+    if (emailEl) emailEl.textContent = user.email || '';
+    if (avatarEl && user.picture) {
+        avatarEl.innerHTML =
+            `<img src="${user.picture}" class="w-full h-full object-cover" alt="avatar">`;
+    }
+
+    document.getElementById('loggedOutView').classList.add('hidden');
+    document.getElementById('loggedInView').classList.remove('hidden');
+    document.getElementById('loggedInView').classList.add('flex');
+
+    // ログイン後: いいねとして登録しようとしていたイベントを自動追加
+    if (currentSelectedEvent && !likedIds.includes(currentSelectedEvent.id)) {
+        likedIds.push(currentSelectedEvent.id);
+        updateSheetButtons();
+    }
+    renderMyPageList();
+}
+
+function triggerLogin() {
+    openLoginPrompt();
+    // GISが読み込まれていればOne Tapを試みる
+    setTimeout(() => {
+        if (typeof google !== 'undefined' && google.accounts) {
+            google.accounts.id.prompt((notification) => {
+                if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
+                    // One Tapが出ない場合はモーダルのボタンを使う
+                }
+            });
+        }
+    }, 300);
+}
+
+// ════════════════════════════════════════════════════════════════
+//  クラウドデータ取得（失敗時はローカルデータにフォールバック）
+// ════════════════════════════════════════════════════════════════
+async function loadCloudData() {
+    // プレースホルダーURLのままなら即スキップ（ローカルデータを使用）
+    if (API_URL.includes("YOUR-CLOUD-SERVER")) {
+        console.info("[MatsuriNavi] API_URL未設定 → ローカルデータで起動");
+        return;
+    }
+    try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 8000); // 8秒タイムアウト
+        const res = await fetch(API_URL, { signal: controller.signal });
+        clearTimeout(timeoutId);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+            window.allEvents = data;
+            console.info(`[MatsuriNavi] クラウドから ${data.length} 件取得`);
+        } else {
+            throw new Error("空データ");
+        }
+    } catch (e) {
+        // 圏外・タイムアウト・URLエラーなどすべてここで吸収
+        console.warn("[MatsuriNavi] クラウド取得失敗 → ローカルデータで起動:", e.message);
+    }
+}
+
+// ════════════════════════════════════════════════════════════════
+//  初期化
+// ════════════════════════════════════════════════════════════════
+window.addEventListener('load', async function () {
+    // ① クラウドからの最新データ取得を試みる（失敗時はローカルデータで継続）
+    await loadCloudData();
+
+    // ② ローカルデータも含めて検証
+    if (!window.allEvents || window.allEvents.length === 0) {
+        console.error('allEvents が読み込まれていません');
+        return;
+    }
+
+    // Leafletマップ初期化
+    map = L.map('map', { zoomControl: false }).setView([36.5, 137.5], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // マーカークラスタリング
+    markerLayer = L.markerClusterGroup({
+        maxClusterRadius: 70,
+        showCoverageOnHover: false,
+        spiderfyOnMaxZoom: true,
+        zoomToBoundsOnClick: true,
+        chunkedLoading: true,
+    });
+    map.addLayer(markerLayer);
+
+    renderMapMarkers();
+    renderSearchList();
+
+    // Google Sign-In 初期化（GISロード完了を待つ）
+    if (typeof google !== 'undefined' && google.accounts) {
+        initGoogleSignIn();
+    } else {
+        // GIS は async で遅れる可能性があるので待機
+        const gisTimer = setInterval(() => {
+            if (typeof google !== 'undefined' && google.accounts) {
+                clearInterval(gisTimer);
+                initGoogleSignIn();
+            }
+        }, 500);
+        // 5秒でタイムアウトしてフォールバック表示
+        setTimeout(() => {
+            clearInterval(gisTimer);
+            document.getElementById('fallbackGoogleBtn')?.classList.remove('hidden');
+        }, 5000);
+    }
+});
+
+// ════════════════════════════════════════════════════════════════
+//  地域フィルター
+// ════════════════════════════════════════════════════════════════
+function changeRegionFilter(region) {
+    currentRegionName = region;
+    if (region === "全国") {
+        map.setView([36.5, 137.5], 5);
+    } else {
+        const c = regionCenters[region];
+        if (c) map.setView([c[0], c[1]], c[2]);
+    }
+    renderMapMarkers();
+    renderSearchList();
+}
+
+// ════════════════════════════════════════════════════════════════
+//  マップマーカー描画
+// ════════════════════════════════════════════════════════════════
+function renderMapMarkers() {
+    markerLayer.clearLayers();
+    const emojis = { '祭り': '🏮', '花火': '🎆', '屋台': '🍡', '文化': '🎭' };
+    const events = window.allEvents || [];
+    events.filter(e => {
+        const okRegion = currentRegionName === "全国" || e.region === currentRegionName;
+        const okCat = activeCategory === "全体" || e.category === activeCategory;
+        return okRegion && okCat;
+    }).forEach(ev => {
+        const icon = L.divIcon({
+            html: emojis[ev.category] || '📍',
+            className: 'custom-marker',
+            iconSize: [32, 32],
+            iconAnchor: [16, 16],
+        });
+        const marker = L.marker([ev.lat, ev.lng], { icon });
+        marker.on('click', () => openBottomSheet(ev));
+        markerLayer.addLayer(marker);
+    });
+}
+
+// ════════════════════════════════════════════════════════════════
+//  タイムライン描画
+// ════════════════════════════════════════════════════════════════
+function renderSearchList() {
+    const container = document.getElementById('searchList');
+    container.innerHTML = '';
+    const events = window.allEvents || [];
+    const filtered = events.filter(e =>
+        currentRegionName === "全国" || e.region === currentRegionName
+    );
+    filtered.slice(0, 200).forEach(ev => {
+        const catEmoji = { '祭り': '🏮', '花火': '🎆', '屋台': '🍡', '文化': '🎭' }[ev.category] || '📍';
+        const card = document.createElement('div');
+        card.className = 'event-card';
+        card.innerHTML = `
+            <div class="relative cursor-pointer" onclick="openBottomSheetById('${ev.id}')">
+                <img src="${ev.imageUrl}" class="w-full h-44 object-cover" loading="lazy" alt="${ev.name}">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent"></div>
+                <span class="absolute top-3 left-3 text-[10px] font-extrabold text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20">
+                    ${catEmoji} ${ev.category}
+                </span>
+                <span class="absolute top-3 right-3 text-[10px] font-extrabold text-white bg-gradient-to-r from-[#FF7000] to-[#FF3040] px-2.5 py-1 rounded-full">
+                    🔥 ${ev.heatScore}
+                </span>
+            </div>
+            <div class="p-4">
+                <h4 class="text-sm font-extrabold text-white tracking-wide mb-2">${ev.name}</h4>
+                <div class="date-badge mb-3">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>${ev.date || '開催日未定'}</span>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed mb-3">${ev.description}</p>
+                <div class="flex items-center justify-between pt-2 border-t border-white/5">
+                    <span class="text-[10px] text-gray-500 font-bold">
+                        <i class="fa-solid fa-location-dot mr-1"></i>${ev.region || ''}
+                    </span>
+                    <div class="flex items-center gap-4 text-lg text-gray-500">
+                        <i class="fa-regular fa-heart cursor-pointer hover:text-pink-400 transition-colors"
+                           onclick="event.stopPropagation(); openBottomSheetById('${ev.id}')"></i>
+                        <i class="fa-regular fa-calendar-plus cursor-pointer hover:text-white transition-colors"
+                           onclick="event.stopPropagation(); openBottomSheetById('${ev.id}')"></i>
+                    </div>
+                </div>
+            </div>`;
+        container.appendChild(card);
+    });
+}
+
+// ════════════════════════════════════════════════════════════════
+//  カテゴリフィルター
+// ════════════════════════════════════════════════════════════════
+function filterCategory(cat) {
+    activeCategory = cat;
+    document.querySelectorAll('.cat-chip').forEach(btn => {
+        const active = btn.innerText.trim().includes(cat) ||
+                       (cat === "全体" && btn.innerText.trim() === "全体");
+        btn.className = active
+            ? "cat-chip bg-white text-black px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap shadow-lg"
+            : "cat-chip bg-black/60 text-gray-300 px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap backdrop-blur-sm border border-white/10";
+    });
+    renderMapMarkers();
+}
+
+// ════════════════════════════════════════════════════════════════
+//  ボトムシート
+// ════════════════════════════════════════════════════════════════
+function openBottomSheet(ev) {
+    currentSelectedEvent = ev;
+    document.getElementById('sheetImage').src = ev.imageUrl || '';
+    document.getElementById('sheetName').textContent = ev.name;
+    document.getElementById('sheetDate').innerHTML =
+        `<i class="fa-solid fa-calendar-days"></i> ${ev.date || '開催日未定'}`;
+    document.getElementById('sheetScore').textContent = '🔥 ' + ev.heatScore;
+    document.getElementById('sheetDesc').textContent = ev.description || '';
+    document.getElementById('sheetWebBtn').href = ev.eventUrl || '#';
+    updateSheetButtons();
+    document.getElementById('detailBottomSheet').classList.remove('translate-y-full');
+}
+
+function openBottomSheetById(id) {
+    const ev = (window.allEvents || []).find(e => e.id === id);
+    if (ev) openBottomSheet(ev);
+}
+
+function closeBottomSheet() {
+    document.getElementById('detailBottomSheet').classList.add('translate-y-full');
+}
+
+function launchNav() {
+    if (!currentSelectedEvent) return;
+    window.open(
+        `https://www.google.com/maps/search/?api=1&query=${currentSelectedEvent.lat},${currentSelectedEvent.lng}`,
+        '_blank'
+    );
+}
+
+function updateSheetButtons() {
+    if (!currentSelectedEvent) return;
+    const liked = likedIds.includes(currentSelectedEvent.id);
+    const cal   = calendarIds.includes(currentSelectedEvent.id);
+
+    const likeBtn = document.getElementById('sheetLikeBtn');
+    likeBtn.className = liked
+        ? "border border-pink-500 text-pink-500 py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5 bg-pink-500/5"
+        : "border border-gray-800 text-white py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5";
+    likeBtn.innerHTML = liked
+        ? `<i class="fa-solid fa-heart"></i> いいね済`
+        : `<i class="fa-regular fa-heart"></i> いいね`;
+
+    const calBtn = document.getElementById('sheetCalBtn');
+    calBtn.className = cal
+        ? "bg-gradient-to-r from-green-600 to-emerald-500 text-white py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5"
+        : "bg-white text-black py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5";
+    calBtn.innerHTML = cal
+        ? `<i class="fa-solid fa-calendar-check"></i> 予定追加済`
+        : `<i class="fa-solid fa-calendar-plus"></i> カレンダー登録`;
+}
+
+// ════════════════════════════════════════════════════════════════
+//  いいね / カレンダー登録 ── ハプティクス + ローカル通知
+// ════════════════════════════════════════════════════════════════
+async function toggleLikeClick() {
+    if (!isLoggedIn) { triggerLogin(); return; }
+    const id = currentSelectedEvent.id;
+    const wasLiked = likedIds.includes(id);
+    likedIds = wasLiked
+        ? likedIds.filter(i => i !== id)
+        : [...likedIds, id];
+
+    // ハプティクス: いいね時は Medium、解除時は Light
+    await hapticImpact(wasLiked ? 'Light' : 'Medium');
+
+    updateSheetButtons();
+    renderMyPageList();
+}
+
+async function toggleCalClick() {
+    if (!isLoggedIn) { triggerLogin(); return; }
+    const id = currentSelectedEvent.id;
+    const wasCal = calendarIds.includes(id);
+    calendarIds = wasCal
+        ? calendarIds.filter(i => i !== id)
+        : [...calendarIds, id];
+
+    if (!wasCal) {
+        // カレンダー登録時: Heavy ハプティクス + 通知
+        await hapticNotification('Success');
+        await scheduleLocalNotification(
+            '📅 カレンダーに登録しました',
+            `「${currentSelectedEvent.name}」を予定に追加しました。当日お見逃しなく！`
+        );
+    } else {
+        await hapticImpact('Light');
+    }
+
+    updateSheetButtons();
+    renderMyPageList();
+}
+
+// ════════════════════════════════════════════════════════════════
+//  ログインモーダル
+// ════════════════════════════════════════════════════════════════
+function openLoginPrompt() {
+    const modal = document.getElementById('loginPromptModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    // GISボタンをレンダリング（まだなら）
+    if (typeof google !== 'undefined' && google.accounts) {
+        google.accounts.id.renderButton(
+            document.getElementById('googleSignInBtn'),
+            { theme: 'outline', size: 'large', width: 300, text: 'signin_with', shape: 'pill' }
+        );
+    }
+}
+function closeLoginPrompt() {
+    const modal = document.getElementById('loginPromptModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// ════════════════════════════════════════════════════════════════
+//  マイページ
+// ════════════════════════════════════════════════════════════════
+function renderMyPageList() {
+    const container = document.getElementById('myPageList');
+    container.innerHTML = '';
+    const ids = currentMyPageSubTab === "calendar" ? calendarIds : likedIds;
+    const items = (window.allEvents || []).filter(e => ids.includes(e.id));
+    if (items.length === 0) {
+        container.innerHTML =
+            `<p class="text-center text-gray-600 text-xs py-12">まだ登録がありません。</p>`;
+        return;
+    }
+    items.forEach(ev => {
+        const row = document.createElement('div');
+        row.className = "flex items-center gap-3 bg-[#1F2937]/40 border border-gray-900 p-2.5 rounded-2xl cursor-pointer";
+        row.onclick = () => openBottomSheet(ev);
+        row.innerHTML = `
+            <img src="${ev.imageUrl}" class="w-12 h-12 object-cover rounded-xl" loading="lazy">
+            <div class="flex-1 min-w-0">
+                <h5 class="text-sm font-bold text-white truncate">${ev.name}</h5>
+                <p class="text-[10px] text-[#38BDF8] font-bold mt-0.5">
+                    <i class="fa-solid fa-calendar-days"></i> ${ev.date || '開催日未定'}
+                </p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-gray-700 text-xs"></i>`;
+        container.appendChild(row);
+    });
+}
+
+function switchMyPageSubTab(type) {
+    currentMyPageSubTab = type;
+    document.getElementById('subTabCal').className =
+        "flex-1 py-2.5 text-center font-bold text-xs " +
+        (type === "calendar" ? "text-[#FF3040] border-b-2 border-[#FF3040]" : "text-gray-500");
+    document.getElementById('subTabLike').className =
+        "flex-1 py-2.5 text-center font-bold text-xs " +
+        (type === "liked" ? "text-[#FF3040] border-b-2 border-[#FF3040]" : "text-gray-500");
+    renderMyPageList();
+}
+
+// ════════════════════════════════════════════════════════════════
+//  タブ切り替え
+// ════════════════════════════════════════════════════════════════
+function switchTab(tabName) {
+    closeBottomSheet();
+    document.querySelectorAll('.tab-pane').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + tabName).classList.add('active');
+
+    ['map', 'search', 'mypage'].forEach(name => {
+        const btn = document.getElementById('nav' + name.charAt(0).toUpperCase() + name.slice(1));
+        if (!btn) return;
+        btn.classList.toggle('text-[#FF3040]', name === tabName);
+        btn.classList.toggle('text-gray-500',  name !== tabName);
+    });
+
+    if (tabName === 'map' && map) {
+        setTimeout(() => map.invalidateSize(), 200);
+    }
+}
+</script>
+</body>
+</html>

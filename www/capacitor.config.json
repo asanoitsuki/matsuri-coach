@@ -1,0 +1,16 @@
+{
+  "appId": "com.matsurinavi.app",
+  "appName": "MatsuriNavi",
+  "webDir": "public",
+  "plugins": {
+    "GoogleAuth": {
+      "scopes": ["profile", "email"],
+      "serverClientId": "YOUR_GOOGLE_CLIENT_ID_HERE",
+      "forceCodeForRefreshToken": true
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#FF3040"
+    }
+  }
+}
