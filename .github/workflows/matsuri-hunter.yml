@@ -1,0 +1,54 @@
+name: 🎆 MatsuriNavi データ自動収集
+
+# ──────────────────────────────────────────────────────────────
+#  1日5回自動実行 (UTC)  →  JST 換算
+#    UTC  0:00 → JST  9:00
+#    UTC  4:00 → JST 13:00
+#    UTC  8:00 → JST 17:00
+#    UTC 12:00 → JST 21:00
+#    UTC 16:00 → JST  1:00 (翌日)
+# ──────────────────────────────────────────────────────────────
+on:
+  schedule:
+    - cron: '0 0,4,8,12,16 * * *'
+  workflow_dispatch:   # GitHub画面から手動実行ボタン
+
+permissions:
+  contents: write      # コミット＆プッシュに必要
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ① リポジトリをクローン
+      - name: 📥 リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # ② Node.js 環境セットアップ (fetch が標準搭載の v20)
+      - name: ⚙️ Node.js v20 セットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ③ データ収集スクリプト実行（www/ サブフォルダにある）
+      - name: 🔍 祭りデータ収集 (www/fetch-matsuri.js)
+        run: node www/fetch-matsuri.js
+
+      # ④ 変更があればコミット＆プッシュ
+      - name: 🚀 www/matsuri-data.json を GitHub にプッシュ
+        run: |
+          git config user.email "matsuri-bot@github.com"
+          git config user.name "MatsuriBot 🎆"
+          git add www/matsuri-data.json
+          if git diff --staged --quiet; then
+            echo "✅ データに変更なし — コミットをスキップ"
+          else
+            TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+            COUNT=$(node -e "const d=require('./www/matsuri-data.json'); console.log(d.length)" 2>/dev/null || echo "?")
+            git commit -m "🎆 データ自動更新 ${TIMESTAMP} (合計${COUNT}件)"
+            git push
+            echo "✅ プッシュ完了"
+          fi
