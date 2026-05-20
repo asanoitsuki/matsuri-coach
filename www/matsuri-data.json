@@ -75,7 +75,8 @@
     "lng": 134.5561,
     "region": "中国・四国",
     "heatScore": 9900,
-    "eventUrl": "https://www.awaodori.tokushima.jp/"
+    "eventUrl": "https://www.awaodori.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "evt_1",
@@ -205,7 +206,8 @@
     "lng": 130.93,
     "region": "中国・四国",
     "heatScore": 9800,
-    "eventUrl": "https://www.kanmon-hanabi.info/"
+    "eventUrl": "https://www.kanmon-hanabi.info/",
+    "parking": []
   },
   {
     "id": "evt_13",
@@ -296,7 +298,8 @@
     "lng": 133.5311,
     "region": "中国・四国",
     "heatScore": 9700,
-    "eventUrl": "http://www.cciweb.or.jp/kochi/yosakoiweb/"
+    "eventUrl": "http://www.cciweb.or.jp/kochi/yosakoiweb/",
+    "parking": []
   },
   {
     "id": "evt_30",
@@ -504,7 +507,8 @@
     "lng": 133.2728,
     "region": "中国・四国",
     "heatScore": 9500,
-    "eventUrl": "https://niihama-taiko.jp/"
+    "eventUrl": "https://niihama-taiko.jp/",
+    "parking": []
   },
   {
     "id": "md_hr01",
@@ -517,7 +521,8 @@
     "lng": 132.4553,
     "region": "中国・四国",
     "heatScore": 9500,
-    "eventUrl": "https://www.hiroshima-ff.com/"
+    "eventUrl": "https://www.hiroshima-ff.com/",
+    "parking": []
   },
   {
     "id": "evt_46",
@@ -543,7 +548,8 @@
     "lng": 132.3209,
     "region": "中国・四国",
     "heatScore": 9300,
-    "eventUrl": "https://www.itsukushimajinja.jp/"
+    "eventUrl": "https://www.itsukushimajinja.jp/",
+    "parking": []
   },
   {
     "id": "evt_23",
@@ -621,7 +627,8 @@
     "lng": 133.1826,
     "region": "中国・四国",
     "heatScore": 9200,
-    "eventUrl": "https://www.city.saijo.ehime.jp/"
+    "eventUrl": "https://www.city.saijo.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_ok01",
@@ -634,7 +641,8 @@
     "lng": 134.0889,
     "region": "中国・四国",
     "heatScore": 9200,
-    "eventUrl": "https://okayama-cci.or.jp/activation/saidaijieyo.html"
+    "eventUrl": "https://okayama-cci.or.jp/activation/saidaijieyo.html",
+    "parking": []
   },
   {
     "id": "md_hr23",
@@ -647,7 +655,8 @@
     "lng": 132.3209,
     "region": "中国・四国",
     "heatScore": 9200,
-    "eventUrl": "https://www.miyajima.or.jp/"
+    "eventUrl": "https://www.miyajima.or.jp/",
+    "parking": []
   },
   {
     "id": "md_sm08",
@@ -660,7 +669,8 @@
     "lng": 132.686,
     "region": "中国・四国",
     "heatScore": 9100,
-    "eventUrl": "https://www.izumooyashiro.or.jp/"
+    "eventUrl": "https://www.izumooyashiro.or.jp/",
+    "parking": []
   },
   {
     "id": "evt_18",
@@ -920,7 +930,8 @@
     "lng": 132.6851,
     "region": "中国・四国",
     "heatScore": 9000,
-    "eventUrl": "https://www.izumooyashiro.or.jp/"
+    "eventUrl": "https://www.izumooyashiro.or.jp/",
+    "parking": []
   },
   {
     "id": "md_ok02",
@@ -933,7 +944,8 @@
     "lng": 133.9197,
     "region": "中国・四国",
     "heatScore": 9000,
-    "eventUrl": "https://www.okayama-kanko.net/"
+    "eventUrl": "https://www.okayama-kanko.net/",
+    "parking": []
   },
   {
     "id": "md_hr05",
@@ -946,7 +958,8 @@
     "lng": 132.7285,
     "region": "中国・四国",
     "heatScore": 9000,
-    "eventUrl": "https://sakematsuri.com/"
+    "eventUrl": "https://sakematsuri.com/",
+    "parking": []
   },
   {
     "id": "md_ym02",
@@ -959,7 +972,22 @@
     "lng": 131.4712,
     "region": "中国・四国",
     "heatScore": 9000,
-    "eventUrl": "https://y-chouchin.jp/"
+    "eventUrl": "https://y-chouchin.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg114",
+    "name": "香川 瀬戸内国際芸術祭 関連まつり",
+    "category": "屋台",
+    "date": "毎年3年に1度（春・夏・秋）",
+    "description": "瀬戸内海の島々（直島・豊島・女木島・男木島・小豆島・大島・犬島など）と香川県高松市・岡山県宇野市を会場に3年に1度開催される国際的な現代アートフェスティバル。世界各地の現代アーティストが島の廃屋や自然の中に恒久作品を制作・展示し、期間中は世界中から来場者が集まる。会場となる各島では地元の食文化・工芸を体験できる屋台も出て、アートと旅と食が融合する瀬戸内の特別な祭典。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.462,
+    "lng": 133.999,
+    "region": "中国・四国",
+    "heatScore": 9000,
+    "eventUrl": "https://setouchi-artfest.jp/",
+    "parking": []
   },
   {
     "id": "evt_14",
@@ -985,7 +1013,8 @@
     "lng": 132.7657,
     "region": "中国・四国",
     "heatScore": 8800,
-    "eventUrl": "https://www.matsuyama-matsuri.com/"
+    "eventUrl": "https://www.matsuyama-matsuri.com/",
+    "parking": []
   },
   {
     "id": "md_kg07",
@@ -998,7 +1027,8 @@
     "lng": 133.823,
     "region": "中国・四国",
     "heatScore": 8800,
-    "eventUrl": "https://www.konpirakabuki.jp/"
+    "eventUrl": "https://www.konpirakabuki.jp/",
+    "parking": []
   },
   {
     "id": "evt_2",
@@ -1401,7 +1431,8 @@
     "lng": 133.823,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.konpira.or.jp/"
+    "eventUrl": "https://www.konpira.or.jp/",
+    "parking": []
   },
   {
     "id": "md_tt01",
@@ -1414,7 +1445,8 @@
     "lng": 134.2351,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://tottori-shanshan.jp/"
+    "eventUrl": "https://tottori-shanshan.jp/",
+    "parking": []
   },
   {
     "id": "md_sm01",
@@ -1427,7 +1459,8 @@
     "lng": 133.0486,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.matsue-suitoro.com/"
+    "eventUrl": "https://www.matsue-suitoro.com/",
+    "parking": []
   },
   {
     "id": "md_hr07",
@@ -1440,7 +1473,8 @@
     "lng": 132.4543,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.gokoku.or.jp/"
+    "eventUrl": "https://www.gokoku.or.jp/",
+    "parking": []
   },
   {
     "id": "md_ym04",
@@ -1453,7 +1487,8 @@
     "lng": 130.95,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://kanmon.jp/"
+    "eventUrl": "https://kanmon.jp/",
+    "parking": []
   },
   {
     "id": "md_tt07",
@@ -1466,7 +1501,8 @@
     "lng": 134.2279,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.sand-museum.jp/"
+    "eventUrl": "https://www.sand-museum.jp/",
+    "parking": []
   },
   {
     "id": "md_ok19",
@@ -1479,7 +1515,8 @@
     "lng": 133.9355,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.city.okayama.jp/"
+    "eventUrl": "https://www.city.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_hr14",
@@ -1492,7 +1529,8 @@
     "lng": 132.56,
     "region": "中国・四国",
     "heatScore": 8500,
-    "eventUrl": "https://www.city.kure.lg.jp/"
+    "eventUrl": "https://www.city.kure.lg.jp/",
+    "parking": []
   },
   {
     "id": "evt_17",
@@ -1544,7 +1582,8 @@
     "lng": 132.5613,
     "region": "中国・四国",
     "heatScore": 8200,
-    "eventUrl": "https://www.city.uwajima.ehime.jp/"
+    "eventUrl": "https://www.city.uwajima.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_hr03",
@@ -1557,7 +1596,8 @@
     "lng": 133.1976,
     "region": "中国・四国",
     "heatScore": 8200,
-    "eventUrl": "http://onomichi.main.jp/betcha/"
+    "eventUrl": "http://onomichi.main.jp/betcha/",
+    "parking": []
   },
   {
     "id": "md_ym03",
@@ -1570,7 +1610,22 @@
     "lng": 131.563,
     "region": "中国・四国",
     "heatScore": 8200,
-    "eventUrl": "https://hofu-tenmangu.or.jp/"
+    "eventUrl": "https://hofu-tenmangu.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg19",
+    "name": "金刀比羅宮 春の大祭",
+    "category": "祭り",
+    "date": "毎年4月10日",
+    "description": "香川県琴平町の金刀比羅宮で行われる春の例大祭。785段の石段を上った本宮で厳かな神事が営まれ、稚児行列と神輿渡御が参道を彩る。秋の大祭と並ぶ年間最大の祭礼で、全国から崇拝者が参拝に訪れる。参道の門前町では春限定の讃岐和三盆の和菓子・金糖製品が販売され、桜との共演が美しい四国屈指の春の神事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.1849,
+    "lng": 133.823,
+    "region": "中国・四国",
+    "heatScore": 8200,
+    "eventUrl": "https://www.konpira.or.jp/",
+    "parking": []
   },
   {
     "id": "evt_31",
@@ -2129,7 +2184,8 @@
     "lng": 134.0434,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://www.city.takamatsu.kagawa.jp/"
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_tt04",
@@ -2142,7 +2198,8 @@
     "lng": 133.3312,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://www.yonagogaina.com/"
+    "eventUrl": "https://www.yonagogaina.com/",
+    "parking": []
   },
   {
     "id": "md_ym07",
@@ -2155,7 +2212,8 @@
     "lng": 132.1799,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://www.iwakuni-kanko.com/"
+    "eventUrl": "https://www.iwakuni-kanko.com/",
+    "parking": []
   },
   {
     "id": "md_hr11",
@@ -2168,7 +2226,22 @@
     "lng": 132.3209,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://www.miyajima.or.jp/"
+    "eventUrl": "https://www.miyajima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg62",
+    "name": "父母ヶ浜 サンセットイベント",
+    "category": "屋台",
+    "date": "毎年5月〜10月（週末）",
+    "description": "SNSで「日本のウユニ塩湖」として世界的に話題となった香川県三豊市の父母ヶ浜（ちちぶがはま）で定期的に開催される夕日鑑賞イベント。干潮時の砂浜に薄く水が張り、夕焼けが映り込む幻想的なリフレクション写真が撮れるスポットとして全国から観光客が集まる。週末には地元グルメの屋台も登場し、三豊市のブランド野菜・海産物を使ったフードが楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.16,
+    "lng": 133.665,
+    "region": "中国・四国",
+    "heatScore": 8000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_kc20",
@@ -2181,7 +2254,8 @@
     "lng": 133.5311,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://www.cciweb.or.jp/kochi/yosakoiweb/"
+    "eventUrl": "https://www.cciweb.or.jp/kochi/yosakoiweb/",
+    "parking": []
   },
   {
     "id": "md_ym24",
@@ -2194,7 +2268,8 @@
     "lng": 130.93,
     "region": "中国・四国",
     "heatScore": 8000,
-    "eventUrl": "https://kanmon.jp/"
+    "eventUrl": "https://kanmon.jp/",
+    "parking": []
   },
   {
     "id": "evt_6",
@@ -2246,7 +2321,8 @@
     "lng": 134.5482,
     "region": "中国・四国",
     "heatScore": 7800,
-    "eventUrl": "https://www.city.tokushima.tokushima.jp/"
+    "eventUrl": "https://www.city.tokushima.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_ok04",
@@ -2259,7 +2335,8 @@
     "lng": 134.1756,
     "region": "中国・四国",
     "heatScore": 7800,
-    "eventUrl": "https://www.bizen-pottery.gr.jp/"
+    "eventUrl": "https://www.bizen-pottery.gr.jp/",
+    "parking": []
   },
   {
     "id": "md_hr04",
@@ -2272,7 +2349,22 @@
     "lng": 133.082,
     "region": "中国・四国",
     "heatScore": 7800,
-    "eventUrl": "https://www.mihara-kanko.com/"
+    "eventUrl": "https://www.mihara-kanko.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg31",
+    "name": "滝宮の念仏踊り",
+    "category": "祭り",
+    "date": "毎年8月25日",
+    "description": "香川県綾川町の滝宮天満宮で行われる国指定重要無形民俗文化財の伝統芸能。平安時代に菅原道真が雨乞いの念仏踊りを奉納したのが起源と伝わる1,100年以上の歴史を持つ祭り。色鮮やかな衣装をまとった踊り手が笛・太鼓に合わせて独特の念仏踊りを奉納し、五穀豊穣・雨乞いの祈りを今に伝える。讃岐の夏を代表する貴重な無形文化財の奉納行事として全国的にも知られる。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.255,
+    "lng": 134.03,
+    "region": "中国・四国",
+    "heatScore": 7800,
+    "eventUrl": "https://www.town.ayagawa.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "evt_5",
@@ -2792,7 +2884,8 @@
     "lng": 134.605,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.city.naruto.tokushima.jp/"
+    "eventUrl": "https://www.city.naruto.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_kc02",
@@ -2805,7 +2898,8 @@
     "lng": 133.5408,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://welcome-kochi.jp/"
+    "eventUrl": "https://welcome-kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_sm03",
@@ -2818,7 +2912,8 @@
     "lng": 132.5012,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.pref.shimane.lg.jp/"
+    "eventUrl": "https://www.pref.shimane.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ok03",
@@ -2831,7 +2926,8 @@
     "lng": 133.7726,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.kura-cci.or.jp/"
+    "eventUrl": "https://www.kura-cci.or.jp/",
+    "parking": []
   },
   {
     "id": "md_ym05",
@@ -2844,7 +2940,8 @@
     "lng": 132.1023,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.city.yanai.lg.jp/"
+    "eventUrl": "https://www.city.yanai.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ok08",
@@ -2857,7 +2954,8 @@
     "lng": 134.0009,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.city.tsuyama.lg.jp/"
+    "eventUrl": "https://www.city.tsuyama.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_kg17",
@@ -2870,7 +2968,36 @@
     "lng": 134.0467,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://ritsuringarden.jp/"
+    "eventUrl": "https://ritsuringarden.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg35",
+    "name": "丸亀市民花火大会",
+    "category": "花火",
+    "date": "毎年8月第3土曜",
+    "description": "香川県丸亀市の丸亀城外堀周辺と土器川河川敷を会場にした夏花火大会。丸亀城の雄姿を背景に約6,000発の花火が夏の夜空を彩り、約5万人が集まる丸亀市最大の夏のイベント。石垣の城下町の夜景と花火のコントラストが美しく、城の石垣ごしに打ち上がる大玉花火は迫力満点。地元名産の骨付き鳥・丸亀うちわ・讃岐うどん屋台が賑わう夏の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.2855,
+    "lng": 133.7963,
+    "region": "中国・四国",
+    "heatScore": 7500,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg67",
+    "name": "まんのう公園フラワーフェスタ",
+    "category": "屋台",
+    "date": "毎年4月下旬〜5月上旬",
+    "description": "弘法大師が修築したため池・満濃池に隣接する国営讃岐まんのう公園で行われる春の花の祭典。約30万本のネモフィラ・チューリップ・ポピーなどが一面に咲く高原の花畑は香川を代表する春の絶景スポット。園内には地元グルメの屋台も登場し、春風の中のんびりと花見ができる。ゴールデンウィーク中は多くの家族連れで賑わう讃岐の春の一大観光イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.122,
+    "lng": 133.843,
+    "region": "中国・四国",
+    "heatScore": 7500,
+    "eventUrl": "https://www.nichinoken.co.jp/sanuki/",
+    "parking": []
   },
   {
     "id": "md_eh12",
@@ -2883,7 +3010,8 @@
     "lng": 132.787,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.dogo.or.jp/"
+    "eventUrl": "https://www.dogo.or.jp/",
+    "parking": []
   },
   {
     "id": "md_kc10",
@@ -2896,7 +3024,8 @@
     "lng": 133.7167,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://kanko-kochi.jp/"
+    "eventUrl": "https://kanko-kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_sm09",
@@ -2909,7 +3038,8 @@
     "lng": 132.6851,
     "region": "中国・四国",
     "heatScore": 7500,
-    "eventUrl": "https://www.izumokankou.gr.jp/"
+    "eventUrl": "https://www.izumokankou.gr.jp/",
+    "parking": []
   },
   {
     "id": "evt_3",
@@ -3065,7 +3195,8 @@
     "lng": 133.6603,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://www.city.kanonji.kagawa.jp/"
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_tt02",
@@ -3078,7 +3209,8 @@
     "lng": 133.2312,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://www.sakaiminato.net/"
+    "eventUrl": "https://www.sakaiminato.net/",
+    "parking": []
   },
   {
     "id": "md_sm06",
@@ -3091,7 +3223,8 @@
     "lng": 131.7823,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://tsuwano-kanko.net/"
+    "eventUrl": "https://tsuwano-kanko.net/",
+    "parking": []
   },
   {
     "id": "md_ym06",
@@ -3104,7 +3237,8 @@
     "lng": 131.4034,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://hagishi.com/"
+    "eventUrl": "https://hagishi.com/",
+    "parking": []
   },
   {
     "id": "md_tk18",
@@ -3117,7 +3251,22 @@
     "lng": 134.533,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://www.oohinamatsuri.com/"
+    "eventUrl": "https://www.oohinamatsuri.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg34",
+    "name": "丸亀城桜まつり",
+    "category": "祭り",
+    "date": "毎年3月下旬〜4月上旬",
+    "description": "現存12天守の一つ・香川県丸亀市の丸亀城を会場にした花見まつり。日本一高い石垣（高さ約60m）の上にそびえる天守と桜の共演は讃岐を代表する絶景で、城内の各曲輪に咲く約1,000本の桜が満開となる。夜間はライトアップが行われ、石垣と天守が浮かび上がる夜桜も格別。屋台や骨付き鳥の出店もあり、地元市民が春の訪れを喜ぶ丸亀の大切な花見行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.292,
+    "lng": 133.796,
+    "region": "中国・四国",
+    "heatScore": 7200,
+    "eventUrl": "https://www.marugame-castle.jp/",
+    "parking": []
   },
   {
     "id": "md_hr18",
@@ -3130,7 +3279,8 @@
     "lng": 133.01,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://sera.ne.jp/"
+    "eventUrl": "https://sera.ne.jp/",
+    "parking": []
   },
   {
     "id": "md_hr22",
@@ -3143,7 +3293,8 @@
     "lng": 133.38,
     "region": "中国・四国",
     "heatScore": 7200,
-    "eventUrl": "https://www.city.fukuyama.hiroshima.jp/"
+    "eventUrl": "https://www.city.fukuyama.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "evt_4",
@@ -3741,7 +3892,8 @@
     "lng": 132.9349,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.shimanto-okyaku.com/"
+    "eventUrl": "https://www.shimanto-okyaku.com/",
+    "parking": []
   },
   {
     "id": "md_sm04",
@@ -3754,7 +3906,8 @@
     "lng": 133.0508,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.matsue-tourism.com/"
+    "eventUrl": "https://www.matsue-tourism.com/",
+    "parking": []
   },
   {
     "id": "md_ok07",
@@ -3767,7 +3920,8 @@
     "lng": 133.9355,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.okayama-korakuen.jp/"
+    "eventUrl": "https://www.okayama-korakuen.jp/",
+    "parking": []
   },
   {
     "id": "md_hr08",
@@ -3780,7 +3934,8 @@
     "lng": 133.0196,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.shobarakanko.com/"
+    "eventUrl": "https://www.shobarakanko.com/",
+    "parking": []
   },
   {
     "id": "md_hr10",
@@ -3793,7 +3948,8 @@
     "lng": 133.3634,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.fukuyama-kanko.com/"
+    "eventUrl": "https://www.fukuyama-kanko.com/",
+    "parking": []
   },
   {
     "id": "md_ym10",
@@ -3806,7 +3962,8 @@
     "lng": 131.8034,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.city.shunan.lg.jp/"
+    "eventUrl": "https://www.city.shunan.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ym13",
@@ -3819,7 +3976,64 @@
     "lng": 131.3956,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://hagishi.com/"
+    "eventUrl": "https://hagishi.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg45",
+    "name": "豊浜ちょうさ祭",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "香川県観音寺市豊浜地区に伝わる勇壮な太鼓台（ちょうさ）の祭り。観音寺市ちょうさやの中でも特に豪華な金糸刺繍の太鼓台が登場する豊浜地区のまつりは迫力満点で、地区ごとの「かきくらべ」が観衆を熱狂させる。地元の漁師が伝統を守り続けるこの祭りは、豊浜港の新鮮な魚介屋台と相まって愛媛県との県境に位置する西讃岐の海の町の活気を伝える秋祭り。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.1,
+    "lng": 133.65,
+    "region": "中国・四国",
+    "heatScore": 7000,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg74",
+    "name": "寒霞渓 紅葉まつり",
+    "category": "屋台",
+    "date": "毎年11月上旬〜中旬",
+    "description": "日本三大渓谷美の一つに数えられる香川県小豆島の寒霞渓（かんかけい）で行われる紅葉の季節の観光イベント。標高612mの山上から眺める瀬戸内海と染まる山々の紅葉は息をのむ絶景で、ロープウェイから見下ろす渓谷の紅葉は格別。山上では地元の猪鍋・オリーブ豚料理・島そうめんの屋台が出て、秋の寒霞渓観光をより豊かにする。全国から紅葉狩りの観光客が訪れる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.44,
+    "lng": 134.21,
+    "region": "中国・四国",
+    "heatScore": 7000,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg78",
+    "name": "さぬきうどん祭り",
+    "category": "屋台",
+    "date": "毎年3月（うどん県の日前後）",
+    "description": "香川県（うどん県）のシンボル・讃岐うどんの文化を発信する春のグルメイベント。高松市サンポート周辺を会場に、県内のうどん店・製麺所が集結した屋台村が誕生し、釜玉・ぶっかけ・骨付き鳥うどんなど多彩なスタイルのうどんを食べ比べできる。地元の製粉会社による小麦粉の即売や、うどん打ち体験コーナーも人気。香川を丸ごと体感できる讃岐文化の春の大祭。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 7000,
+    "eventUrl": "https://www.pref.kagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg173",
+    "name": "琴平町 金刀比羅宮 秋季例大祭",
+    "category": "祭り",
+    "date": "毎年10月9・10日",
+    "description": "全国から参拝者が訪れるこんぴらさん（金刀比羅宮）の秋の例大祭。春の例大祭と並ぶ重要な宮中行事で、祭神の大物主神に収穫の感謝を捧げる神事が厳かに執り行われる。神職による神楽の奉納・巫女舞・雅楽の演奏が続き、参道には昔ながらの縁日が並ぶ。門前町の旅館・土産物店が特別営業し、こんぴら詣での旅人で賑わう秋の一大神事。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.1858,
+    "lng": 133.8237,
+    "region": "中国・四国",
+    "heatScore": 7000,
+    "eventUrl": "https://www.konpira.or.jp/",
+    "parking": []
   },
   {
     "id": "md_eh18",
@@ -3832,7 +4046,8 @@
     "lng": 132.787,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.dogo.or.jp/"
+    "eventUrl": "https://www.dogo.or.jp/",
+    "parking": []
   },
   {
     "id": "md_kc13",
@@ -3845,7 +4060,8 @@
     "lng": 132.9349,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.city.shimanto.kochi.jp/"
+    "eventUrl": "https://www.city.shimanto.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_sm15",
@@ -3858,7 +4074,8 @@
     "lng": 133.0486,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.matsue-tourism.com/"
+    "eventUrl": "https://www.matsue-tourism.com/",
+    "parking": []
   },
   {
     "id": "md_hr17",
@@ -3871,7 +4088,8 @@
     "lng": 132.42,
     "region": "中国・四国",
     "heatScore": 7000,
-    "eventUrl": "https://www.kagura.org/"
+    "eventUrl": "https://www.kagura.org/",
+    "parking": []
   },
   {
     "id": "wd_Q21653176",
@@ -4066,7 +4284,8 @@
     "lng": 133.7963,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://www.city.marugame.lg.jp/"
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_eh09",
@@ -4079,7 +4298,8 @@
     "lng": 132.794,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://tobeyaki.com/"
+    "eventUrl": "https://tobeyaki.com/",
+    "parking": []
   },
   {
     "id": "md_sm07",
@@ -4092,7 +4312,8 @@
     "lng": 133.2584,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://www.city.yasugi.shimane.jp/"
+    "eventUrl": "https://www.city.yasugi.shimane.jp/",
+    "parking": []
   },
   {
     "id": "md_kg09",
@@ -4105,7 +4326,64 @@
     "lng": 133.782,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://www.zentsuji.com/"
+    "eventUrl": "https://www.zentsuji.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg20",
+    "name": "高松城桜まつり",
+    "category": "祭り",
+    "date": "毎年3月下旬〜4月上旬",
+    "description": "海城として名高い高松城（玉藻城）跡・玉藻公園内の桜並木が満開となる花見シーズンの春まつり。石垣に映える約200本の桜と瀬戸内海の青い海が織り成す絶景は高松屈指の花見スポット。夜間の提灯ライトアップも行われ、屋台や茶席が設けられ地元市民と観光客が春の一日を楽しむ。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3461,
+    "lng": 134.0479,
+    "region": "中国・四国",
+    "heatScore": 6800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg24",
+    "name": "高松JAZZ STREET",
+    "category": "屋台",
+    "date": "毎年10月上旬（2日間）",
+    "description": "高松市の中心商店街・丸亀町商店街周辺の路上・商店内の100か所以上の会場で、国内外のミュージシャンが無料ライブを行う音楽の祭典。爽やかな秋風の中、ジャズ・ボサノバ・ソウルが街全体に響き渡り、飲食の屋台も随所に出店。入場無料で誰でも楽しめる開放的なまちなか音楽祭として香川の秋の定番イベントに定着。2日間で数万人が高松の街に繰り出す。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3411,
+    "lng": 134.0455,
+    "region": "中国・四国",
+    "heatScore": 6800,
+    "eventUrl": "https://www.highmatsu.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg47",
+    "name": "観音寺市花火大会",
+    "category": "花火",
+    "date": "毎年8月第4土曜",
+    "description": "香川県観音寺市の有明浜周辺を会場にした夏花火大会。砂浜で有名な有明浜（砂絵「銭形」の砂絵で全国的に知られる）の沖合から打ち上がる花火は、瀬戸内海の夜空を大きく彩る。「銭形」の砂絵と花火を組み合わせた幻想的な光景が見られる稀有な花火大会として観音寺市のシンボル的イベント。地元の伊吹いりこを使った料理屋台も充実する西讃岐の夏の祭典。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.1189,
+    "lng": 133.6564,
+    "region": "中国・四国",
+    "heatScore": 6800,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg69",
+    "name": "小豆島オリーブまつり",
+    "category": "屋台",
+    "date": "毎年10月中旬",
+    "description": "瀬戸内海のオリーブ産地として知られる小豆島（小豆島町・土庄町）で開催される秋の収穫まつり。日本初のオリーブ栽培地・草壁地区周辺を会場に、新鮮なオリーブの実・搾りたてオリーブオイルの直売や試食が行われる。オリーブを使ったグルメ屋台が集まり、島の特産品・ゴマやそうめん（島の光）の直売も充実。秋の小豆島の豊かな実りを味わう収穫の祭典。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.43,
+    "lng": 134.25,
+    "region": "中国・四国",
+    "heatScore": 6800,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
   },
   {
     "id": "md_eh22",
@@ -4118,7 +4396,8 @@
     "lng": 132.794,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://tobeyaki.com/"
+    "eventUrl": "https://tobeyaki.com/",
+    "parking": []
   },
   {
     "id": "md_ok13",
@@ -4131,7 +4410,8 @@
     "lng": 133.56,
     "region": "中国・四国",
     "heatScore": 6800,
-    "eventUrl": "https://www.hiruzen.info/"
+    "eventUrl": "https://www.hiruzen.info/",
+    "parking": []
   },
   {
     "id": "wd_Q135186414",
@@ -4859,7 +5139,8 @@
     "lng": 134.6602,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.anan.tokushima.jp/"
+    "eventUrl": "https://www.city.anan.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_eh05",
@@ -4872,7 +5153,8 @@
     "lng": 132.9978,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.imabari.ehime.jp/"
+    "eventUrl": "https://www.city.imabari.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_ok05",
@@ -4885,7 +5167,8 @@
     "lng": 133.6126,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.takahashi.lg.jp/"
+    "eventUrl": "https://www.city.takahashi.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_hr06",
@@ -4898,7 +5181,8 @@
     "lng": 133.1976,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.ononavi.jp/"
+    "eventUrl": "https://www.ononavi.jp/",
+    "parking": []
   },
   {
     "id": "md_ym09",
@@ -4911,7 +5195,8 @@
     "lng": 131.2428,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.tokiwapark.jp/"
+    "eventUrl": "https://www.tokiwapark.jp/",
+    "parking": []
   },
   {
     "id": "md_eh10",
@@ -4924,7 +5209,8 @@
     "lng": 133.0039,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.imabari.ehime.jp/"
+    "eventUrl": "https://www.city.imabari.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_kc08",
@@ -4937,7 +5223,8 @@
     "lng": 133.2285,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://nakatosa-kanko.jp/"
+    "eventUrl": "https://nakatosa-kanko.jp/",
+    "parking": []
   },
   {
     "id": "md_kg11",
@@ -4950,7 +5237,120 @@
     "lng": 133.999,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.town.naoshima.lg.jp/"
+    "eventUrl": "https://www.town.naoshima.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg23",
+    "name": "田村神社例大祭",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "高松市一宮町の「讃岐の一宮」として崇敬される田村神社の秋の例大祭。神輿渡御と獅子舞・浦安の舞が境内と周辺を巡行し、境内に多数の屋台が並ぶ。讃岐国一宮として1,300年以上の歴史を持ち、健康・縁結び・学業の御利益で知られる大社の秋まつりには多くの参拝者が集まる。高松市内随一の伝統ある神事として地元に深く根付いている。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3085,
+    "lng": 133.9896,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.tamurajinja.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg37",
+    "name": "丸亀骨付き鳥フェスタ",
+    "category": "屋台",
+    "date": "毎年10月中旬",
+    "description": "丸亀市が発祥の地と誇る香川県民食「骨付き鳥」を全国に発信するグルメイベント。丸亀市の商店街周辺に骨付き鳥の専門店や地元飲食店が集結した屋台村が誕生し、スパイシーな骨付き親どりと柔らかな若どりを食べ比べられる。地元の名酒・塩屋の醤油などを使ったコラボグルメも登場。丸亀城を背景に香川最大のチキングルメ祭りとして年々規模が拡大している。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2855,
+    "lng": 133.7963,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg77",
+    "name": "直島アートイベント",
+    "category": "屋台",
+    "date": "毎年10月（芸術の秋）",
+    "description": "現代アートの聖地・香川県直島町で秋に行われるアート体験型イベント。ベネッセアートサイト直島・地中美術館・李禹煥美術館など世界的な現代美術施設が集まる直島で、アーティストと地域住民がコラボする特別プログラムや屋外展示が行われる。島の各所で飲食の屋台も出て、アートと食を楽しみながら瀬戸内の秋の島を散策できる全国でも稀有な体験型秋イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.462,
+    "lng": 133.999,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.naoshima.net/",
+    "parking": []
+  },
+  {
+    "id": "md_kg80",
+    "name": "高松みなとまつり",
+    "category": "祭り",
+    "date": "毎年8月上旬",
+    "description": "高松市のサンポート高松周辺の港湾エリアを会場にした夏まつり。高松港は本州・小豆島・直島などへのフェリーが発着する瀬戸内の要衝で、港の夏まつりには踊りパレードと花火が加わり多くの市民が集まる。サンポート高松のウォーターフロントに屋台が並び、瀬戸内の夕暮れを見ながらのまつりは格別の雰囲気。高松城跡の玉藻公園も提灯で飾られる夏の高松の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1529686342540-1b43aec0df75?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg100",
+    "name": "まんのう公園 コスモスまつり",
+    "category": "屋台",
+    "date": "毎年10月中旬〜下旬",
+    "description": "国営讃岐まんのう公園で毎年秋に開催されるコスモスの花の祭典。広大な公園内に約100万本のコスモスが一面に咲き誇り、香川の秋を代表する花の絶景スポットとして多くの来場者が訪れる。コスモスの花畑の中を散策しながら地元農産物・スイーツの屋台グルメも楽しめる。秋の澄んだ空気の中、弘法大師ゆかりの満濃池を背景に広がるコスモスの海は圧巻の美しさ。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.122,
+    "lng": 133.843,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.nichinoken.co.jp/sanuki/",
+    "parking": []
+  },
+  {
+    "id": "md_kg101",
+    "name": "観音寺 財田川花火大会",
+    "category": "花火",
+    "date": "毎年8月第1土曜",
+    "description": "香川県観音寺市を流れる財田川（さいだがわ）の河川敷を会場にした夏花火大会。「銭形」の砂絵で有名な観音寺市のメインの夏花火で、市内を流れる財田川から打ち上がる約4,000発の花火が観音寺の夏夜を彩る。有明浜の砂絵と花火を組み合わせた観光コースが人気で、地元の伊吹いりこ・さぬきうどん・骨付き鳥の屋台が川沿いに賑やかに並ぶ観音寺市最大の夏イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.1255,
+    "lng": 133.6603,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg107",
+    "name": "高松 春のサンポートフェスタ",
+    "category": "屋台",
+    "date": "毎年4月下旬〜5月上旬",
+    "description": "高松市のサンポート高松周辺の港湾エリアで行われるゴールデンウィーク恒例のグルメ＆エンタメフェスタ。瀬戸内の絶景ウォーターフロントに飲食の屋台が100店以上集まり、讃岐うどん・骨付き鳥・地元スイーツなど香川グルメが一堂に。ステージでは地元アーティストのライブが行われ、フェリーが往来する港の風景を楽しみながら春の高松を満喫できるゴールデンウィーク最大の市民イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg167",
+    "name": "高松市 栗林公園 月見まつり",
+    "category": "祭り",
+    "date": "毎年9月の中秋の名月",
+    "description": "国の特別名勝・栗林公園で中秋の名月に合わせて開催される月見の宴。池に映る名月と数百個の行灯が幻想的な情景を作り出す夜の特別公開イベントで、普段は閉園時間が早い栗林公園が夜遅くまで開園される。琴の演奏・茶席・月見にちなんだ和菓子の販売などが行われ、公園内をゆっくり散策しながら日本の秋の風情を楽しめる。毎年台数限定の入場整理券が必要。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3318,
+    "lng": 134.0491,
+    "region": "中国・四国",
+    "heatScore": 6500,
+    "eventUrl": "https://ritsuringarden.jp/",
+    "parking": []
   },
   {
     "id": "md_kc09",
@@ -4963,7 +5363,8 @@
     "lng": 133.58,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.attaka.or.jp/"
+    "eventUrl": "https://www.attaka.or.jp/",
+    "parking": []
   },
   {
     "id": "md_kc18",
@@ -4976,7 +5377,8 @@
     "lng": 133.44,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.tosa.lg.jp/"
+    "eventUrl": "https://www.city.tosa.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tt10",
@@ -4989,7 +5391,8 @@
     "lng": 133.8261,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.kurayoshi.lg.jp/"
+    "eventUrl": "https://www.city.kurayoshi.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_sm13",
@@ -5002,7 +5405,8 @@
     "lng": 132.43,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.ginzan-world.com/"
+    "eventUrl": "https://www.ginzan-world.com/",
+    "parking": []
   },
   {
     "id": "md_sm18",
@@ -5015,7 +5419,8 @@
     "lng": 133.33,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.oki-kankoukyoukai.gr.jp/"
+    "eventUrl": "https://www.oki-kankoukyoukai.gr.jp/",
+    "parking": []
   },
   {
     "id": "md_ok17",
@@ -5028,7 +5433,8 @@
     "lng": 134.0009,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.city.tsuyama.lg.jp/"
+    "eventUrl": "https://www.city.tsuyama.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ym23",
@@ -5041,7 +5447,8 @@
     "lng": 132.1799,
     "region": "中国・四国",
     "heatScore": 6500,
-    "eventUrl": "https://www.iwakuni-kanko.com/"
+    "eventUrl": "https://www.iwakuni-kanko.com/",
+    "parking": []
   },
   {
     "id": "wd_Q21652985",
@@ -5119,7 +5526,8 @@
     "lng": 133.8521,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.sakaide.lg.jp/"
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tt03",
@@ -5132,7 +5540,8 @@
     "lng": 133.8261,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.kurayoshi.lg.jp/"
+    "eventUrl": "https://www.city.kurayoshi.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tk08",
@@ -5145,7 +5554,8 @@
     "lng": 134.5593,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.anan.tokushima.jp/"
+    "eventUrl": "https://www.city.anan.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_ok09",
@@ -5158,7 +5568,8 @@
     "lng": 133.9488,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.tamano.lg.jp/"
+    "eventUrl": "https://www.city.tamano.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ym15",
@@ -5171,7 +5582,8 @@
     "lng": 131.2428,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.ube.yamaguchi.jp/"
+    "eventUrl": "https://www.city.ube.yamaguchi.jp/",
+    "parking": []
   },
   {
     "id": "md_kg08",
@@ -5184,7 +5596,64 @@
     "lng": 134.18,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.sanuki.kagawa.jp/"
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg21",
+    "name": "栗林公園 観月会",
+    "category": "祭り",
+    "date": "毎年9月（中秋の名月前後）",
+    "description": "国の特別名勝・高松市の栗林公園で行われる中秋の名月を愛でる伝統行事。池面に映る月と回遊式庭園の松・石組みの幻想的な景観の中、和楽器の演奏や茶席が設けられる。舟に乗って月見を楽しむ「観月舟」が人気で、静謐な秋の名園で行われる格調高い宵のイベント。讃岐の秋の夜を上品に楽しめる高松ならではの文化行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3253,
+    "lng": 134.0467,
+    "region": "中国・四国",
+    "heatScore": 6200,
+    "eventUrl": "https://ritsuringarden.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg46",
+    "name": "大野原ちょうさ祭",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "香川県観音寺市大野原地区で行われる秋の太鼓台（ちょうさ）まつり。観音寺市の中でも山間の農業地帯である大野原は、県道沿いに地区ごとの豪華な太鼓台が集合し「かきくらべ」が展開される。農業と縁の深い大野原ならではの収穫への感謝が祭りに込められており、地元の大野原産野菜・米を使った料理の屋台も並ぶ。讃岐と伊予が交差する地域の秋の勇壮な祭礼。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.153,
+    "lng": 133.636,
+    "region": "中国・四国",
+    "heatScore": 6200,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg58",
+    "name": "みとよ夏まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月第1土曜",
+    "description": "香川県三豊市の比地大（ひじだい）地区周辺を会場にした三豊市最大の夏花火大会。三豊市の中心部に近い会場から打ち上がる約5,000発の花火が夏の夜空を彩り、多くの市民が詰めかける。三豊市は讃岐の最西部の豊かな農業・漁業の地で、地元産の野菜・海鮮の屋台が充実。三豊市誕生（2006年）以来の市民の一体感を育む花火大会として定着している。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.1979,
+    "lng": 133.722,
+    "region": "中国・四国",
+    "heatScore": 6200,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg71",
+    "name": "醤の郷まつり",
+    "category": "屋台",
+    "date": "毎年11月中旬",
+    "description": "小豆島に江戸時代から根付く醤油・味噌の醸造文化を祝う秋まつり。黒い木桶が立ち並ぶ醤油蔵が連なる小豆島町馬木・苗羽（のうま）地区の「醤の郷（しょうのさと）」を舞台に、蔵元の醤油・味噌・佃煮の直売と試食が行われる。島の特産品を使ったグルメ屋台も登場し、醤油文化の香りが漂う島の町並みの中を散策しながら食の文化を体験する秋のイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.42,
+    "lng": 134.24,
+    "region": "中国・四国",
+    "heatScore": 6200,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
   },
   {
     "id": "md_eh17",
@@ -5197,7 +5666,8 @@
     "lng": 132.9978,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.imabari.ehime.jp/"
+    "eventUrl": "https://www.city.imabari.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_eh19",
@@ -5210,7 +5680,8 @@
     "lng": 132.5613,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.uwajima.ehime.jp/"
+    "eventUrl": "https://www.city.uwajima.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_sm14",
@@ -5223,7 +5694,8 @@
     "lng": 133.08,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.okuizumo.org/"
+    "eventUrl": "https://www.okuizumo.org/",
+    "parking": []
   },
   {
     "id": "md_ok18",
@@ -5236,7 +5708,8 @@
     "lng": 134.15,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.town.wake.okayama.jp/"
+    "eventUrl": "https://www.town.wake.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_hr20",
@@ -5249,7 +5722,8 @@
     "lng": 132.59,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.city.akitakata.lg.jp/"
+    "eventUrl": "https://www.city.akitakata.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ym16",
@@ -5262,7 +5736,8 @@
     "lng": 132.29,
     "region": "中国・四国",
     "heatScore": 6200,
-    "eventUrl": "https://www.town.suo-oshima.lg.jp/"
+    "eventUrl": "https://www.town.suo-oshima.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135195110",
@@ -5860,7 +6335,8 @@
     "lng": 133.4255,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.pref.kochi.lg.jp/"
+    "eventUrl": "https://www.pref.kochi.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_sm05",
@@ -5873,7 +6349,8 @@
     "lng": 132.0816,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.hamada-kanko.com/"
+    "eventUrl": "https://www.hamada-kanko.com/",
+    "parking": []
   },
   {
     "id": "md_ym14",
@@ -5886,7 +6363,8 @@
     "lng": 131.302,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.mine-shi.com/"
+    "eventUrl": "https://www.mine-shi.com/",
+    "parking": []
   },
   {
     "id": "md_kg10",
@@ -5899,7 +6377,120 @@
     "lng": 133.751,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.town.tadotsu.kagawa.jp/"
+    "eventUrl": "https://www.town.tadotsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg25",
+    "name": "高松城下まちフェスタ",
+    "category": "屋台",
+    "date": "毎年11月上旬",
+    "description": "高松市の中心部・サンポート高松と中央公園周辺を会場に行われる高松市最大の市民フェスタ。地元グルメ・物産・クラフト作品の屋台が100店以上集まり、ステージではよさこいや地元バンドの演奏が行われる。讃岐うどんの生地打ち体験や骨付き鳥の実演販売など香川の食文化が一堂に集まる。サンポート高松の港の景観を楽しみながら秋の高松を丸ごと体験できる大型市民イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg41",
+    "name": "瀬戸大橋まつり",
+    "category": "祭り",
+    "date": "毎年5月（大型連休中）",
+    "description": "本州と四国を結ぶ瀬戸大橋（全長約13.1km）の開通を記念した春の大型イベント。坂出市の瀬戸大橋周辺を会場に、地元の踊りパレードや海上イベントが開催される。瀬戸大橋架橋記念館の特別公開や、橋の麓の海岸での花火大会・屋台村も行われ、地元住民・観光客が瀬戸内海の大橋の偉業に改めて感動するゴールデンウィーク恒例イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.31,
+    "lng": 133.87,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg43",
+    "name": "善通寺桜まつり",
+    "category": "祭り",
+    "date": "毎年3月下旬〜4月上旬",
+    "description": "弘法大師空海の生誕地・香川県善通寺市の善通寺（75番札所）境内の桜が満開となる春の花見イベント。五重塔と伽藍を背景に咲き誇る桜は、四国遍路の霊場らしい荘厳な美しさを持ち、参拝者と花見客が混ざり合う独特の春景色。境内の茶席や善通寺うどんの振る舞いも行われ、屋台が並ぶ春の伽藍市も同時開催される香川の春を代表する花見スポット。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.228,
+    "lng": 133.782,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.zentsuji.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg51",
+    "name": "津田の松原花火大会",
+    "category": "花火",
+    "date": "毎年8月上旬",
+    "description": "香川県さぬき市の名勝「津田の松原」周辺の海岸を会場にした夏花火大会。日本の松原百選にも選ばれた津田の松原の松越しに見る花火は格別の美しさで、讃岐の白砂青松の海岸線を夜に照らし出す。地元の海の幸・小海老やちりめんじゃこを使った屋台が並び、夜の津田海岸は地元住民と観光客で賑わう。さぬき市夏の風物詩として長年親しまれている。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.27,
+    "lng": 134.175,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg56",
+    "name": "引田秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "香川県東かがわ市引田地区の白鳥神社・引田八幡神社を中心に行われる秋まつり。かつて酒造業と水産業で栄えた引田の白壁の古い町並みを舞台に、地区の太鼓台が練り歩く勇壮な秋まつり。江戸・明治期の商家建築が連なる重要伝統的建造物群保存地区候補の町並みと秋まつりの組み合わせは旅情感抜群。地元産ハマチ・しょうゆを使った郷土料理の屋台も登場。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.264,
+    "lng": 134.37,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg63",
+    "name": "三野ちょうさ祭",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "香川県三豊市三野地区の三野神社を中心に行われる秋まつり。三豊市の太鼓台（ちょうさ）まつりの中でも三野地区のちょうさは特に豪華な幕と刺繍で飾られた重厚な作りで知られ、「かきくらべ」の迫力は地域随一。農業と漁業が共存する三野の地域文化を反映した祭りで、地元産の野菜・魚介を使った屋台も充実する三豊市西部の秋の一大祭礼。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.16,
+    "lng": 133.67,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg73",
+    "name": "エンジェルロード夕日まつり",
+    "category": "屋台",
+    "date": "毎年8月（週末）",
+    "description": "香川県土庄町の潮の干満で現れ消える砂の道「エンジェルロード」周辺で開催される夏の夕日鑑賞イベント。恋人の聖地として知られるエンジェルロードは、干潮時に小豆島と余島（よしま）を結ぶ砂の道が現れる幻想的なスポット。夕日の時間帯に合わせてカップルや観光客が集まり、地元のオリーブオイルを使ったグルメ屋台も登場。小豆島の夏の夕暮れを楽しむ観光イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.4847,
+    "lng": 134.174,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.town.tonosho.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg116",
+    "name": "丸亀 うちわアートフェスタ",
+    "category": "屋台",
+    "date": "毎年6月〜7月",
+    "description": "国内生産9割以上を誇る丸亀うちわの産地・香川県丸亀市でうちわの季節に合わせて開催されるアート＆グルメフェスタ。丸亀市内の商店街とうちわ製作工房を舞台に、伝統の手作りうちわ体験と若手アーティストによるうちわアート展示が行われる。骨付き鳥やさぬきうどんの屋台も充実し、丸亀うちわの美しさと丸亀の食文化を一度に体験できる梅雨から夏への季節のイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2855,
+    "lng": 133.7963,
+    "region": "中国・四国",
+    "heatScore": 6000,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_kc12",
@@ -5912,7 +6503,8 @@
     "lng": 132.9703,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.city.tosashimizu.kochi.jp/"
+    "eventUrl": "https://www.city.tosashimizu.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_kc15",
@@ -5925,7 +6517,8 @@
     "lng": 134.05,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.yuzu.or.jp/"
+    "eventUrl": "https://www.yuzu.or.jp/",
+    "parking": []
   },
   {
     "id": "md_kc19",
@@ -5938,7 +6531,8 @@
     "lng": 134.0832,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.city.aki.kochi.jp/"
+    "eventUrl": "https://www.city.aki.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_tt08",
@@ -5951,7 +6545,8 @@
     "lng": 134.2351,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.tottori-kanko.jp/"
+    "eventUrl": "https://www.tottori-kanko.jp/",
+    "parking": []
   },
   {
     "id": "md_tt13",
@@ -5964,7 +6559,8 @@
     "lng": 133.5495,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.daisen.jp/"
+    "eventUrl": "https://www.daisen.jp/",
+    "parking": []
   },
   {
     "id": "md_ok14",
@@ -5977,7 +6573,8 @@
     "lng": 133.57,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.city.niimi.okayama.jp/"
+    "eventUrl": "https://www.city.niimi.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_ym17",
@@ -5990,7 +6587,8 @@
     "lng": 131.17,
     "region": "中国・四国",
     "heatScore": 6000,
-    "eventUrl": "https://www.city.nagato.yamaguchi.jp/"
+    "eventUrl": "https://www.city.nagato.yamaguchi.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135193378",
@@ -6224,7 +6822,8 @@
     "lng": 134.15,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.mima.lg.jp/"
+    "eventUrl": "https://www.city.mima.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_eh06",
@@ -6237,7 +6836,8 @@
     "lng": 132.66,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.town.uchiko.ehime.jp/"
+    "eventUrl": "https://www.town.uchiko.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_tt05",
@@ -6250,7 +6850,8 @@
     "lng": 133.5495,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.daisen.jp/"
+    "eventUrl": "https://www.daisen.jp/",
+    "parking": []
   },
   {
     "id": "md_hr09",
@@ -6263,7 +6864,8 @@
     "lng": 132.9212,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.takeharakanko.jp/"
+    "eventUrl": "https://www.takeharakanko.jp/",
+    "parking": []
   },
   {
     "id": "md_ym08",
@@ -6276,7 +6878,8 @@
     "lng": 131.2033,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.nagato.yamaguchi.jp/"
+    "eventUrl": "https://www.city.nagato.yamaguchi.jp/",
+    "parking": []
   },
   {
     "id": "md_ok10",
@@ -6289,7 +6892,8 @@
     "lng": 133.5067,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.kasaoka.okayama.jp/"
+    "eventUrl": "https://www.city.kasaoka.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_ym12",
@@ -6302,7 +6906,8 @@
     "lng": 131.8716,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.kudamatsu.lg.jp/"
+    "eventUrl": "https://www.city.kudamatsu.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tk11",
@@ -6315,7 +6920,8 @@
     "lng": 134.5854,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.komatsushima.tokushima.jp/"
+    "eventUrl": "https://www.city.komatsushima.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_tk12",
@@ -6328,7 +6934,8 @@
     "lng": 134.5593,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.anan.tokushima.jp/"
+    "eventUrl": "https://www.city.anan.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_kg12",
@@ -6341,7 +6948,8 @@
     "lng": 133.8246,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.town.utazu.kagawa.jp/"
+    "eventUrl": "https://www.town.utazu.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_kg15",
@@ -6354,7 +6962,8 @@
     "lng": 133.823,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.konpira.or.jp/"
+    "eventUrl": "https://www.konpira.or.jp/",
+    "parking": []
   },
   {
     "id": "md_kg18",
@@ -6367,7 +6976,134 @@
     "lng": 133.8521,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.sakaide.lg.jp/"
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg50",
+    "name": "有明浜花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "香川県観音寺市の有明浜海水浴場を会場にした夏の花火大会。「銭形砂絵」で有名な有明浜は白砂青松の美しい砂浜で、砂浜に集まった海水浴客や地元住民が海上花火を楽しむ。瀬戸内海の夏の夕凪の中、静かな海面に映る花火は格別の美しさで、浜辺の屋台では地元の伊吹いりこやスイカが振る舞われる。観音寺市の夏を彩る地域密着型の浜辺の花火大会。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.11,
+    "lng": 133.64,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg76",
+    "name": "直島盆踊り",
+    "category": "祭り",
+    "date": "毎年8月14日〜16日",
+    "description": "香川県直島町で行われる伝統の盆踊りまつり。現代アートの島として世界的に有名な直島だが、夏の盆踊りは古くから島民が大切にしてきた地域の伝統行事。宮浦地区の神社境内と浜辺を舞台に、地元の民謡に合わせた盆踊りが繰り広げられる。ベネッセアートサイトを訪れる観光客も参加でき、アートと伝統文化が共存する直島ならではの夏の夜の光景が広がる。",
+    "imageUrl": "https://images.unsplash.com/photo-1529686342540-1b43aec0df75?w=800&q=80",
+    "lat": 34.462,
+    "lng": 133.999,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.town.naoshima.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg87",
+    "name": "琴平ご縁まつり",
+    "category": "屋台",
+    "date": "毎年10月下旬",
+    "description": "香川県琴平町の金刀比羅宮参道・門前町エリアで行われる地元産品・グルメの秋まつり。「こんぴらさん」ゆかりの縁結びをテーマに、琴平産の金刀比羅宮御用達のこんぴら和三盆・讃岐うどん・地酒「金陵」などが一堂に集まる屋台イベント。参道の石段や門前町を舞台にしたフォトコンテストも同時開催され、秋の琴平・金毘羅街道の散策と組み合わせて楽しめるイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.1849,
+    "lng": 133.823,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://kotohira-kanko.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg93",
+    "name": "小豆島 中山の棚田まつり",
+    "category": "屋台",
+    "date": "毎年10月中旬",
+    "description": "香川県小豆島町中山地区の千枚田（棚田）が黄金色に染まる収穫の時期に行われる秋まつり。日本の棚田百選に選ばれた中山の千枚田は小豆島の奥山に広がる美しい農業景観で、稲刈りの季節にあわせてオーナー田の収穫体験と棚田米の直売が行われる。秋の棚田の美しさと島の農業文化を体験できる、小豆島の隠れた名物秋イベントとして近年人気が高まっている。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.42,
+    "lng": 134.19,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg94",
+    "name": "高松港 クリスマスマーケット",
+    "category": "屋台",
+    "date": "毎年12月上旬〜25日",
+    "description": "高松市のサンポート高松周辺の港湾エリアで行われるクリスマスシーズンのイルミネーションと屋台イベント。高松港のウォーターフロントに大型クリスマスツリーが設置され、周辺はLEDイルミネーションで装飾される。地元のクリスマス限定グルメ・スイーツや讃岐地酒のホットワイン屋台が並び、冬の瀬戸内の夜景と組み合わせた高松の冬のクリスマスシーズンを演出する。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg103",
+    "name": "丸亀市 中津万象園 桜まつり",
+    "category": "祭り",
+    "date": "毎年4月上旬",
+    "description": "香川県丸亀市の国指定名勝・中津万象園の春の花見まつり。江戸時代に丸亀藩主・京極氏が造営した回遊式大名庭園に咲く桜と、瀬戸内海を一望できる園内の春景色を楽しむイベント。海の見える庭園の松と桜の組み合わせは讃岐を代表する春の絶景で、茶席や地元グルメの屋台も設けられる。丸亀城桜まつりと合わせて丸亀市内の花見を楽しむ春の定番コースとして人気。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.2855,
+    "lng": 133.7963,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.nakatsumanshouen.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg104",
+    "name": "高松市 屋島スカイウェイ夜景まつり",
+    "category": "屋台",
+    "date": "毎年夏（7〜8月）",
+    "description": "高松市東部の屋島（標高292m）の山上・屋島スカイウェイ周辺で行われる夏の夜景鑑賞イベント。源平合戦の古戦場として知られる屋島の山頂から眺める高松市街と瀬戸内海の夜景は香川随一の絶景スポット。夏の夜間は山上の屋台イベントが開催され、夜の瀬戸内の島々のシルエットを眺めながら地元グルメが楽しめる。カップルや家族連れに人気の高松の夏の夜のデートスポット。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.37,
+    "lng": 134.1,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg111",
+    "name": "三豊市 粟島 海楽フェスタ",
+    "category": "屋台",
+    "date": "毎年8月上旬",
+    "description": "香川県三豊市沖合の粟島で行われる夏の海と音楽のフェスタ。「粟島海洋記念公園」（旧大島商船学校）が残る文化の島・粟島の夏を盛り上げるイベントで、フェリーで渡った島の開放的な海辺でライブ音楽と地元グルメが楽しめる。燧灘の透明な海を泳いだ後に夕暮れ時のライブと花火を楽しむ離島フェスは、三豊市の夏の隠れた名物イベントとして若者に人気が高まっている。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.092,
+    "lng": 133.57,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg216",
+    "name": "高松市 春のさぬきうどん祭り",
+    "category": "屋台",
+    "date": "毎年4月第4日曜",
+    "description": "高松市内のうどん製麺業者と飲食店が一体となって開催するうどんの祭典。高松市の中央公園や商店街の一角を会場に、讃岐うどんの打ち立て実演・うどん早食い大会・うどんを使ったユニーク料理の屋台が並ぶ。地元の製麺業者が一般向けに開放する工場見学ツアーも同日開催され、讃岐うどんの産業と文化を丸ごと体験できる。うどん好きが全国から集まる春の讃岐グルメまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3401,
+    "lng": 134.0434,
+    "region": "中国・四国",
+    "heatScore": 5800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_eh20",
@@ -6380,7 +7116,8 @@
     "lng": 132.5386,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.ozu.ehime.jp/"
+    "eventUrl": "https://www.city.ozu.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_kc16",
@@ -6393,7 +7130,8 @@
     "lng": 133.4235,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.town.ino.kochi.jp/"
+    "eventUrl": "https://www.town.ino.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_tt09",
@@ -6406,7 +7144,8 @@
     "lng": 133.86,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.misasa.jp/"
+    "eventUrl": "https://www.misasa.jp/",
+    "parking": []
   },
   {
     "id": "md_sm10",
@@ -6419,7 +7158,8 @@
     "lng": 131.87,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.masuda.lg.jp/"
+    "eventUrl": "https://www.city.masuda.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ok16",
@@ -6432,7 +7172,8 @@
     "lng": 133.58,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.town.yakage.okayama.jp/"
+    "eventUrl": "https://www.town.yakage.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_ok21",
@@ -6445,7 +7186,8 @@
     "lng": 133.49,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.takahashi.lg.jp/"
+    "eventUrl": "https://www.city.takahashi.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_hr13",
@@ -6458,7 +7200,8 @@
     "lng": 133.01,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.miyoshi.hiroshima.jp/"
+    "eventUrl": "https://www.city.miyoshi.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_hr21",
@@ -6471,7 +7214,8 @@
     "lng": 132.42,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.etajima.hiroshima.jp/"
+    "eventUrl": "https://www.city.etajima.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_ym21",
@@ -6484,7 +7228,8 @@
     "lng": 131.95,
     "region": "中国・四国",
     "heatScore": 5800,
-    "eventUrl": "https://www.city.hikari.lg.jp/"
+    "eventUrl": "https://www.city.hikari.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135070151",
@@ -6614,7 +7359,8 @@
     "lng": 132.4196,
     "region": "中国・四国",
     "heatScore": 5600,
-    "eventUrl": "https://www.city.yawatahama.ehime.jp/"
+    "eventUrl": "https://www.city.yawatahama.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_eh11",
@@ -6627,7 +7373,8 @@
     "lng": 132.5386,
     "region": "中国・四国",
     "heatScore": 5600,
-    "eventUrl": "https://www.city.ozu.ehime.jp/"
+    "eventUrl": "https://www.city.ozu.ehime.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135186167",
@@ -8057,7 +8804,8 @@
     "lng": 133.8067,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.miyoshi-city.jp/"
+    "eventUrl": "https://www.miyoshi-city.jp/",
+    "parking": []
   },
   {
     "id": "md_kg05",
@@ -8070,7 +8818,8 @@
     "lng": 134.174,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.town.tonosho.kagawa.jp/"
+    "eventUrl": "https://www.town.tonosho.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_kc04",
@@ -8083,7 +8832,8 @@
     "lng": 134.0832,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.aki.kochi.jp/"
+    "eventUrl": "https://www.city.aki.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_ok06",
@@ -8096,7 +8846,8 @@
     "lng": 134.0836,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.yunogo.com/"
+    "eventUrl": "https://www.yunogo.com/",
+    "parking": []
   },
   {
     "id": "md_tk09",
@@ -8109,7 +8860,8 @@
     "lng": 133.9974,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.miyoshi-city.jp/"
+    "eventUrl": "https://www.miyoshi-city.jp/",
+    "parking": []
   },
   {
     "id": "md_hr12",
@@ -8122,7 +8874,8 @@
     "lng": 132.22,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.hatsukaichi.hiroshima.jp/"
+    "eventUrl": "https://www.city.hatsukaichi.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_ym11",
@@ -8135,7 +8888,8 @@
     "lng": 131.9455,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.hikari.lg.jp/"
+    "eventUrl": "https://www.city.hikari.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tk10",
@@ -8148,7 +8902,8 @@
     "lng": 134.5363,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://oasahiko.net/"
+    "eventUrl": "https://oasahiko.net/",
+    "parking": []
   },
   {
     "id": "md_tk13",
@@ -8161,7 +8916,8 @@
     "lng": 133.9974,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.miyoshi-city.jp/"
+    "eventUrl": "https://www.miyoshi-city.jp/",
+    "parking": []
   },
   {
     "id": "md_tk19",
@@ -8174,7 +8930,8 @@
     "lng": 134.6602,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.anan.tokushima.jp/"
+    "eventUrl": "https://www.city.anan.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_kg14",
@@ -8187,7 +8944,8 @@
     "lng": 133.84,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.town.manno.lg.jp/"
+    "eventUrl": "https://www.town.manno.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_kg16",
@@ -8200,7 +8958,260 @@
     "lng": 134.37,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.higashikagawa.lg.jp/"
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg26",
+    "name": "牟礼秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "高松市牟礼地区の洲崎神社を中心に行われる秋まつり。石の島として知られる屋島・庵治石の産地・牟礼ならではの石工細工の実演と奉納神輿が見どころ。源平合戦ゆかりの屋島を背景に、地区ごとの神輿と太鼓台が勇壮に練り歩く。地元の鮮魚・讃岐うどん屋台も並ぶ高松東部の伝統ある秋まつりで、石工文化と祭り文化が融合した牟礼らしい一日。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.351,
+    "lng": 134.12,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg38",
+    "name": "多度津港まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "香川県仲多度郡多度津町の多度津港を会場にした夏花火大会。かつて鉄道発祥の地として栄え、今も四国への玄関口の一つである多度津港から打ち上がる花火は、瀬戸内海の夜を鮮やかに染め上げる。港町らしい開放的な雰囲気の中で地元住民が集い、屋台や盆踊りとともに楽しむ多度津の夏の最大イベント。地元の塩を使った瀬戸内の海鮮屋台が人気。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.272,
+    "lng": 133.751,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.town.tadotsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg40",
+    "name": "坂出まつり",
+    "category": "祭り",
+    "date": "毎年10月下旬",
+    "description": "香川県坂出市の坂出八幡神社を中心に行われる秋の例大祭。坂出は塩田と航路で栄えた讃岐の港町で、秋まつりでは地区ごとの太鼓台（ちょうさ）が勇壮に練り歩く。瀬戸大橋の麓に広がる坂出の市街地を舞台にした秋まつりは、坂出の歴史と誇りを次世代に伝える地域の大切な祭礼。地元の塩・しょうゆを使ったさぬきうどんと瀬戸内の海鮮屋台が人気を集める。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.3155,
+    "lng": 133.8521,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg55",
+    "name": "三本松港まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月第2土曜",
+    "description": "香川県東かがわ市の三本松港を会場にした夏花火大会。東かがわ市の中心部に近い三本松港から打ち上がる花火が、瀬戸内海の夏の夜を彩る地元密着型の花火大会。地元の手袋産業で知られる東かがわ市の夏の最大イベントとして定着しており、港周辺に屋台が並び地域住民が楽しみにする一夜。地元の新鮮な海鮮・讃岐うどん屋台も充実した讃岐東部の夏の花火大会。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.243,
+    "lng": 134.36,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg66",
+    "name": "粟島まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "三豊市の沖合約11kmに浮かぶ粟島（あわしま）の粟島港を会場にした離島の夏花火大会。「粟島海洋記念公園」（旧粟島商船学校）が残る文化の島・粟島の夏の風物詩で、フェリーで渡る価値がある離島の花火体験が人気。燧灘の静かな海面に花火が映える幻想的な光景は本土の花火大会とは異なる感動を与える。地元の新鮮な魚介の屋台とともに楽しむ離島の夏まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.092,
+    "lng": 133.57,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg70",
+    "name": "草壁港まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "香川県小豆島（小豆島町）の草壁港を会場にした離島の夏花火大会。高松港からフェリーで約1時間の小豆島の玄関口の一つ・草壁港から打ち上がる花火が、穏やかな瀬戸内海の夜を染め上げる。小豆島の豊かな自然の中、海を渡る潮風を感じながら楽しむ花火大会は、本土とは異なる離島ならではの情緒があり観光客にも人気。地元のオリーブや海の幸の屋台も並ぶ。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.43,
+    "lng": 134.25,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg72",
+    "name": "小豆島 天皇社秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "香川県小豆島町の天皇社（てんのうしゃ）を中心に行われる秋まつり。古代から続く小豆島の氏神の祭礼で、島の各集落から神輿や太鼓台が集合する壮観な秋まつり。人口が減少する島の中で地域コミュニティの絆を保つ重要な年中行事として島民が大切にしている。地元産のオリーブ・ゴマ・そうめん（島の光）を使った屋台が並ぶ瀬戸内の島の秋の一大イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.42,
+    "lng": 134.22,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg79",
+    "name": "高松七夕まつり",
+    "category": "屋台",
+    "date": "毎年7月7日前後",
+    "description": "高松市の中央商店街・丸亀町商店街周辺で行われる七夕のまちかざりと商店街イベント。アーケード商店街に色とりどりの吹き流しと七夕飾りが飾られ、願い事を書いた短冊を笹竹に結ぶ体験コーナーや地元グルメの屋台が登場。夏前の高松の中心街が七夕色に染まる1週間は、地元住民が親子でショッピングと縁日を楽しむ夏の恒例行事として定着している。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3411,
+    "lng": 134.0455,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg81",
+    "name": "高松まちかど音楽祭",
+    "category": "屋台",
+    "date": "毎年5月（GW前後）",
+    "description": "高松市の中心商店街・丸亀町商店街周辺の路上で、地元ミュージシャンが無料ライブを行う春の音楽イベント。爽やかな初夏の風の中、ジャズ・クラシック・ポップスなど多彩なジャンルの音楽が街角に流れ、飲食屋台も各所に出店。高松JAZZ STREETの姉妹イベントとして毎年定着しており、商店街の賑わいとともに高松の春の街歩きを楽しめるオープンエアーの音楽祭。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3411,
+    "lng": 134.0455,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg86",
+    "name": "中津万象園ライトアップ",
+    "category": "屋台",
+    "date": "毎年10月〜11月",
+    "description": "香川県丸亀市の国の名勝・中津万象園で秋に行われる庭園のライトアップイベント。江戸時代に藩主・京極氏が築いた回遊式大名庭園の松・池・石組みが幻想的な光に照らされる。秋の夜長に日本庭園の美を楽しむイベントとして丸亀市の秋の観光コンテンツに定着しており、瀬戸内海を一望できる隣接の丸亀市猪熊弦一郎現代美術館との組み合わせも人気。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.2855,
+    "lng": 133.7963,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.nakatsumanshouen.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg92",
+    "name": "小豆島 苗羽（のうま）まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "香川県小豆島町の醤油の産地・苗羽地区の秋まつり。江戸時代から醤油・味噌の醸造で栄えた苗羽地区の地区神社の秋例大祭で、木桶の醤油蔵が立ち並ぶ「醤の郷」の町並みを神輿と子供御輿が練り歩く。醤油の香りが漂う醸造の町で行われる秋まつりは全国でも希少な光景で、地元産の醤油・佃煮・島そうめんを使った料理の屋台が並ぶ、小豆島ならではの秋の祭礼。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.42,
+    "lng": 134.24,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg97",
+    "name": "香川産業フェスタ",
+    "category": "屋台",
+    "date": "毎年11月中旬",
+    "description": "香川県の産業・ものづくりを発信する秋の総合フェスタ。高松市のサンメッセ香川を会場に、うちわ・手袋・ ガラス工芸・造船など香川の多彩な地場産業の製品展示・即売と体験ワークショップが行われる。讃岐うどんや地元食材を使ったグルメ屋台も充実しており、香川の産業と食文化を一日で体験できる大型イベント。地元学生や企業の技術発表の場としても機能している。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.36,
+    "lng": 134.05,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.pref.kagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg106",
+    "name": "三豊市 詫間秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第1土・日曜",
+    "description": "香川県三豊市詫間地区の白山神社・徒木神社を中心に行われる秋まつり。燧灘に面した詫間の漁業の町の秋まつりで、地区ごとの太鼓台（ちょうさ）が港町の細い路地を練り歩く。海軍航空隊の歴史を持つ詫間ならではの勇ましい気風が祭りにも現れており、地元漁師が担ぐ太鼓台は特に迫力がある。詫間港の新鮮な魚介と三豊の農産物を使った屋台も充実する秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.1978,
+    "lng": 133.68,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg118",
+    "name": "高松市 日本民謡まつり",
+    "category": "祭り",
+    "date": "毎年9月上旬",
+    "description": "高松市のサンポート高松周辺を会場に行われる日本各地の民謡を披露する文化祭。讃岐の民謡「さぬき音頭」や「金毘羅船々」をはじめ、全国各地の民謡団体が一堂に集まり演奏・踊りを披露する。港の風景を背景に響く三味線と太鼓の音は秋の高松の情緒を高め、観覧無料で日本の伝統音楽文化に親しめる貴重な機会。讃岐うどんや地元グルメの屋台も並ぶ秋の文化行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1529686342540-1b43aec0df75?w=800&q=80",
+    "lat": 34.35,
+    "lng": 134.046,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg136",
+    "name": "東かがわ市 引田ひなまつり",
+    "category": "祭り",
+    "date": "毎年3月上旬〜中旬",
+    "description": "江戸時代の商家建築が残る東かがわ市引田地区の古い街並みを舞台に開かれる雛人形の展示まつり。地区内の古民家・商家・神社の座敷に各家が代々受け継いできた江戸・明治・大正・昭和の雛人形を展示し、一般公開する。白壁の商家が続く伝建地区のまち歩きとともに各家の雛人形を見て回るスタイルが人気で、地元の名物・和三盆スイーツを売る屋台も並ぶ春の文化行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.2425,
+    "lng": 134.3773,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg163",
+    "name": "三豊市 高屋神社 麓祭り",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "「天空の鳥居」として近年SNSで有名になった三豊市の高屋神社の麓社で行われる秋まつり。山頂の本宮（天空の鳥居のある場所）への登山道の入口にある麓社では、地元氏子たちが秋の収穫に感謝する例祭を行う。参拝者急増で観光地化した今も、地区の伝統的な神事と獅子舞が変わらず行われ、観光客が多い中で地元の祭り文化を守ろうとする住民の姿が印象的。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.0832,
+    "lng": 133.675,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg212",
+    "name": "小豆島 中山 虫送り",
+    "category": "祭り",
+    "date": "毎年7月1日頃",
+    "description": "小豆島内陸部の棚田が広がる中山地区（千枚田）で行われる伝統農耕行事「虫送り」。農作物を害虫から守るために、地域の農家が松明を持ち田畑の畦道を歩きながら害虫を追い払う古い農耕儀礼で、国の重要無形民俗文化財的価値を持つ。中山の棚田に数十の松明が連なる光景は幻想的で、近年は観光客にも知られるようになったが、今もあくまで農家の方々が主役の農村の生きた習俗。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.48,
+    "lng": 134.26,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg217",
+    "name": "土庄町 小豆島 醤油の里まつり",
+    "category": "屋台",
+    "date": "毎年11月第3土・日曜",
+    "description": "小豆島の特産品・醤油の産地として有名な土庄町マルキン醤油記念館周辺で行われる醤油まつり。江戸時代から続く小豆島の醤油醸造の歴史を紹介するとともに、醤油を使った料理の屋台・醤油の直売・醤油蔵の見学会が行われる。醤油に漬けたオリーブ・醤油ソフトクリーム・醤油だんごなど小豆島ならではのユニーク醤油グルメが並ぶ。国内外の観光客にも人気の小豆島の産業文化まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.4831,
+    "lng": 134.202,
+    "region": "中国・四国",
+    "heatScore": 5500,
+    "eventUrl": "https://www.marukin-soy.co.jp/",
+    "parking": []
   },
   {
     "id": "md_eh14",
@@ -8213,7 +9224,8 @@
     "lng": 132.5353,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.seiyo.ehime.jp/"
+    "eventUrl": "https://www.city.seiyo.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_kc14",
@@ -8226,7 +9238,8 @@
     "lng": 133.6417,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.nankoku.lg.jp/"
+    "eventUrl": "https://www.city.nankoku.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_kc17",
@@ -8239,7 +9252,8 @@
     "lng": 134.15,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.muroto-kanko.jp/"
+    "eventUrl": "https://www.muroto-kanko.jp/",
+    "parking": []
   },
   {
     "id": "md_tt12",
@@ -8252,7 +9266,8 @@
     "lng": 134.1612,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.town.wakasa.tottori.jp/"
+    "eventUrl": "https://www.town.wakasa.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_tt15",
@@ -8265,7 +9280,8 @@
     "lng": 134.17,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.tottori-kanko.jp/"
+    "eventUrl": "https://www.tottori-kanko.jp/",
+    "parking": []
   },
   {
     "id": "md_tt18",
@@ -8278,7 +9294,8 @@
     "lng": 134.4002,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.town.iwami.tottori.jp/"
+    "eventUrl": "https://www.town.iwami.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_sm11",
@@ -8291,7 +9308,8 @@
     "lng": 132.21,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.gotsu.lg.jp/"
+    "eventUrl": "https://www.city.gotsu.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_sm12",
@@ -8304,7 +9322,8 @@
     "lng": 132.89,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.unnan.shimane.jp/"
+    "eventUrl": "https://www.city.unnan.shimane.jp/",
+    "parking": []
   },
   {
     "id": "md_sm16",
@@ -8317,7 +9336,8 @@
     "lng": 133,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.okuizumo.org/"
+    "eventUrl": "https://www.okuizumo.org/",
+    "parking": []
   },
   {
     "id": "md_ok11",
@@ -8330,7 +9350,8 @@
     "lng": 133.74,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.soja.okayama.jp/"
+    "eventUrl": "https://www.city.soja.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_hr16",
@@ -8343,7 +9364,8 @@
     "lng": 133.2445,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.fuchu.hiroshima.jp/"
+    "eventUrl": "https://www.city.fuchu.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_hr19",
@@ -8356,7 +9378,8 @@
     "lng": 132.22,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.otake.hiroshima.jp/"
+    "eventUrl": "https://www.city.otake.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_ym18",
@@ -8369,7 +9392,8 @@
     "lng": 131.18,
     "region": "中国・四国",
     "heatScore": 5500,
-    "eventUrl": "https://www.city.sanyo-onoda.lg.jp/"
+    "eventUrl": "https://www.city.sanyo-onoda.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135193385",
@@ -8460,7 +9484,8 @@
     "lng": 132.7305,
     "region": "中国・四国",
     "heatScore": 5300,
-    "eventUrl": "https://www.city.sukumo.kochi.jp/"
+    "eventUrl": "https://www.city.sukumo.kochi.jp/",
+    "parking": []
   },
   {
     "id": "md_tk15",
@@ -8473,7 +9498,8 @@
     "lng": 134.078,
     "region": "中国・四国",
     "heatScore": 5300,
-    "eventUrl": "https://www.city.mima.lg.jp/"
+    "eventUrl": "https://www.city.mima.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q134928742",
@@ -8616,7 +9642,8 @@
     "lng": 134.56,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.tokushima.tokushima.jp/"
+    "eventUrl": "https://www.city.tokushima.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_eh07",
@@ -8629,7 +9656,8 @@
     "lng": 132.5603,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.town.ainan.ehime.jp/"
+    "eventUrl": "https://www.town.ainan.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_tk14",
@@ -8642,7 +9670,8 @@
     "lng": 134.3515,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.awa.tokushima.jp/"
+    "eventUrl": "https://www.city.awa.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_tk17",
@@ -8655,7 +9684,8 @@
     "lng": 134.36,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.yoshinogawa.tokushima.jp/"
+    "eventUrl": "https://www.city.yoshinogawa.tokushima.jp/",
+    "parking": []
   },
   {
     "id": "md_kg13",
@@ -8668,7 +9698,190 @@
     "lng": 133.656,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.mitoyo.lg.jp/"
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg22",
+    "name": "栗林公園 梅花祭",
+    "category": "祭り",
+    "date": "毎年2月上旬〜中旬",
+    "description": "高松市の特別名勝・栗林公園に咲く約200本の梅が見ごろを迎える早春の花見イベント。白梅・紅梅が交互に咲く梅林と、丹精された庭園の冬景色のコントラストが美しい。茶席や書道・生け花の実演も行われ、一足早い春を告げる穏やかな公園の风景が楽しめる。週末には抹茶と和菓子セットが振る舞われる香川の春の先触れイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3253,
+    "lng": 134.0467,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://ritsuringarden.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg28",
+    "name": "庵治まつり",
+    "category": "祭り",
+    "date": "毎年10月第3土・日曜",
+    "description": "高松市庵治町の八幡神社を中心に行われる秋まつり。「庵治石」として世界的に有名な最高級御影石の産地・庵治は、石工の技術と信仰が深く結びついた地域。秋まつりでは石工の棟梁たちが担ぐ神輿と地区ごとの太鼓台が練り歩き、地元のタコやハマチなど庵治沖で水揚げされた新鮮な魚介の屋台が並ぶ。瀬戸内海を望む石の聖地の秋の祭礼。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.375,
+    "lng": 134.15,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg33",
+    "name": "三木町まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "香川県木田郡三木町の白山神社を中心に行われる秋まつり。高松市のベッドタウンとして発展した三木町の秋の恒例行事で、地区ごとの太鼓台（ちょうさ）が練り歩く迫力ある祭りが繰り広げられる。四国学院大学など大学が立地する学術文化の町らしく、若者も積極的に担ぎ手として参加する活気ある秋まつり。地元農産物の直売や屋台も充実。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.289,
+    "lng": 134.13,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.town.miki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg39",
+    "name": "宇多津まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "香川県綾歌郡宇多津町の宇多津八幡神社を中心に行われる秋まつり。塩の町として中世から栄えた宇多津の秋まつりで、太鼓台（ちょうさ）が町内を練り歩く。宇多津は江戸時代に讃岐でも有数の塩の産地として繁栄した歴史があり、その誇りを祭りに込めて現代へと継承。臨海公園の瀬戸内海の景観とともに、塩の文化が薫る港町の秋まつりを楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.3067,
+    "lng": 133.8246,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.town.utazu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg52",
+    "name": "大串岬花火大会",
+    "category": "花火",
+    "date": "毎年8月下旬",
+    "description": "香川県さぬき市の大串岬（おおくしざき）周辺の海岸から打ち上げられる夏花火大会。瀬戸内海に突き出た半島・大串岬の先端付近から四方に広がる海上に花火が打ち上がり、海を囲む絶景の中での花火体験は唯一無二。地元の漁師が中心となって運営する素朴な海の花火大会で、釣り好きにも人気のさぬき市屈指のロケーションで行われるこぢんまりとした夏まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.24,
+    "lng": 134.19,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg60",
+    "name": "仁尾秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "香川県三豊市仁尾地区の仁尾八幡神社を中心に行われる秋まつり。かつてソーラー発電の実証実験が行われたことでも知られる仁尾の、漁業を中心とした地域に根付いた秋の祭礼。地区の太鼓台（ちょうさ）が港町を練り歩く勇壮なまつりで、仁尾のイリコと地元の鮮魚を使った屋台が充実する。燧灘に面した小さな漁港の活気あふれる秋まつりは地元住民の誇り。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.1057,
+    "lng": 133.656,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg75",
+    "name": "豊島まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "香川県土庄町に属する豊島（てしま）の家浦港周辺を会場にした離島の夏花火大会。現代アートの聖地として近年注目を集める豊島の夏の一大イベントで、豊島美術館や心臓音のアーカイブで知られる芸術の島に夏の夜だけ花火が咲き誇る。瀬戸内海を渡る潮風の中、島民と来島観光客が一緒に楽しむ離島の花火大会は特別な体験として旅の思い出に残る。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.48,
+    "lng": 134.06,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.town.tonosho.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg88",
+    "name": "坂出金時まつり",
+    "category": "屋台",
+    "date": "毎年11月下旬",
+    "description": "香川県坂出市特産のサツマイモ「さぬきゴールド（金時芋）」の収穫を祝う秋の農業まつり。さぬきゴールドはしっとりとした甘みが特徴の坂出市を代表するブランドサツマイモで、直売・焼き芋・スイーツなど多彩な金時芋グルメの屋台が集まる。地元農家との交流コーナーや、坂出港での海鮮屋台との組み合わせで、坂出市の食文化を堪能できる秋の大人気グルメイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3155,
+    "lng": 133.8521,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg95",
+    "name": "善通寺 伽藍市（がらんいち）",
+    "category": "屋台",
+    "date": "毎年10月〜11月",
+    "description": "香川県善通寺市の総本山善通寺の境内で行われる秋の市（いち）。弘法大師ゆかりの伽藍の中で、地元の農産物・工芸品・仏具・古民具などが並ぶ縁日市が開催される。四国遍路の霊場として全国から参拝者が集まる善通寺で、参拝と市の買い物を兼ねて楽しめる。地元の善通寺うどんや讃岐和三盆を使ったスイーツの屋台も登場し、伽藍の秋の空気の中でゆったりと過ごせる。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.228,
+    "lng": 133.782,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.zentsuji.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg105",
+    "name": "さぬき市 志度音頭まつり",
+    "category": "祭り",
+    "date": "毎年8月下旬",
+    "description": "香川県さぬき市志度地区の志度八幡神社周辺で行われる夏の盆踊りまつり。「志度音頭」は讃岐東部に古くから伝わる民謡盆踊りで、地域の人々が浴衣姿で集い踊り続ける夏の夜の伝統行事。志度寺（86番札所）の門前町として栄えた志度の歴史的な町並みを背景に、世代を超えて受け継がれる盆踊り文化が地域の絆を育む。地元の瀬戸内の魚介と讃岐うどんの屋台が並ぶ。",
+    "imageUrl": "https://images.unsplash.com/photo-1529686342540-1b43aec0df75?w=800&q=80",
+    "lat": 34.32,
+    "lng": 134.18,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg115",
+    "name": "観音寺市 観音寺音楽まつり",
+    "category": "屋台",
+    "date": "毎年10月中旬",
+    "description": "香川県観音寺市の有明浜周辺を会場にした秋の音楽フェスタ。「銭形砂絵」で知られる有明浜の白砂青松の浜辺に野外ステージが設けられ、地元や近隣地域のバンド・アーティストが演奏を披露。海風を感じながらの野外ライブは格別で、地元の伊吹いりこ・骨付き鳥・さぬきうどんなど讃岐グルメの屋台も充実。観音寺市の秋の開放的な海辺のイベントとして定着しつつある。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.1189,
+    "lng": 133.6564,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg117",
+    "name": "さぬき市 長尾寺まつり",
+    "category": "祭り",
+    "date": "毎年10月下旬",
+    "description": "香川県さぬき市の四国八十八か所霊場・長尾寺（87番札所）の秋の特別開帳に合わせたまつり。弘法大師ゆかりの霊場で行われる法要と縁日で、遍路参拝者と地元住民が混ざり合う穏やかなまつりが境内で開催される。長尾寺の門前市場では地元産の農産物・讃岐の名物菓子・遍路グッズの販売が行われ、秋の霊場の静寂の中に小さな賑わいが生まれる四国遍路文化ならではの秋の行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.273,
+    "lng": 134.152,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg180",
+    "name": "善通寺市 弘法市（こうぼういち）",
+    "category": "屋台",
+    "date": "毎年6月15日",
+    "description": "弘法大師（空海）の誕生日（6月15日）に合わせて善通寺境内で開かれる縁日市。全国の弘法市の中でも、空海生誕の地・善通寺の弘法市は特別な意味を持つ。境内の参道沿いに骨董・民芸品・植木・食品・衣料など多種多様な露天商が並び、全国から参拝者と縁日好きが集まる。四国遍路の発心地として著名な善通寺で、縁日の活気と信仰の静けさが共存する独特の雰囲気。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2271,
+    "lng": 133.7815,
+    "region": "中国・四国",
+    "heatScore": 5200,
+    "eventUrl": "https://www.zentsuji.com/",
+    "parking": []
   },
   {
     "id": "md_kc11",
@@ -8681,7 +9894,8 @@
     "lng": 133.2814,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.susaki.lg.jp/"
+    "eventUrl": "https://www.city.susaki.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_tt17",
@@ -8694,7 +9908,8 @@
     "lng": 133.56,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.town.hoki.tottori.jp/"
+    "eventUrl": "https://www.town.hoki.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_sm19",
@@ -8707,7 +9922,8 @@
     "lng": 132.0816,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.hamada-kanko.com/"
+    "eventUrl": "https://www.hamada-kanko.com/",
+    "parking": []
   },
   {
     "id": "md_ok15",
@@ -8720,7 +9936,8 @@
     "lng": 134,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.akaiwa.lg.jp/"
+    "eventUrl": "https://www.city.akaiwa.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ok20",
@@ -8733,7 +9950,8 @@
     "lng": 134.168,
     "region": "中国・四国",
     "heatScore": 5200,
-    "eventUrl": "https://www.city.setouchi.lg.jp/"
+    "eventUrl": "https://www.city.setouchi.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q135186326",
@@ -9591,7 +10809,8 @@
     "lng": 134.1604,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.muroto-kanko.jp/"
+    "eventUrl": "https://www.muroto-kanko.jp/",
+    "parking": []
   },
   {
     "id": "md_tt06",
@@ -9604,7 +10823,8 @@
     "lng": 134.4002,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.iwami.tottori.jp/"
+    "eventUrl": "https://www.town.iwami.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_tk20",
@@ -9617,7 +10837,218 @@
     "lng": 134.3583,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.kamiyama.lg.jp/"
+    "eventUrl": "https://www.town.kamiyama.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg29",
+    "name": "仏生山まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "高松市仏生山地区の法然寺（仏生山）を中心に行われる秋の門前まつり。江戸時代に参勤交代の松平家の菩提寺として栄えた法然寺の境内で、露店が並びにぎやかな縁日が開催される。仏生山の町並みにはレトロな商店が残り、地元住民が丹精込めて準備する手作りのまつりが好評。讃岐うどん発祥の地ともいわれる香川の食文化と地域の歴史を感じるまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.301,
+    "lng": 134.021,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg36",
+    "name": "本島まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "丸亀港から定期船で約40分・瀬戸内海に浮かぶ本島（ほんじま）の本島港を会場にした夏花火大会。笠島まちなみ（国の重要伝統的建造物群保存地区）が残る静かな島の夏の風物詩で、島周辺の穏やかな瀬戸内の海面に花火が打ち上がる。島民と島を訪れた来島者が一緒に楽しむアットホームな離島の花火大会で、夕暮れ時の瀬戸内の美しさとともに忘れられない夏の体験を提供する。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.34,
+    "lng": 133.78,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg49",
+    "name": "財田まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "香川県観音寺市財田（さいだ）地区の財田八幡神社を中心に行われる秋まつり。愛媛・徳島との県境に近い山間の農村地帯・財田で行われる伝統の秋まつりで、地区ごとの太鼓台が山里の細い道を練り歩く。財田川の清流に恵まれた農業の里らしく、地元産のコメや野菜を使った郷土料理の屋台が並ぶ。山里の素朴な祭りながら地域の誇りを感じる、讃岐の奥座敷の秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.19,
+    "lng": 133.74,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg53",
+    "name": "長尾まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "香川県さぬき市長尾地区の長尾神社を中心に行われる秋まつり。四国八十八か所霊場・長尾寺（87番札所）の門前町として栄えた長尾は遍路道の宿場でもあり、秋まつりには神輿と地区の太鼓台が参道を練り歩く。地元の農産物・野菜の収穫を祝う秋の感謝祭の側面もあり、讃岐平野の豊かな実りを感じながら楽しむ伝統の秋まつり。地元産の讃岐うどん屋台が名物。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.273,
+    "lng": 134.152,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg57",
+    "name": "手袋フェスタ東かがわ",
+    "category": "屋台",
+    "date": "毎年11月下旬",
+    "description": "国内生産の約9割を占める手袋産地・香川県東かがわ市の手袋産業を発信するグルメ＆ショッピングイベント。地元の手袋メーカーが一堂に集まりアウトレット販売を行うほか、地元グルメの屋台も登場。「東かがわ＝手袋」のブランドイメージを全国に発信するとともに、地元特産のハマチや讃岐うどんとのセットで東かがわ市の魅力を総合的に体験できる秋の産業まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.243,
+    "lng": 134.36,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg59",
+    "name": "詫間花火大会",
+    "category": "花火",
+    "date": "毎年8月中旬",
+    "description": "香川県三豊市詫間地区の詫間港周辺を会場にした夏花火大会。燧灘（ひうちなだ）に面した詫間港から打ち上がる花火が、瀬戸内西部の夜の海を照らす漁港の夏花火大会。かつて海軍航空隊の基地が置かれた詫間の歴史を持つ港町で、今は漁業と農業の町として静かに栄える詫間の最大の夏イベント。地元の燧灘産のイリコ・タコを使った屋台が地元民に愛される。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.1978,
+    "lng": 133.68,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg68",
+    "name": "まんのう公園夏まつり",
+    "category": "屋台",
+    "date": "毎年7月下旬〜8月上旬",
+    "description": "国営讃岐まんのう公園で開催される夏のイベント。広大な公園内で行われる夜間開放と光のイルミネーション、盆踊りイベントが夏の讃岐の夜を演出する。満濃池の水辺と公園の緑の中で行われる夏の屋台イベントは家族連れに人気で、地元の讃岐うどんや農産物グルメが楽しめる。讃岐の田園地帯の中にある公園の夏ならではのひとときを提供するまんのう町の夏の人気イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.122,
+    "lng": 133.843,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.nichinoken.co.jp/sanuki/",
+    "parking": []
+  },
+  {
+    "id": "md_kg83",
+    "name": "綾川町 滝宮天満宮梅まつり",
+    "category": "祭り",
+    "date": "毎年2月中旬〜3月上旬",
+    "description": "香川県綾川町の滝宮天満宮（菅原道真を祀る）の境内に咲く梅の花を愛でる春の梅まつり。学問の神様を祀る天満宮の境内に約200本の梅が咲き、受験シーズンに合わせて学業成就を願う参拝者も多く訪れる。滝宮の念仏踊りで有名な天満宮の落ち着いた雰囲気の中での梅見は格別の風情があり、地元の讃岐うどんと梅茶の屋台も出て早春の綾川を彩るイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.255,
+    "lng": 134.03,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.town.ayagawa.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg98",
+    "name": "さぬきの輝き農業まつり",
+    "category": "屋台",
+    "date": "毎年11月上旬",
+    "description": "香川県の農業の恵みを一堂に集めた秋の農業大まつり。高松市の香川県農業試験場・産業技術総合センター周辺を会場に、県内各地の農家が丹精込めたブランド農産物の直売と試食が行われる。さぬきゴールデン（金時サツマイモ）・さぬきの夢（小麦）・讃岐の宝石（オリーブ）など香川ブランドの農産物が勢揃い。農業体験ワークショップや地産地消グルメの屋台も充実。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.32,
+    "lng": 134.01,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.pref.kagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg99",
+    "name": "宇多津 塩の里まつり",
+    "category": "祭り",
+    "date": "毎年10月第1日曜",
+    "description": "香川県綾歌郡宇多津町の歴史的な塩田跡「宇多津塩の里」周辺で行われる秋まつり。中世から江戸時代にかけて讃岐有数の塩の産地として繁栄した宇多津の塩文化を発信するイベントで、塩の製造体験や塩を使ったグルメ屋台が登場。宇多津町の旧市街・古街道の石畳エリアを散策しながら歴史に触れられる。瀬戸大橋を望む臨海公園の秋景色も楽しめるまち歩きイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3067,
+    "lng": 133.8246,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.town.utazu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg109",
+    "name": "小豆島 大阪城残石まつり",
+    "category": "屋台",
+    "date": "毎年11月上旬",
+    "description": "香川県小豆島が大阪城築城に際し石材（残石）を供給した歴史を祝う秋の文化イベント。小豆島町の採石場跡近くに今も残る「残石」の資料館周辺で、江戸時代初期の石丁場の歴史を紹介するイベントが行われる。地元の石工文化・醤油文化・オリーブ文化を合わせて紹介する総合的な歴史文化体験イベントで、島特産のゴマ・そうめん・オリーブを使った屋台グルメも楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.45,
+    "lng": 134.22,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg110",
+    "name": "高松市 仏生山温泉まつり",
+    "category": "屋台",
+    "date": "毎年11月下旬",
+    "description": "高松市仏生山地区の法然寺の門前と仏生山温泉周辺で行われる秋の温泉まつり。仏生山温泉は高松市内の都市型日帰り温泉として人気のスポットで、温泉の恵みに感謝する秋のイベントとして地元グルメの屋台が集結する。法然寺の紅葉と相まって秋の情緒たっぷりの下町散策ができ、讃岐うどんや地元焼き菓子・温泉卵など仏生山ならではのグルメが楽しめるまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.301,
+    "lng": 134.021,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.busshozan.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg112",
+    "name": "東かがわ 白鳥温泉まつり",
+    "category": "祭り",
+    "date": "毎年8月第2土曜",
+    "description": "香川県東かがわ市の白鳥神社周辺と白鳥海水浴場を会場にした夏まつり。白鳥神社は平安時代に日本武尊（ヤマトタケルノミコト）の白鳥伝説にゆかりがある古社で、夏まつりでは神社の縁日と海岸での花火大会が組み合わさる。東かがわ市東部の海の町・白鳥地区の夏の一大イベントとして地元住民が楽しみにしており、海水浴とまつりを合わせた東讃の夏の定番コース。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.23,
+    "lng": 134.42,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg113",
+    "name": "坂出市 番の州海岸花火大会",
+    "category": "花火",
+    "date": "毎年8月第2土曜",
+    "description": "香川県坂出市の番の州工業地帯に隣接する海岸公園を会場にした夏花火大会。瀬戸大橋のライトアップが映える番の州周辺の海岸から打ち上がる花火は、工業地帯の夜景と橋の光を背景にした独特の美しさが特徴。坂出市南部の住民が楽しみにする地域密着型の花火大会で、地元グルメの屋台とともに坂出の夏の夜を過ごせるイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.295,
+    "lng": 133.86,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg166",
+    "name": "宇多津町 瀬戸大橋記念公園 花火大会",
+    "category": "花火",
+    "date": "毎年10月第2土曜",
+    "description": "瀬戸大橋の四国側たもと・宇多津町の瀬戸大橋記念公園を会場にした秋の花火大会。10月という珍しい時期の花火で、夏の花火大会が終わったあとに楽しめる秋の夜空の花火として地元に定着している。瀬戸大橋をバックにした花火は写真映えするアングルとして地元カメラマンに人気があり、約3,000発が打ち上げられる。公園内では地元の屋台も並ぶ秋の一大イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.3101,
+    "lng": 133.8261,
+    "region": "中国・四国",
+    "heatScore": 5000,
+    "eventUrl": "https://www.town.utazu.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "md_eh13",
@@ -9630,7 +11061,8 @@
     "lng": 133.5395,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.city.shikokuchuo.ehime.jp/"
+    "eventUrl": "https://www.city.shikokuchuo.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_eh15",
@@ -9643,7 +11075,8 @@
     "lng": 132.7208,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.kihoku.ehime.jp/"
+    "eventUrl": "https://www.town.kihoku.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_eh16",
@@ -9656,7 +11089,8 @@
     "lng": 132.7046,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.city.iyo.ehime.jp/"
+    "eventUrl": "https://www.city.iyo.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_eh21",
@@ -9669,7 +11103,8 @@
     "lng": 132.5603,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.ainan.ehime.jp/"
+    "eventUrl": "https://www.town.ainan.ehime.jp/",
+    "parking": []
   },
   {
     "id": "md_tt11",
@@ -9682,7 +11117,8 @@
     "lng": 133.69,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.kotoura.tottori.jp/"
+    "eventUrl": "https://www.town.kotoura.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_ok12",
@@ -9695,7 +11131,8 @@
     "lng": 133.55,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.city.asakuchi.okayama.jp/"
+    "eventUrl": "https://www.city.asakuchi.okayama.jp/",
+    "parking": []
   },
   {
     "id": "md_ym20",
@@ -9708,7 +11145,8 @@
     "lng": 131.59,
     "region": "中国・四国",
     "heatScore": 5000,
-    "eventUrl": "https://www.town.abu.yamaguchi.jp/"
+    "eventUrl": "https://www.town.abu.yamaguchi.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q1151186",
@@ -10150,7 +11588,176 @@
     "lng": 134.4278,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.town.mugi.tokushima.jp/"
+    "eventUrl": "https://www.town.mugi.tokushima.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg27",
+    "name": "塩江温泉夏まつり",
+    "category": "祭り",
+    "date": "毎年8月上旬",
+    "description": "高松市塩江地区の塩江温泉郷を会場にした山里の温泉まつり。四国でも屈指の歴史を誇る塩江温泉の旅館街を舞台に、地元の盆踊りと花火大会が行われる。清流・内場川のせせらぎを聞きながら行われる盆踊りは、山里の温泉地ならではの涼やかな夏の情景。地元産の讃岐野菜・アユ・山菜を使った屋台グルメも楽しめる高松近郊の隠れた夏まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.23,
+    "lng": 134.11,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg30",
+    "name": "国分寺まつり",
+    "category": "祭り",
+    "date": "毎年10月中旬",
+    "description": "高松市（旧国分寺町）の讃岐国分寺跡周辺で行われる秋まつり。国の史跡・讃岐国分寺は奈良時代に聖武天皇の詔で建立された歴史的な寺院で、七重塔跡が残る境内周辺を会場に地元の神輿行列と農産物の収穫祭が行われる。地元産の米・野菜・果物の直売と屋台が並び、古代の遺跡の空気を纏いながら讃岐の秋を楽しめる歴史好きにも魅力のまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.288,
+    "lng": 133.981,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg48",
+    "name": "粟井神社秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第1日曜",
+    "description": "香川県観音寺市粟井地区の粟井神社で行われる秋例大祭。素朴な農業の村落に根付いた地域の秋まつりで、神輿渡御と獅子舞が地区を巡行する。観音寺市の中でも伝統的な農村文化が色濃く残る粟井地区の人々が、年に一度全力で取り組む秋の祭礼として親しまれている。境内の屋台では地元産のいりこ・讃岐うどんが振る舞われ、地域のつながりを確かめ合う大切な一日。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.18,
+    "lng": 133.68,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.kanonji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg61",
+    "name": "高瀬秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "香川県三豊市高瀬地区の高瀬八幡宮を中心に行われる秋例大祭。三豊市の農業地帯の中心・高瀬の伝統ある秋まつりで、神輿渡御と獅子舞が地区を巡行する。讃岐の平野部に広がる農業の里らしく、新米や地元野菜を使った収穫感謝の祭りの雰囲気が漂う。高瀬茶（三豊市特産の緑茶）と讃岐うどんを組み合わせた屋台が地元らしい。三豊市内の秋まつりシーズンを彩る。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.18,
+    "lng": 133.72,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg82",
+    "name": "讃岐国分寺跡まつり",
+    "category": "祭り",
+    "date": "毎年10月下旬",
+    "description": "国の史跡・高松市（旧国分寺町）の讃岐国分寺跡（白鳥神社周辺）で行われる歴史文化まつり。奈良時代に聖武天皇の詔で建立された讃岐国分寺の七重塔跡が残る史跡を会場に、歴史体験イベントや地元農産物の収穫祭が開催される。遺跡の周囲に広がる讃岐平野の実りを感じながら、讃岐の古代文化に親しめる歴史ファンも楽しめる秋の地域行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.288,
+    "lng": 133.981,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg84",
+    "name": "三木町秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第3土・日曜",
+    "description": "香川県木田郡三木町の白山神社を中心に行われる伝統の秋例大祭。高松市に隣接するベッドタウン・三木町の秋を代表する祭りで、地区ごとのちょうさ（太鼓台）が練り歩く讃岐西部に多いスタイルとは異なり、神輿と獅子舞が中心の比較的穏やかな秋まつり。地元の新鮮な農産物・野菜の直売と屋台が並び、秋の讃岐平野の恵みを感じる地域に根付いた行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.289,
+    "lng": 134.13,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.town.miki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg89",
+    "name": "東かがわ市大内夏まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月第3土曜",
+    "description": "香川県東かがわ市大内地区の大内川河川敷を会場にした夏花火大会。東かがわ市の西部・大内地区の夏の最大イベントで、川沿いに打ち上がる花火と盆踊りが夏の夜を彩る。手袋産業の城下町・東かがわ市の農村地帯に位置する大内の素朴なコミュニティまつりとして地元住民に深く愛されており、地元の農産物と讃岐うどんの屋台が並ぶ東かがわ市の夏の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.25,
+    "lng": 134.32,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg90",
+    "name": "さぬき市大川まつり花火大会",
+    "category": "花火",
+    "date": "毎年8月上旬",
+    "description": "香川県さぬき市大川地区の大川ダム周辺を会場にした夏花火大会。讃岐山脈の山間に位置する大川ダムの湖面に花火が打ち上がり、山あいに反響する爆音と水面に映る光が作り出す幻想的な光景が見どころ。さぬき市の山間部の夏の風物詩として地元住民が楽しみにするイベントで、近くの大川温泉との組み合わせで温泉花火の夏旅も人気。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.19,
+    "lng": 134.15,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg96",
+    "name": "多度津 金毘羅街道まつり",
+    "category": "屋台",
+    "date": "毎年4月下旬",
+    "description": "香川県多度津町から琴平町まで続く「金毘羅街道」の旧街道の風情を楽しむ春のウォーキングイベント。金刀比羅宮参拝の旧来の玄関口だった多度津から出発し、沿道に昔の商家や休憩所が再現された屋台が出店。参道の趣ある町並みや讃岐平野の春景色を楽しみながら歩く街道ウォークは歴史好きに好評で、地元の讃岐うどんや鮮魚の屋台でエネルギー補給もできる春のイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.272,
+    "lng": 133.751,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.town.tadotsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg172",
+    "name": "三豊市 荘内半島 サンセットまつり",
+    "category": "屋台",
+    "date": "毎年7月第4土曜",
+    "description": "三豊市の荘内半島先端・父母ヶ浜の近くに位置する荘内半島周遊道路沿いの展望スポットで行われる夕日まつり。「日本のウユニ塩湖」として知名度が上がった三豊市の荘内半島で、夕日の絶景をテーマにした地域まつりが開催される。サンセットに合わせた時間設定で、地元の農漁産品の屋台と地元アーティストのライブ演奏が組み合わさり、讃岐の夕暮れの美しさを体感できる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.12,
+    "lng": 133.678,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg194",
+    "name": "まんのう町 まんのう池 冬の夜まつり",
+    "category": "花火",
+    "date": "毎年2月上旬",
+    "description": "日本最大の農業用ため池・満濃池（まんのう池）の水面を生かした冬の花火とイルミネーションのイベント。弘法大師が修築したとされる歴史あるまんのう池が夜間ライトアップされ、池の水面に映る幻想的な光景とともに2月の寒空に花火が上がる。讃岐の農業を支えてきた満濃池の水の恵みに感謝するイベントで、地元の温かい飲食屋台と合わせて楽しめる冬の夜まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.1748,
+    "lng": 133.8888,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.town.manno.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg207",
+    "name": "観音寺市 雲辺寺 山上まつり",
+    "category": "屋台",
+    "date": "毎年7月下旬",
+    "description": "四国八十八ヶ所で最も高い位置にある第66番札所・雲辺寺（標高911m）の境内で行われる夏まつり。ロープウェイで登る雲辺寺の山上境内に屋台が並ぶ珍しいまつりで、雲の上の祭りとして地元に知られる。山上からは讃岐平野・燧灘・四国山地が一望でき、猛暑の讃岐平野より20度近く気温が低い涼しい空間での真夏の夜まつりが楽しめる。地元の農産物と観音寺の特産品が並ぶ標高900mの市場。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.0652,
+    "lng": 133.705,
+    "region": "中国・四国",
+    "heatScore": 4800,
+    "eventUrl": "https://www.unpenji.jp/",
+    "parking": []
   },
   {
     "id": "md_tt14",
@@ -10163,7 +11770,8 @@
     "lng": 133.35,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.town.nanbu.tottori.jp/"
+    "eventUrl": "https://www.town.nanbu.tottori.jp/",
+    "parking": []
   },
   {
     "id": "md_sm17",
@@ -10176,7 +11784,8 @@
     "lng": 131.95,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.town.yoshika.lg.jp/"
+    "eventUrl": "https://www.town.yoshika.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_hr15",
@@ -10189,7 +11798,8 @@
     "lng": 133.28,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.city.shobara.hiroshima.jp/"
+    "eventUrl": "https://www.city.shobara.hiroshima.jp/",
+    "parking": []
   },
   {
     "id": "md_ym19",
@@ -10202,7 +11812,8 @@
     "lng": 132.05,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.town.hirao.lg.jp/"
+    "eventUrl": "https://www.town.hirao.lg.jp/",
+    "parking": []
   },
   {
     "id": "md_ym22",
@@ -10215,7 +11826,8 @@
     "lng": 132.04,
     "region": "中国・四国",
     "heatScore": 4800,
-    "eventUrl": "https://www.town.tabuse.lg.jp/"
+    "eventUrl": "https://www.town.tabuse.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q11285021",
@@ -10307,6 +11919,48 @@
     "region": "近畿",
     "heatScore": 4602,
     "eventUrl": "https://www.wikidata.org/wiki/Q134927474"
+  },
+  {
+    "id": "md_kg32",
+    "name": "綾川まつり",
+    "category": "祭り",
+    "date": "毎年8月第1土曜",
+    "description": "香川県綾川町の綾川河川敷を会場にした夏まつり。滝宮天満宮の門前町として栄えた綾川町の夏の一大イベントで、地元の盆踊りと花火大会が行われる。さぬきうどんの名産地でもある綾川町らしく、地元の製粉所直送の生地を使ったうどん屋台が登場。綾川の清流と山里の自然を背景に地域住民が一堂に集まる暖かいコミュニティまつりとして町民に愛されている。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.255,
+    "lng": 134.03,
+    "region": "中国・四国",
+    "heatScore": 4600,
+    "eventUrl": "https://www.town.ayagawa.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg65",
+    "name": "みとよ農業まつり",
+    "category": "屋台",
+    "date": "毎年11月上旬",
+    "description": "香川県三豊市の農業の恵みを祝う収穫まつり。三豊市内の農家が丹精込めた新米・野菜・果物の直売が最大の目玉で、三豊ナスや三豊産の柑橘類・アスパラガスなど三豊ブランドの農産物が一堂に集まる。地元の食材を使った加工品や郷土料理の屋台も充実し、農業への理解と三豊市への愛着を深める秋の市民参加型イベントとして定着している。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.1979,
+    "lng": 133.722,
+    "region": "中国・四国",
+    "heatScore": 4600,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg91",
+    "name": "三豊市高瀬花火大会",
+    "category": "花火",
+    "date": "毎年8月第2土曜",
+    "description": "香川県三豊市高瀬地区の高瀬川河川敷を会場にした夏花火大会。三豊市の農業地帯の中心・高瀬の夏の風物詩で、川沿いに打ち上がる花火と地元の盆踊りが夏の夜を盛り上げる。高瀬は高瀬茶（三豊市特産の緑茶）の産地として知られ、地元産の茶を使ったスイーツ屋台や讃岐うどんが登場。三豊市内の夏まつりシーズンの締めくくりとなる高瀬の夏花火大会。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.18,
+    "lng": 133.72,
+    "region": "中国・四国",
+    "heatScore": 4600,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q110191727",
@@ -10621,6 +12275,188 @@
     "eventUrl": "https://www.google.com/search?q=%E5%8D%97%E4%B9%9D%E5%B7%9E%E3%81%BE%E3%81%A4%E3%82%8A%E8%8A%B1%E7%81%AB"
   },
   {
+    "id": "md_kg42",
+    "name": "坂出菱池花火大会",
+    "category": "花火",
+    "date": "毎年8月下旬",
+    "description": "香川県坂出市郊外の菱池（ひしいけ）周辺を会場にした地域の夏花火大会。坂出市内の穏やかな農村地帯に広がる菱池から打ち上がる花火は、地元住民が楽しみにする坂出市内のもう一つの夏の花火イベント。規模はコンパクトだが、地域住民が手作りで運営する素朴な花火大会として長年地域に親しまれており、屋台や盆踊りとともに地元コミュニティの絆を深める。",
+    "imageUrl": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&q=80",
+    "lat": 34.3,
+    "lng": 133.84,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg44",
+    "name": "善通寺 五岳山ハイキングまつり",
+    "category": "屋台",
+    "date": "毎年11月中旬",
+    "description": "香川県善通寺市周辺に連なる五岳山（香色山・筆山・我拝師山・中山・火上山）の縦走ハイキングイベントに合わせて開催される地元グルメフェスタ。弘法大師ゆかりの山々を一日で縦走した後、善通寺の門前で地元の屋台グルメが楽しめる。名物の善通寺うどん・讃岐和三盆を使ったスイーツ・地元農産物の直売も行われる秋の健康イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.228,
+    "lng": 133.782,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.zentsuji.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg54",
+    "name": "さぬき市農業まつり",
+    "category": "屋台",
+    "date": "毎年11月中旬",
+    "description": "香川県さぬき市の農産物の実りを祝う秋の収穫祭。さぬき市内の農家が丹精込めた新米・野菜・果物を販売する直売コーナーが最大の目玉で、地元産の特産品が市価よりもお得に手に入ると大盛況。讃岐うどんの実演や農業体験コーナーも設けられ、農業への理解と地域への愛着を育む市民参加型のイベント。さぬき市の豊かな農業文化を発信する秋の大切な行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.28,
+    "lng": 134.18,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg64",
+    "name": "財田観音まつり",
+    "category": "祭り",
+    "date": "毎年4月中旬",
+    "description": "香川県三豊市財田（たからだ）地区の財田川沿いにある財田観音（財田山千手院）の春まつり。桜の花見シーズンに合わせて行われる観音堂の縁日で、四国山地の裾野に位置する山里の春を告げる穏やかな行事。地元住民が丹精込めた手作りの屋台が並び、財田川沿いの桜並木を愛でながらのんびり楽しめる。三豊市の奥座敷・財田の里山の春の訪れを祝う素朴なまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.21,
+    "lng": 133.75,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg85",
+    "name": "飯山まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "香川県丸亀市飯山地区の飯山八幡神社を中心に行われる秋まつり。丸亀市の農業地帯・飯山の伝統的な秋の祭礼で、地区の神輿と獅子舞が田園地帯を巡行する。飯山はため池農業と桃・ブドウの産地として知られており、収穫を祝う秋まつりに地元産の桃・ブドウの直売屋台が登場する。讃岐の実りの秋を地元住民と共に分かち合うのどかな田園地帯のまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.254,
+    "lng": 133.904,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg102",
+    "name": "東かがわ市 農業まつり",
+    "category": "屋台",
+    "date": "毎年11月中旬",
+    "description": "香川県東かがわ市の農業の実りを祝う秋の収穫祭。東かがわ市は讃岐東部の豊かな農業地帯として知られ、地元産の米・野菜・果物の直売と地元農家との交流ができる。手袋産業とともに農業も盛んな東かがわの食の豊かさを発信し、地元産食材を使った屋台グルメも楽しめる。地域の農業後継者育成のPRも兼ねた東かがわ市が力を入れる秋の農業文化イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.243,
+    "lng": 134.36,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg108",
+    "name": "綾川町 陶地区秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "香川県綾川町の陶（すえ）地区の陶神社を中心に行われる秋まつり。古来より讃岐の陶器産地として知られた陶の地区で、陶神社の神輿渡御と地元の子どもたちによる獅子舞が地区を巡行する。地元の農産物の実りを感謝する素朴な地域の秋まつりとして長く継承されており、讃岐の農村コミュニティの絆を確かめ合う大切な年中行事。地産地消の屋台グルメが楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.25,
+    "lng": 134.02,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.town.ayagawa.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg138",
+    "name": "高松市 屋島 壇ノ浦合戦まつり",
+    "category": "祭り",
+    "date": "毎年11月上旬",
+    "description": "源平合戦の古戦場として名高い高松市の屋島で、平家物語の名場面を再現する歴史まつり。「那須与一の扇の的」伝説の舞台・屋島の海辺に源氏・平家両軍に扮した甲冑武者が集い、弓矢で扇を射る演武を披露。地元の歴史研究者が解説を行い、子どもの甲冑試着体験も人気。屋島寺参拝とあわせて訪れる観光客にも好評な秋の歴史文化イベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.366,
+    "lng": 134.1023,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.yashima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg160",
+    "name": "丸亀市 佐柳島 猫まつり",
+    "category": "屋台",
+    "date": "毎年9月第2日曜",
+    "description": "丸亀市の離島・佐柳島（さなぎしま）で行われる猫好きのためのユニークなまつり。島の人口より猫の数が多いことで有名な佐柳島は近年「猫の島」として愛好者に知られるようになり、猫好きの来島者が増加。毎年秋にはこの猫たちへの感謝をテーマに島民が手作りの猫まつりを開催。猫グッズの販売、島猫との触れ合い、漁港での地元鮮魚の直売などを楽しめるほのぼのとした離島まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.211,
+    "lng": 133.649,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg174",
+    "name": "高松市 香川県立ミュージアム 夜の博物館まつり",
+    "category": "屋台",
+    "date": "毎年10月末",
+    "description": "高松城址の玉藻公園に隣接する香川県立ミュージアムで夜間開催される特別イベント。ハロウィン時期に合わせて夜の博物館を特別開放し、普段は昼間しか見られない展示品や史料を特別な夜の照明で鑑賞できる。中庭に設けられたランタン展示と江戸時代の食文化を再現した体験屋台、讃岐の民話を題材にした語り部のパフォーマンスが行われる文化系まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3431,
+    "lng": 134.0488,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.pref.kagawa.lg.jp/kmuseum/",
+    "parking": []
+  },
+  {
+    "id": "md_kg177",
+    "name": "東かがわ市 白鳥神社 春まつり（春季例大祭）",
+    "category": "祭り",
+    "date": "毎年4月中旬",
+    "description": "東かがわ市の白鳥神社（日本武尊を祀る）で行われる春の例大祭。「白鳥のみこと」の伝説で知られる白鳥神社は讃岐東部最大の神社で、春の例大祭には地域各地から氏子が集まる。祭り当日は神輿渡御・浦安の舞・太鼓演奏が境内と周辺で行われ、参道には縁日の露天商が並ぶ。地元の学校の子どもたちが総動員で参加する地域一体型の春の大祭。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.2425,
+    "lng": 134.3773,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg192",
+    "name": "直島 つつじ荘 芸術家と地域まつり",
+    "category": "屋台",
+    "date": "毎年5月上旬",
+    "description": "現代アートの聖地・直島のキャンプ場「つつじ荘」前の海岸広場で行われる春まつり。直島に滞在する国内外のアーティストと島民が協働して開くユニークなまつりで、アート作品の即売展示・ワークショップ・パフォーマンスアートが行われる。島の魚介を使ったバーベキュー屋台と、地元のお母さんたちが作る郷土料理も楽しめる。世界から集まるアートファンと地元漁師が一体となる直島らしい春まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.4648,
+    "lng": 133.9994,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.naoshima.net/",
+    "parking": []
+  },
+  {
+    "id": "md_kg214",
+    "name": "観音寺市 豊浜 秋まつり（よしの川太鼓台）",
+    "category": "祭り",
+    "date": "毎年10月第1土・日曜",
+    "description": "観音寺市豊浜地区のよしの川沿いの神社で行われる秋まつり。三豊・西讃地域の太鼓台まつりの中でも豊浜地区の太鼓台は独特の装飾と演奏様式で知られ、深夜まで太鼓の音が響く「宵まつり」が特に盛んな地区。豊浜地区に代々伝わる「よしこの節」の唄に乗せた太鼓の演奏は、愛媛との県境に近いこの地域の独自の音楽文化を体現している。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.035,
+    "lng": 133.625,
+    "region": "中国・四国",
+    "heatScore": 4500,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
     "id": "md_tt16",
     "name": "日南町 にちなんまつり",
     "category": "祭り",
@@ -10631,7 +12467,8 @@
     "lng": 133.32,
     "region": "中国・四国",
     "heatScore": 4500,
-    "eventUrl": "https://www.town.nichinan.tottori.jp/"
+    "eventUrl": "https://www.town.nichinan.tottori.jp/",
+    "parking": []
   },
   {
     "id": "wd_Q116056816",
@@ -10790,6 +12627,118 @@
     "eventUrl": "https://www.google.com/search?q=%E8%8B%A5%E6%A1%9C%E3%81%BE%E3%81%A4%E3%82%8A"
   },
   {
+    "id": "md_kg129",
+    "name": "丸亀市 飯野山（讃岐富士）登山まつり",
+    "category": "祭り",
+    "date": "毎年5月第4日曜",
+    "description": "標高422mの美しい円錐形の山として讃岐平野のシンボルである飯野山（讃岐富士）の山開きまつり。麓の飯野山登山口から早朝6時のスタートで地元住民・登山愛好家が一斉に登頂を目指す。山頂で地元神社の神職が安全祈願祭を行い、下山後は麓に設けられた屋台でうどん・おにぎりが振る舞われる。讃岐富士を地域で守る住民の活動として長く続く春の恒例行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.2616,
+    "lng": 133.831,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg132",
+    "name": "三豊市 仁尾 いりこまつり",
+    "category": "屋台",
+    "date": "毎年11月第2土・日曜",
+    "description": "日本有数のいりこ（煮干し）の産地として知られる三豊市仁尾地区で行われる漁業感謝まつり。仁尾漁港を会場に、地元漁師が水揚げした新鮮ないりこや海産物を格安で販売するまつりで、いりこ出汁を使ったうどん・味噌汁の無料振る舞いが人気。地元の料理人によるいりこ料理コンテストも開かれ、日本の食文化を支える讃岐のいりこの魅力を発信するユニークなグルメまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.105,
+    "lng": 133.682,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg164",
+    "name": "高松市 高松空港 夏まつり",
+    "category": "屋台",
+    "date": "毎年8月上旬",
+    "description": "高松空港の敷地を利用した地域住民向けの夏まつり。普段は立ち入れない空港の駐機エリアや展望デッキを一般開放し、飛行機を間近に見ながら楽しめる珍しいまつり。地元の自衛隊や航空会社スタッフも参加し、消防・救難訓練のデモンストレーションも行われる。空港ならではのコンテンツと讃岐うどんや地元農産物の屋台を組み合わせた、航空ファンと一般家族の両方が楽しめる夏のイベント。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2141,
+    "lng": 134.0234,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.takamatsu-airport.co.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg175",
+    "name": "坂出市 瀬戸大橋 イルミネーションまつり",
+    "category": "屋台",
+    "date": "毎年12月上旬〜中旬",
+    "description": "瀬戸大橋の四国側たもと・坂出市で行われる冬のイルミネーションイベント。瀬戸大橋を望む坂出港周辺にイルミネーションが設置され、橋と海と光が織りなす幻想的な夜景が楽しめる。地元の商工会が主催し、港の駐車場には讃岐の鍋料理・甘酒・焼き牡蠣などの冬のグルメ屋台が並ぶ。瀬戸大橋の見える席でホットドリンクを飲みながら橋の夜景を楽しむ冬の人気スポット。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3196,
+    "lng": 133.8592,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg179",
+    "name": "丸亀市 飯野山麓 うちわ凧まつり",
+    "category": "屋台",
+    "date": "毎年3月第2日曜",
+    "description": "丸亀市の名産品・丸亀うちわにちなんだ凧あげまつり。飯野山（讃岐富士）の山麓の広い農地を凧あげ会場に、手作りのうちわ型凧をはじめ様々な形の凧を揚げる大会が行われる。讃岐の春の強い西風「やまじ風」を利用した凧揚げは迫力があり、全国から凧愛好家も参加する。うちわの手作り体験ワークショップと丸亀名物の骨付鳥・焼き鳥の屋台も並ぶ春の特産品まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2616,
+    "lng": 133.831,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg181",
+    "name": "さぬき市 志度寺 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月下旬",
+    "description": "四国八十八ヶ所第86番札所・さぬき市の志度寺（しどじ）で行われる秋の縁日まつり。「海女の玉取り伝説」で知られる志度寺の境内に露天商が並び、巡礼者と地元住民が混在する賑やかな縁日が開かれる。寺の庭園・蓬莱庭（国指定名勝）では秋の紅葉が見頃を迎え、寺の歴史と縁日の賑わいが共存する。地元の和菓子・仏具・骨董などの店が参道に並ぶ。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.3262,
+    "lng": 134.1819,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.shidoji.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg191",
+    "name": "小豆島 草壁 春まつり",
+    "category": "屋台",
+    "date": "毎年4月下旬",
+    "description": "小豆島の中心集落・小豆島町草壁の草壁港周辺で行われる春まつり。オリーブ・醤油・そうめんの三大特産品で知られる小豆島の春を祝う地域まつりで、港の広場にオリーブ関連商品・手延べそうめん・醤油ソフトクリームなどの小豆島名産品の屋台が並ぶ。地元の学校の吹奏楽部の演奏と、地区の婦人会による地場産品を使った郷土料理の振る舞いが一日中楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.4726,
+    "lng": 134.3006,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg205",
+    "name": "東かがわ市 三本松 三本松祇園まつり",
+    "category": "祭り",
+    "date": "毎年7月第3土・日曜",
+    "description": "東かがわ市三本松地区の津嶋神社（海の中の神社）に関連した夏の地域まつり。年に一度しか参拝できない海の中の神社・津嶋神社の例大祭（8月）に先立って、三本松地区で行われる前夜祭的な地域祭り。神社本殿への橋が架けられるのを待ちわびる地元民の夏の恒例行事で、三本松商店街に夜店が並ぶ。子どもたちが楽しみにする金魚すくい・スーパーボールすくい・型抜きの縁日は昔のまま。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.26,
+    "lng": 134.35,
+    "region": "中国・四国",
+    "heatScore": 4200,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
     "id": "wd_Q135099013",
     "name": "出雲岡神社",
     "category": "祭り",
@@ -10840,6 +12789,1042 @@
     "region": "北海道・東北",
     "heatScore": 4000,
     "eventUrl": "https://www.google.com/search?q=%E4%B8%8A%E5%B1%B1%E5%B8%82%E3%81%8B%E3%81%BF%E3%81%AE%E3%82%84%E3%81%BE%E3%81%93%E3%81%91%E3%81%97%E7%A5%AD"
+  },
+  {
+    "id": "md_kg121",
+    "name": "直島 本村 八幡神社 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "現代アートの島として世界的に知られる直島の古集落・本村地区の八幡神社で行われる秋の例祭。アート施設が立ち並ぶ島にあって、江戸時代から続く伝統的な神輿渡御と太鼓台の練り回しが保存されている。島の漁師の子孫たちが担う素朴な神輿行列は、世界から集まるアートファンには新鮮な驚き。祭り当日だけ島民手作りの郷土料理が振る舞われる。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.4648,
+    "lng": 133.9994,
+    "region": "中国・四国",
+    "heatScore": 4000,
+    "eventUrl": "https://www.naoshima.net/",
+    "parking": []
+  },
+  {
+    "id": "md_kg162",
+    "name": "さぬき市 津田地区 津田の松原 夏まつり",
+    "category": "屋台",
+    "date": "毎年8月第2日曜",
+    "description": "日本の白砂青松百選に選ばれた絶景の海岸・津田の松原を会場にした夏まつり。さぬき市津田地区の漁業者と観光関係者が共同で開催し、地元の鮮魚・海産物の屋台と夜の打ち上げ花火が組み合わさったビーチまつり。松林の中にテントが並び、地元の海水浴客や観光客が一日中過ごせる。さぬき市の海の幸「サーモン・鰤・鯛」を使った創作料理の振る舞いも人気。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3302,
+    "lng": 134.2601,
+    "region": "中国・四国",
+    "heatScore": 4000,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg218",
+    "name": "高松市 塩江町 あじさいまつり",
+    "category": "屋台",
+    "date": "毎年6月中旬〜下旬",
+    "description": "高松市の山間の温泉地・塩江温泉郷でアジサイの開花シーズンに合わせて行われる花まつり。塩江温泉街の周囲の山道に数千株のアジサイが咲き誇り、温泉郷一帯がアジサイで彩られる。旅館・民宿の足湯開放と地元産の山の幸の屋台、アジサイ写真コンテストが開催され、梅雨の晴れ間に多くの来訪者が訪れる。讃岐の奥座敷として知られる塩江温泉の梅雨時期の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.215,
+    "lng": 134.138,
+    "region": "中国・四国",
+    "heatScore": 4000,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg119",
+    "name": "高松市 女木島 鬼まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "桃太郎伝説の「鬼ヶ島」として知られる高松沖の女木島で行われる小さな島まつり。島の鬼ヶ島大洞窟前広場に地元の鬼装束を纏った島民が集い、太鼓と笛の囃子で鬼踊りを披露。定期船で渡る観光客も多く、島の漁師が作る鬼の面や地元の干物・わかめの販売も行われる。普段は静かな島が年に一度だけ鬼伝説を再現する希少な離島まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.3748,
+    "lng": 134.1189,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg128",
+    "name": "高松市 鬼無町 桃まつり",
+    "category": "屋台",
+    "date": "毎年6月上旬",
+    "description": "桃太郎の故郷として知られる高松市鬼無町で、桃の収穫期に合わせて行われる地域イベント。全国有数の桃の産地・鬼無地区の農家が新鮮な桃を格安で販売する直売まつりで、ジャム・桃アイス・桃のスムージーなどの加工品屋台も並ぶ。庭木の産地としても有名な鬼無の植木市も同時開催され、一日中楽しめるローカルフェスとして地元に親しまれている。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.338,
+    "lng": 133.977,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg133",
+    "name": "まんのう町 神野寺 柴灯護摩大祭",
+    "category": "祭り",
+    "date": "毎年2月第2日曜",
+    "description": "まんのう町（旧琴南町）の神野寺で冬に行われる火渡り神事「柴灯護摩大祭」。境内に積み重ねた柴を燃やし、白煙が立ち上る護摩の火の上を山伏姿の行者が素足で歩き渡る勇壮な神事。地元住民も祈りを捧げながら行者の後に続いて火渡りに挑む。平安時代から続くとされる山岳修験道の伝統を今に伝え、冬のまんのう町の隠れた名物として地元に親しまれている。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.1521,
+    "lng": 133.8745,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.town.manno.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg161",
+    "name": "高松市 春日川 蛍まつり",
+    "category": "祭り",
+    "date": "毎年6月第1土曜",
+    "description": "高松市を流れる春日川の中流域で初夏に行われる蛍の鑑賞まつり。市街地の近くにあって蛍の生息地が残る春日川周辺では、地元の環境保護グループが蛍の生息調査と河川清掃活動を続けており、その成果として蛍の数が徐々に回復してきた。毎年蛍の乱舞が始まる時期に合わせて観察会とミニまつりが開かれ、和紙で作った行灯の灯りの中で蛍を愛でる幻想的な夕べとなる。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.34,
+    "lng": 134.07,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg165",
+    "name": "多度津町 多度津港 港まつり",
+    "category": "花火",
+    "date": "毎年8月第4土曜",
+    "description": "香川県多度津町の多度津港で行われる夏まつり。かつて四国鉄道の出発点として栄えた港町・多度津では、港の歴史を後世に伝えるための港まつりが地元商工会を中心に開かれる。多度津港に停泊した漁船が一斉に漁火を灯す「万灯」と打ち上げ花火の組み合わせが見どころで、港の岸壁に並ぶ屋台では地元の海産物・焼きそば・綿あめが販売される夏の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.2748,
+    "lng": 133.752,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.town.tadotsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg170",
+    "name": "高松市 塩江ダム湖 紅葉まつり",
+    "category": "屋台",
+    "date": "毎年11月上旬〜中旬",
+    "description": "高松市の山間部・塩江町の内場ダム湖周辺で行われる紅葉まつり。四国山地の麓に位置する内場ダムは秋には周囲の山々が赤や黄色に染まり、湖面に映る紅葉が絶景。まつり期間中は湖畔の駐車場に地元農家の農産物直売所と食の屋台が並び、紅葉狩りとグルメを組み合わせて楽しめる。高松市街から約1時間で行ける手軽な紅葉スポットとして地元に愛されている。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.205,
+    "lng": 134.143,
+    "region": "中国・四国",
+    "heatScore": 3800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg135",
+    "name": "善通寺市 筆まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "弘法大師（空海）の生誕地・善通寺市で行われる筆への感謝のまつり。空海が真言密教の書・梵字を広めたことに由来し、使い古した筆や書道用品を善通寺境内で供養する「筆供養」が中心行事。書道関係者・習字を学ぶ子どもたちが参加し、書道パフォーマンスや習字教室も開かれる。市内の書道用品店が特価販売を行い、弘法大師ゆかりの文房具・書道品が並ぶ文化色豊かなまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.2271,
+    "lng": 133.7815,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.city.zentsuji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg140",
+    "name": "観音寺市 伊吹島 盆踊り",
+    "category": "祭り",
+    "date": "毎年8月14・15日",
+    "description": "観音寺市沖合の伊吹島（いわしの聖地）で行われる盆踊り。日本有数のいりこ漁の島・伊吹島では、漁業の繁栄と先祖への感謝を込めた盆踊りが島の港近くの広場で行われる。島の女性たちが着る色鮮やかな浴衣が漁港の照明に映え、三味線と太鼓の音色が島全体に響く。フェリーで渡る島のまつりは、日常の観光では見られない漁師の島の素朴な生活文化に触れられる。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.061,
+    "lng": 133.531,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg146",
+    "name": "さぬき市 寒川神社 例大祭",
+    "category": "祭り",
+    "date": "毎年10月第1土・日曜",
+    "description": "さぬき市寒川地区の寒川神社（かわぐちじんじゃ）の例大祭。香川県内でも有数の古社として知られ、地区内の各集落から太鼓台が境内に集結する「宮入」が最大の見どころ。地元の氏子が1年かけて準備した刺繍幕と金具で装飾された太鼓台が神社の急な石段を上る勇壮な場面は、地元住民が誇るまつりのハイライト。さぬき市の秋まつりの中でも特にローカル色が強い。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.322,
+    "lng": 134.21,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg195",
+    "name": "高松市 小豆島行フェリー 初日の出クルーズ",
+    "category": "祭り",
+    "date": "毎年1月1日",
+    "description": "高松港から小豆島へ向かうフェリーを利用した元旦の初日の出クルーズイベント。高松港を元旦の夜明け前に出港し、瀬戸内海の海上で初日の出を迎えるツアーで、地元のフェリー会社と観光協会が共催。甲板から見る水平線からの初日の出は「ご来光」として感動的で、船内では地元の海産物を使ったお雑煮が提供される。讃岐の海で新年の夜明けを迎える穴場的な元旦行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.354,
+    "lng": 134.05,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.shoudoshima-ferry.co.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg204",
+    "name": "善通寺市 善通寺五岳 トレイルまつり",
+    "category": "屋台",
+    "date": "毎年3月下旬",
+    "description": "弘法大師ゆかりの五つの山「善通寺五岳」（我拝師山・中山・火上山・大麻山・筆山）を縦走するトレイルランニング大会と地域まつりを組み合わせたイベント。空海が幼少期に遊んだとされる五岳を走るコースは地元の登山愛好家に人気で、ゴールの善通寺境内では地元食品の屋台と弘法市が同時開催される。讃岐平野を見渡せる尾根道からの眺望を楽しみながら走る春のアクティブまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2271,
+    "lng": 133.7815,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.city.zentsuji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg209",
+    "name": "さぬき市 富田浜 花火大会",
+    "category": "花火",
+    "date": "毎年8月第2土曜",
+    "description": "さぬき市の富田浜海水浴場で行われる夏の花火大会。さぬき市の夏の行楽地として地元に親しまれている富田浜の海岸で、海水浴シーズンの終わりを告げる花火大会が行われる。さぬき市中心部から近く、地元住民が家族で訪れる手頃な花火大会として定着している。約1,500発の規模で、浜辺から近距離で見る迫力のある花火と夏の海の香りが楽しめる知る人ぞ知るまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.32,
+    "lng": 134.2,
+    "region": "中国・四国",
+    "heatScore": 3600,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg122",
+    "name": "豊島 甲生地区 とよしまっこ夏まつり",
+    "category": "屋台",
+    "date": "毎年8月第1土曜",
+    "description": "豊島の北西に位置する甲生集落で行われる小さな夏まつり。廃棄物問題と闘った豊島の歴史を持つ住民が、地域の再生を祝い毎年手作りで開催する。島で採れた魚介・タコ飯・野菜を使った屋台、子どもたちによる盆踊り、そして夜の打ち上げ花火が小さな浜辺を彩る。人口百人余りの集落全員が参加する温かな離島まつり。豊島美術館来館者も立ち寄れる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.4912,
+    "lng": 134.1758,
+    "region": "中国・四国",
+    "heatScore": 3500,
+    "eventUrl": "https://www.teshima-island.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg131",
+    "name": "観音寺市 粟島神社 例大祭",
+    "category": "祭り",
+    "date": "毎年10月第1土・日曜",
+    "description": "三豊市と観音寺市の沖合に浮かぶ粟島の粟島神社で行われる秋の例大祭。航海の神・少彦名命を祀るこの神社は船乗りたちの信仰を集め、江戸時代には全国の船乗りが詣でたとされる。祭り当日は島民が獅子舞を奉納し、航海の安全と大漁を祈願する神事が行われる。島の分校の子どもたちが練習を重ねた太鼓演奏も披露される感動的な離島の秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.0972,
+    "lng": 133.5853,
+    "region": "中国・四国",
+    "heatScore": 3500,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg137",
+    "name": "さぬき市 多和神社 例大祭",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "さぬき市（旧大川郡大内町）の多和神社で行われる秋の例大祭。四国八十八ヶ所の霊場でもある名木・千年杉で有名な多和神社は地域の氏神として古くから崇敬されてきた。祭り当日は氏子区域各町内の太鼓台がこの神社に集まり、境内でぶつかり合う「かきくらべ」が見どころ。普段は静かな山間の神社が年に一度だけ太鼓台の熱気に包まれるローカルな秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.3048,
+    "lng": 134.235,
+    "region": "中国・四国",
+    "heatScore": 3400,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg189",
+    "name": "観音寺市 大野原 大野原八幡神社 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "観音寺市大野原地区の大野原八幡神社の秋まつり。讃岐と伊予の境に位置する大野原地区は、両県の文化が混在する独特の地域で、秋まつりにも愛媛の太鼓台と讃岐のだんじりの要素が混じり合った珍しい形式が残る。地区の各町内から山車が繰り出し、神社境内で競い合う様子は見ごたえがある。地域の産業・農業の恵みに感謝する素朴で力強い秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.045,
+    "lng": 133.69,
+    "region": "中国・四国",
+    "heatScore": 3400,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg202",
+    "name": "三豊市 豊中地区 神田神社 例祭",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "三豊市豊中地区の神田神社の秋の例祭。三豊市の中でも特に農業色が強い豊中地区では、旧豊中町時代から続く秋まつりの伝統が守られている。地区内の太鼓台4基が神社境内に集結し、太鼓の激しい演奏が深夜まで続く「宵まつり」が特に地元に人気がある。翌日の昼まつりでは稚児行列と神輿が地区内を練り歩き、農産物直売も行われる讃岐らしい秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.1618,
+    "lng": 133.7495,
+    "region": "中国・四国",
+    "heatScore": 3400,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg120",
+    "name": "高松市 男木島 燈籠流し",
+    "category": "祭り",
+    "date": "毎年8月15日",
+    "description": "高松港から約40分の男木島で行われる精霊送りの燈籠流し。人口わずか100人ほどの小さな島の集落から、漁師の家々が手作りの燈籠を海へ流す。夜の静かな入り江に揺れる数十の燈籠が幻想的な光景を作り出す。島の古い石垣の路地に提灯が並び、島民と島を訪れた少数の旅人が共に故人を偲ぶ、規模は小さくも深い情感のある年中行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.4119,
+    "lng": 134.1248,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg125",
+    "name": "高松市 塩江町 温泉まつり",
+    "category": "屋台",
+    "date": "毎年6月第1日曜",
+    "description": "高松市の山間部・塩江温泉郷で毎年初夏に開かれる温泉感謝まつり。讃岐の奥座敷とも呼ばれる塩江温泉は昔から湯治客で賑わった歴史を持ち、まつり当日は旅館・民宿が地域の温泉水を使った足湯コーナーを無料開放する。地元の山菜・猪肉・鮎の塩焼きなどの山の幸屋台が並び、民謡と盆踊りで一日中賑わう。秘湯感あふれる山あいの温泉まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.215,
+    "lng": 134.138,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg134",
+    "name": "琴平町 金倉川 灯籠流し",
+    "category": "祭り",
+    "date": "毎年8月16日",
+    "description": "こんぴらさんの門前町・琴平町を流れる金倉川で行われる精霊送りの灯籠流し。お盆最終日の夕暮れ時、地元の家々が手作りの灯籠を川に流し、今年亡くなった方々の御霊を送り届ける伝統行事。街灯を落とした暗い川面に数百の灯籠がゆっくりと流れる光景は幻想的で、参拝客も多いこんぴらさんの門前町ならではの穏やかな夏の行事として地元住民に大切にされている。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.1858,
+    "lng": 133.8237,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.town.kotohira.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg142",
+    "name": "三豊市 高瀬 吉津神社 太鼓台まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土・日曜",
+    "description": "三豊市高瀬地区の吉津神社の秋まつり。讃岐の太鼓台まつりの中でも知名度は低いが、地区内4台の太鼓台が競い合う「かきくらべ」は地元に深く根付いた伝統行事。重量3トンを超える太鼓台を男衆が肩で担いで神社境内に向かい、笛と太鼓の囃子が秋の田園地帯に響く。三豊市の農業地帯の中にあって、昔ながらの讃岐まつり文化を色濃く残すローカルな秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.18,
+    "lng": 133.78,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg151",
+    "name": "高松市 庵治半島 春の磯まつり",
+    "category": "屋台",
+    "date": "毎年5月第3日曜",
+    "description": "高松市北東端の庵治半島の海岸で行われる春の磯開き祭り。漁師の島・庵治地区では春になると磯の潮干狩りシーズンが始まり、それを祝う地元まつりとして磯まつりが開かれる。地元の漁師が採った鮑・さざえ・ウニを炭火で焼く屋台が並び、潮風の中で海の幸を楽しめる。庵治石の産地でもあるため、石工の実演なども加わった春の複合型地域まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.385,
+    "lng": 134.205,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg159",
+    "name": "観音寺市 豊浜地区 牛鬼まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "観音寺市豊浜地区（愛媛県との県境近く）の神社で行われる秋まつり。愛媛県の宇和島地方で有名な「牛鬼」の影響を受けた独特の山車（うしおに）が地区内を練り歩くのが特徴で、讃岐ではほとんど見られない珍しいまつり様式。巨大な牛の頭を持つ山車が地区の路地を歩く姿は迫力満点で、子どもたちが怖がりながらも興味津々で近づく姿が微笑ましい。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.025,
+    "lng": 133.615,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg168",
+    "name": "観音寺市 財田川 蛍の里まつり",
+    "category": "祭り",
+    "date": "毎年6月上旬",
+    "description": "観音寺市を流れる財田川の上流域・財田地区で初夏に行われる蛍観賞まつり。財田川沿いの清流地帯では蛍の生息が確認されており、地元の環境保護グループが蛍の保護活動と観察会を組み合わせた地域まつりを開催。川岸に並べた和紙行灯の明かりの中で地元の子どもたちが蛍を観察する光景は幻想的で、郷土食・麦飯と郷土菓子「おいり」の販売も行われる。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.06,
+    "lng": 133.72,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg185",
+    "name": "高松市 国分寺町 国分寺まつり",
+    "category": "屋台",
+    "date": "毎年10月第2日曜",
+    "description": "高松市国分寺町の四国八十八ヶ所第80番札所・国分寺境内で行われる秋まつり。古代の讃岐国分寺の遺跡上に建つ国分寺を舞台に、地元の住民と遍路者が集まる縁日が開かれる。国分寺町の農産物直売・地元の郷土菓子販売のほか、子どもたちの太鼓演奏奉納もある。国分寺の広い境内では秋の花が咲き誇り、讃岐平野を見渡せる境内の高台から秋の田園風景を楽しめる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3018,
+    "lng": 134.0133,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.shikoku-henro.com/",
+    "parking": []
+  },
+  {
+    "id": "md_kg187",
+    "name": "坂出市 番の州 臨海まつり",
+    "category": "花火",
+    "date": "毎年7月第3土曜",
+    "description": "坂出市の工業地帯・番の州臨海地区の公園で行われる夏の花火大会。石油化学コンビナートと製塩業が並立する坂出市の臨海部で、地元の企業と商工会が合同開催する花火大会。工場の煙突と花火の組み合わせは坂出らしい産業的な風景で、地元住民のみぞ知る穴場スポットとして人気。約2,000発の花火と地元の屋台が揃う、坂出市民のための夏まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.33,
+    "lng": 133.845,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg196",
+    "name": "東かがわ市 湊川 鮎まつり",
+    "category": "屋台",
+    "date": "毎年7月第2日曜",
+    "description": "東かがわ市を流れる湊川の鮎の解禁に合わせて行われる鮎まつり。清流・湊川は香川県内でも有数の鮎の産地として地元漁師に知られており、夏の鮎漁解禁を地域全体で祝うまつりが川岸で開かれる。地元の鮎を炭火塩焼きにする屋台が人気で、新鮮な鮎の塩焼きと清流を見ながら夏を満喫できる。鮎の友釣り実演・子ども釣り体験も行われる夏の川まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2425,
+    "lng": 134.3773,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg211",
+    "name": "高松市 国分寺 源平まつり",
+    "category": "祭り",
+    "date": "毎年5月第4日曜",
+    "description": "高松市国分寺地区で行われる源平合戦の歴史ゆかりのまつり。屋島合戦の舞台が近い国分寺地区では、地元の郷土史家と学校の先生が中心となって源平の歴史を学ぶ参加型まつりを開催。甲冑体験・弓道体験・讃岐の中世食文化再現の屋台（大麦餅・焼き魚）が楽しめる。子どもたちが源平武者の扮装をして地区内の史跡をウォークするプログラムが特に人気の歴史教育まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.3018,
+    "lng": 134.0133,
+    "region": "中国・四国",
+    "heatScore": 3200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg126",
+    "name": "高松市 庵治町 石の祭典",
+    "category": "屋台",
+    "date": "毎年5月第3日曜",
+    "description": "世界最高品質の花崗岩産地として知られる高松市庵治町の石職人たちが開く祭り。石彫り実演・石細工体験ワークショップを中心に、庵治石を使った芸術作品の展示販売が行われる。漁業と採石業が共存する特殊な漁師町の文化を紹介するコーナーも人気で、地元の海産物を使った屋台と合わせて年に一度の町全体の文化祭として賑わう。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3602,
+    "lng": 134.1805,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg152",
+    "name": "坂出市 与島 漁火まつり",
+    "category": "花火",
+    "date": "毎年8月第3土曜",
+    "description": "瀬戸大橋の途中に位置する坂出市の与島（よしま）で行われる小さな夏まつり。瀬戸大橋架橋前は漁業で栄えた与島も今は観光と少数の漁師のみが暮らす島となった。毎年夏には島民が中心となって漁火まつりを開催し、瀬戸大橋を見上げながらの打ち上げ花火と地元の魚介類を使った屋台が島を賑わせる。瀬戸大橋のパーキングエリアからも観覧できる夏の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.387,
+    "lng": 133.798,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg155",
+    "name": "東かがわ市 大内地区 えびす祭り",
+    "category": "祭り",
+    "date": "毎年1月10日",
+    "description": "東かがわ市大内地区（旧大内町）の恵比寿神社で行われる商売繁盛の十日えびすまつり。讃岐東部の商業の町として発展した大内地区では、商店主・農家・漁師がこぞって恵比寿神社に参拝する「十日えびす」は正月最大の行事。参道には縁起物の熊手・笹を売る露天商が並び、小さな境内は参拝者で溢れる。地域の年初の商売と農漁業の繁栄を祈る重要な神事。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.234,
+    "lng": 134.36,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg176",
+    "name": "三豊市 詫間 海軍まつり",
+    "category": "祭り",
+    "date": "毎年6月第2日曜",
+    "description": "太平洋戦争末期に水上特攻隊（震洋）の訓練基地があった三豊市詫間地区で行われる追悼・平和まつり。詫間海岸に設けられた慰霊碑前で地元住民が戦没者の霊を慰める祭祀を行い、小学生による平和の詩の朗読・地元の生け花展示・郷土料理の振る舞いが行われる。戦争の記憶を次世代に伝える目的で地域住民が自主的に続けるローカルな平和行事。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.15,
+    "lng": 133.67,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg182",
+    "name": "三豊市 みの地区 秋の農業まつり",
+    "category": "屋台",
+    "date": "毎年11月第1日曜",
+    "description": "三豊市旧みの地区（三野町）の農業公園「みの観光農園」周辺で行われる秋の収穫まつり。讃岐のブドウ・栗・かき・さつまいもなど秋の農産物の直売を中心に、農業体験コーナーや地元料理の屋台が並ぶ。三豊市は農業県・香川の中でもとりわけ農業が盛んな地域で、このまつりには農家の方々が丹精込めて育てた農産物が一堂に会する。生産者と消費者が直接交流できる農の祭典。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.15,
+    "lng": 133.72,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg184",
+    "name": "観音寺市 柞田川 灯籠まつり",
+    "category": "祭り",
+    "date": "毎年8月16日",
+    "description": "観音寺市を流れる柞田川（くにたがわ）の岸辺で行われる精霊送りの灯籠流し。地域の仏教寺院が主催し、地区の住民が手作りの灯籠を川に流す伝統行事。夕暮れ時に川沿いに集まった家族が静かに灯籠を川面に浮かべ、故人への想いを込めて送り出す。川の流れに乗って無数の灯籠が観音寺港方向へ流れていく光景は、観音寺の夏の終わりを告げる印象的な風景として長く愛されている。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.0617,
+    "lng": 133.6632,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg203",
+    "name": "高松市 旧街道 讃岐街道まつり",
+    "category": "屋台",
+    "date": "毎年11月第2土曜",
+    "description": "高松市から善通寺・金毘羅へ続く讃岐街道（現在の旧国道）を舞台にした歴史まちあるきまつり。江戸時代に参勤交代と金毘羅参りの人々で賑わった讃岐街道の往時を再現するイベントで、街道沿いの旧家が屋敷を公開し、江戸の旅人文化を体験できるコーナーが設けられる。沿道には昔ながらの旅籠料理・草鞋・道中笠を再現した屋台が並ぶ歴史ロマン漂うまちあるきまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3401,
+    "lng": 134.0434,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg206",
+    "name": "丸亀市 本島 塩飽勤番所まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "丸亀市の塩飽諸島・本島の「塩飽勤番所（しわくきんばんしょ）」で行われる歴史まつり。幕府の直轄地として独自の自治を行っていた塩飽水軍の本拠地・本島の国指定重要文化財「塩飽勤番所」を舞台に、江戸時代の塩飽衆の暮らしを再現する歴史体験イベント。島の古老による塩飽水軍の話、島の伝統食「煮貝」の試食会、航海絵図の展示が行われる離島の歴史まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.28,
+    "lng": 133.87,
+    "region": "中国・四国",
+    "heatScore": 3000,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg123",
+    "name": "土庄町 西村 八幡神社 例大祭",
+    "category": "祭り",
+    "date": "毎年10月下旬",
+    "description": "小豆島の土庄町西村地区に鎮座する八幡神社の秋の例大祭。オリーブ畑に囲まれた山の中腹の神社へ向かう神輿の行列が、石段を登りながら境内へ入る姿が見どころ。地区の子どもたちが神輿の綱を引き、老人会が獅子舞を奉納する。その後境内では、地元のおばあちゃんたちが作るしょうゆ豆やそうめんの振る舞いが行われる素朴な秋の神事。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.505,
+    "lng": 134.206,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.town.tonosho.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg127",
+    "name": "三木町 石田神社 春まつり",
+    "category": "祭り",
+    "date": "毎年4月第2日曜",
+    "description": "香川県三木町の石田神社（式内社）で行われる春の例祭。鎌倉時代から続くとされる由緒ある神社の春祭りで、地域の子どもたちによる稚児行列と獅子舞が神社境内を練り歩く。地元の農業関係者が五穀豊穣を祈願する神事のあと、境内では農産物の直売と餅まきが行われ、三木町名物のさぬきうどんの振る舞いも恒例となっている素朴な里の春まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.3188,
+    "lng": 134.1017,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.town.miki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg148",
+    "name": "丸亀市 垂水地区 大名行列まつり",
+    "category": "祭り",
+    "date": "毎年11月第3日曜",
+    "description": "丸亀藩の城下町としての歴史を持つ丸亀市垂水地区で行われる時代行列まつり。江戸時代の参勤交代を再現したような大名行列を地元住民が演じ、古い街道筋を練り歩く。甲冑・着物姿の参加者は公募で集まった地元住民で、時代劇の衣装を身に纏った子どもの参加も多い。丸亀城の麓の歴史的な景観を生かした、地元有志が主体で運営するまちおこし型の秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.2726,
+    "lng": 133.7993,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg154",
+    "name": "善通寺市 我拝師山 山開きまつり",
+    "category": "祭り",
+    "date": "毎年4月第3日曜",
+    "description": "弘法大師が修行した霊山・我拝師山（がはいしやま）の山開きを祝う春まつり。標高481mの我拝師山は善通寺市の背後にそびえる地域のシンボルで、麓の出釈迦寺から続く急峻な山道を地元の登山愛好会が清掃登山を行う。山頂近くの奥の院・捨身嶽禅定では山岳信仰の伝統に従った護摩焚きが行われ、下山後は善通寺境内でうどんの振る舞いがある。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.2171,
+    "lng": 133.7654,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.city.zentsuji.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg190",
+    "name": "高松市 牟礼地区 源平ロードまつり",
+    "category": "祭り",
+    "date": "毎年11月第3日曜",
+    "description": "高松市牟礼地区の源平ゆかりの史跡を巡る歴史ウォークイベント。源平合戦の舞台となった屋島の地続きの陸地・牟礼では、地元の歴史研究グループが源平の史跡・石碑を巡るガイドウォークを毎年開催。ウォーク終了後は地元の農漁産品の屋台と甲冑試着体験コーナーが設けられ、牟礼石（庵治石）の産地らしい石彫り実演も行われる歴史文化まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.37,
+    "lng": 134.14,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg208",
+    "name": "高松市 八栗地区 八栗ケーブルカーまつり",
+    "category": "屋台",
+    "date": "毎年8月下旬",
+    "description": "高松市五剣山の八栗ケーブルカー麓駅周辺で行われる夏まつり。五剣山の中腹に鎮座する四国八十八ヶ所第85番札所・八栗寺への参道であるケーブルカー乗り場周辺に屋台が並ぶローカルまつり。地元の農産物・五剣山の湧き水を使った豆腐・地場産野菜の直売とともに、夜は参道の提灯が点灯され幻想的な雰囲気を醸し出す。地元の常連参拝者と地域住民のための素朴なまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.378,
+    "lng": 134.152,
+    "region": "中国・四国",
+    "heatScore": 2800,
+    "eventUrl": "https://www.yakurijinja.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg130",
+    "name": "坂出市 沙弥島 万葉まつり",
+    "category": "祭り",
+    "date": "毎年11月第2日曜",
+    "description": "万葉集にも詠まれた歌枕の地・坂出市沙弥島（さみしま）で行われる万葉ゆかりのまつり。柿本人麻呂が「玉藻よし」と詠んだこの島で、地元の和歌愛好者による万葉集の歌の朗詠と、島の遺跡・万葉植物の観察会が開催される。小さな島に渡る橋を歩いて渡り、海辺で万葉の歌碑を巡るウォークイベントも人気。土産には地元の海藻・テングサが売られる。",
+    "imageUrl": "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=800&q=80",
+    "lat": 34.342,
+    "lng": 133.825,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg144",
+    "name": "丸亀市 本島 泊地区 盆まつり",
+    "category": "祭り",
+    "date": "毎年8月15日",
+    "description": "丸亀市の塩飽諸島の一つ・本島（ほんじま）の泊地区で行われる盆まつり。塩飽水軍の本拠地として戦国時代に栄えた本島は、今も石畳の路地と古民家が残る歴史深い島。盆まつり当日は島の狭い広場に盆提灯が並び、島民全員が参加する盆踊りが夜遅くまで続く。フェリーで渡る島のまつりは、高松や丸亀からほど近い場所でありながら時間の流れが違う別世界。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.28,
+    "lng": 133.87,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg158",
+    "name": "坂出市 川津地区 秋まつり（だんじり）",
+    "category": "祭り",
+    "date": "毎年10月上旬",
+    "description": "坂出市川津地区の神社で行われる秋まつり。瀬戸内海の潮風が吹く坂出市の農漁業地帯で、地区のだんじり（屋台式の山車）が地区内の道路を練り歩く。だんじりの四面に施された金箔の装飾と、上に乗った子どもが叩く太鼓のリズムが秋の空に響く。地域の大人たちが綱を引き、子どもたちがだんじりに乗るスタイルは讃岐の秋まつりの典型的な姿。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.33,
+    "lng": 133.845,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg178",
+    "name": "高松市 鹿角地区 土器川源流探検まつり",
+    "category": "屋台",
+    "date": "毎年8月上旬",
+    "description": "讃岐平野を流れる土器川の上流域・高松市鹿角（かつの）地区で行われる夏の川遊びまつり。清流が残る土器川源流付近で、地元の自然保護グループが子どもたちに川遊び・サワークライミング・川魚の観察を体験させるまつり型イベント。地元の婦人グループが作る山里の料理（山菜おにぎり・冷やしうどん）の振る舞いと、夕方には簡易花火もある夏の自然体験まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.3,
+    "lng": 134.11,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg193",
+    "name": "丸亀市 土器地区 土器川河川まつり",
+    "category": "屋台",
+    "date": "毎年8月第3日曜",
+    "description": "丸亀市を流れる土器川の河川敷で行われる夏まつり。土器川は讃岐の母なる川として香川の農業・生活を支えてきた川で、地元の環境保護グループが川の恩恵への感謝と環境保全の意識を高めるために開くまつり。川遊び体験・川魚の観察会とともに、地元の農産物直売と夕暮れの花火が行われる。土器川の清流の復活を願う地域住民の環境まつり的な性格も持つ。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.29,
+    "lng": 133.81,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg201",
+    "name": "高松市 黒島地区 黒島みこし祭り",
+    "category": "祭り",
+    "date": "毎年5月第3日曜",
+    "description": "高松市北部の黒島地区の神社で行われる春まつり。瀬戸内海の海岸線近くに位置する黒島地区では、漁業の神への感謝を込めた神輿を海岸まで担いで海に向かって奉告する「潮かき」の神事が行われる。神輿が海水に浸される独特の神事は全国的にも珍しく、地元の漁師が引き継ぐ古い海の信仰の形が残る。神事のあとは地区の浜辺でバーベキューが行われる。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.39,
+    "lng": 134.07,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg215",
+    "name": "三豊市 山本地区 里山まつり",
+    "category": "屋台",
+    "date": "毎年11月第2日曜",
+    "description": "三豊市旧山本町の里山地域で行われる秋の里山まつり。讃岐山脈の麓に位置する山本地区は棚田・溜池・雑木林が残る里山景観が美しく、この景観を守りながら地域を盛り上げようと有志が始めたまつり。自然薯・いも・栗・野生きのこなど里山の幸を使った郷土料理の屋台、炭焼き体験・竹細工体験・きのこ狩り体験が行われ、里山の自然と文化を楽しめるアウトドアまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.16,
+    "lng": 133.74,
+    "region": "中国・四国",
+    "heatScore": 2600,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg124",
+    "name": "小豆島 福田地区 蛸壺まつり",
+    "category": "屋台",
+    "date": "毎年7月第4日曜",
+    "description": "小豆島北東端の漁師町・福田地区で行われる漁業感謝の祭り。地域の漁師が一年の豊漁に感謝して開く素朴な漁村まつりで、水揚げしたばかりの蛸を使った蛸飯・蛸の天ぷら・蛸焼きが屋台に並ぶ。漁港の岸壁では子ども魚釣り大会が同時開催され、夜には簡易花火が打ち上げられる。県外ではほとんど知られていない超ローカルな離島グルメまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.535,
+    "lng": 134.3742,
+    "region": "中国・四国",
+    "heatScore": 2500,
+    "eventUrl": "https://www.shodoshima.or.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg141",
+    "name": "高松市 塩屋町 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第1日曜",
+    "description": "高松市塩屋町の住吉神社で行われる地区の秋まつり。かつて塩田が広がっていた塩屋地区の氏神・住吉神社の例祭で、氏子たちが太鼓台を担いで町内を練り歩く。高松の中心市街地から少し外れた住宅地で行われるため観光客はほとんど訪れず、地元住民だけで賑わうアットホームな雰囲気が特徴。子どもたちの稚児行列と老人会の盆踊りが微笑ましい地域の秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.352,
+    "lng": 134.05,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg145",
+    "name": "東かがわ市 松原地区 八幡神社 だんじりまつり",
+    "category": "祭り",
+    "date": "毎年10月上旬",
+    "description": "東かがわ市松原地区の八幡神社で行われるだんじりまつり。讃岐東端の阿波との境界に近い松原地区では、阿波文化の影響を受けた独自のだんじり様式が残り、他の讃岐のまつりとは一線を画す装飾が施されただんじりが地区内を練り歩く。地元の老人会による伝統的な「棒術」の奉納演武も見どころで、東かがわ市の中でも特に地元色の強い秋まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.218,
+    "lng": 134.398,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.higashikagawa.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg156",
+    "name": "高松市 大島 大島まつり",
+    "category": "屋台",
+    "date": "毎年8月第1土曜",
+    "description": "高松市沖合の大島で行われる夏まつり。かつてハンセン病療養所があった大島は、入所者の減少とともに島の在り方が問われているが、毎年夏には島の人々が力を合わせてまつりを開催。島内の全員が参加するバーベキューと花火の夜会は、島の歴史と現在を見つめ直しながら地域の絆を確認するためのかけがえのない行事。島の外から訪れるボランティアも参加できる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.2804,
+    "lng": 134.0789,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg171",
+    "name": "さぬき市 大串半島 灯台まつり",
+    "category": "屋台",
+    "date": "毎年5月第4日曜",
+    "description": "さぬき市の大串半島の突端にある大串岬灯台周辺で行われる春まつり。瀬戸内海を見渡せる岬の灯台を保存・活用する地元グループが、灯台の見学会と合わせて地域まつりを開催。漁業の安全を守ってきた灯台への感謝をテーマに、地元の漁師によるワタリガニ・ハマチの直売と、岬の潮風の中で食べる讃岐うどんの屋台が並ぶ。さぬき市の穴場的な海の景勝地で楽しむ春まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.383,
+    "lng": 134.21,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg183",
+    "name": "高松市 春日神社（高松）春まつり",
+    "category": "祭り",
+    "date": "毎年4月第1日曜",
+    "description": "高松市中心部に近い春日神社で行われる春の例祭。高松城下の氏神として古くから市民に親しまれてきた春日神社の春まつりは、地区の子どもたちの稚児行列と地元の太鼓の演奏が中心。平日の喧騒とは無縁の落ち着いた住宅街の神社境内で、地区の長老から若者へ伝統が受け継がれるアットホームな地域まつり。境内の露店で地元の花苗・野菜の苗が販売される春らしい催し。",
+    "imageUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&q=80",
+    "lat": 34.3401,
+    "lng": 134.0434,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg197",
+    "name": "観音寺市 高屋地区 農業感謝まつり",
+    "category": "屋台",
+    "date": "毎年11月第3日曜",
+    "description": "観音寺市高屋地区の農協前広場で行われる秋の農産物感謝まつり。讃岐西部の農業地帯にある高屋地区では、秋の収穫を終えた農家が一堂に集まり農作業の労をねぎらい合うまつりを毎年開催。地元産の白菜・大根・みかん・柿・サツマイモの格安直売と、農家の母ちゃんたちが腕をふるった里芋汁・栗おこわの屋台が人気。農家と消費者が直接交流できる秋の感謝まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.08,
+    "lng": 133.64,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg210",
+    "name": "三豊市 詫間 海岸清掃まつり",
+    "category": "屋台",
+    "date": "毎年9月第3日曜",
+    "description": "三豊市詫間地区の海岸で地域住民が一体となって行う海岸清掃イベントとまつりの複合行事。地元の漁師・農家・会社員・学校の先生など地区の全員参加型で海岸のゴミ拾いを行ったあと、参加者が一堂に集まって浜辺でバーベキューまつりを行う。詫間湾の自然環境保全と地域コミュニティの結束を目的とした環境まつりで、地元の海産物を使ったバーベキューが参加者のご褒美となる。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.158,
+    "lng": 133.672,
+    "region": "中国・四国",
+    "heatScore": 2400,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg139",
+    "name": "丸亀市 手島 夏祭り",
+    "category": "祭り",
+    "date": "毎年8月14日",
+    "description": "丸亀市の離島で現在は無人島となっている手島で、かつての島民が帰省して行う年に一度の夏まつり。終戦後の人口減少で無人島となった手島に、島外に移住した元島民とその家族が盆の時期に集まり先祖の墓参りをしたのち、砂浜でバーベキューと簡易花火で旧交を温める。人口ゼロの島に年一度だけ賑わいが戻る、人の記憶と離島の歴史が交差する感動的な催し。",
+    "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80",
+    "lat": 34.239,
+    "lng": 133.701,
+    "region": "中国・四国",
+    "heatScore": 2200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg147",
+    "name": "高松市 前田地区 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2日曜",
+    "description": "高松市郊外の前田地区の神社で行われる町内秋まつり。高松市の住宅開発が進む地区の中にあって、古くからの氏神への感謝を忘れない地域住民が毎年丁寧に行事を引き継いでいる。子どもみこし・大人神輿・太鼓演奏を組み合わせたプログラムで、地区の公民館前では地域住民手作りの屋台が並ぶ。新興住宅地と農村が混在する高松郊外の地域コミュニティを映す素朴なまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.37,
+    "lng": 134.08,
+    "region": "中国・四国",
+    "heatScore": 2200,
+    "eventUrl": "https://www.city.takamatsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg169",
+    "name": "丸亀市 西島地区 盆まつり",
+    "category": "祭り",
+    "date": "毎年8月13・14日",
+    "description": "丸亀市中心部の西島地区の公民館前で行われる地区盆まつり。丸亀城の城下町が都市化した地域の中にあって、昔ながらの盆踊りを守り続ける地区のまつり。地区の女性グループが着物・浴衣で踊る盆踊りは「よしこの」「炭坑節」などの懐かしい音楽に合わせて行われ、子どもたちも輪に加わる。地区内の商店が屋台を出し、夜の一時間ほど地区全体が祭り一色に染まる。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.2726,
+    "lng": 133.7993,
+    "region": "中国・四国",
+    "heatScore": 2200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg186",
+    "name": "丸亀市 岡田地区 岡田八幡神社 まつり",
+    "category": "祭り",
+    "date": "毎年10月第1土曜",
+    "description": "丸亀市郊外の岡田地区に鎮座する岡田八幡神社の秋まつり。丸亀平野の農村地帯にあるこの神社では、地区の農家の方々が中心となって毎年秋まつりを開催。神輿渡御・地区内の太鼓台巡行のほか、神社境内での野外相撲（奉納相撲）も行われる。岡田地区の特産品である梨・ぶどうの直売と、地区の女性グループ手作りのさぬきうどんの無料振る舞いが参加者に好評。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.29,
+    "lng": 133.82,
+    "region": "中国・四国",
+    "heatScore": 2200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg213",
+    "name": "丸亀市 川西地区 秋の収穫まつり",
+    "category": "屋台",
+    "date": "毎年10月下旬",
+    "description": "丸亀市の内陸農村地帯・川西地区の公民館周辺で行われる秋の農産物収穫まつり。丸亀市の中でも農業色が色濃い川西地区では、稲刈りが終わる秋に農家が一堂に集まり収穫を祝うまつりを毎年開催。地元産の新米・大根・ネギ・かぶなどの格安直売と、地元の女性グループが作る新米おにぎり・とん汁の振る舞いが人気。地区の子どもたちの農業体験発表会も行われる秋の農村まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.29,
+    "lng": 133.85,
+    "region": "中国・四国",
+    "heatScore": 2200,
+    "eventUrl": "https://www.city.marugame.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg149",
+    "name": "観音寺市 室本地区 室本神社 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第1日曜",
+    "description": "観音寺市室本地区の室本神社で行われる秋まつり。観音寺市の中でも比較的小さな地区の氏神まつりで、地区の氏子たちが手作りで準備する素朴な秋まつり。子どもたちの稚児行列と地元の若者が担ぐ神輿が地区内を巡行し、神社境内では地域の女性グループが作る讃岐名物の屋台が出る。テレビや観光ガイドには載らない、地域の人たちだけが知るローカルまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.085,
+    "lng": 133.65,
+    "region": "中国・四国",
+    "heatScore": 2000,
+    "eventUrl": "https://www.city.kanonji.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg150",
+    "name": "三豊市 笠田地区 神輿まつり",
+    "category": "祭り",
+    "date": "毎年10月中旬",
+    "description": "三豊市旧笠田地区（現・財田町）の八幡神社で行われる秋の神輿まつり。讃岐山脈の麓に位置する笠田地区は農山村的な色合いが濃く、地区の青年団が中心となって神輿を担いで山の集落を巡行する昔ながらのスタイルが守られている。山間の道を神輿が練り歩く姿は秋の紅葉と相まって美しく、地区の長老から若者へ神輿の担ぎ方が口伝えで引き継がれている。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.082,
+    "lng": 133.785,
+    "region": "中国・四国",
+    "heatScore": 2000,
+    "eventUrl": "https://www.city.mitoyo.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg157",
+    "name": "三木町 平木地区 八幡神社 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第3日曜",
+    "description": "三木町の平木地区（旧三木町北部）に鎮座する八幡神社の秋の例祭。地区の青年団が中心となって神輿を担ぐほか、子どもみこし・稚児行列が地区内の道路を練り歩く。地元の農家が境内に並べる野菜・果物の直売コーナーと、婦人会が作るさぬきうどんの屋台が人気。三木町の農村部で行われる素朴な秋まつりで、地区の全世帯が何らかの形で参加する共同体の祭り。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.335,
+    "lng": 134.12,
+    "region": "中国・四国",
+    "heatScore": 2000,
+    "eventUrl": "https://www.town.miki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg188",
+    "name": "三木町 氷上地区 夏まつり",
+    "category": "屋台",
+    "date": "毎年8月第1土曜",
+    "description": "三木町の氷上（ひかみ）地区の公民館前で行われる地区夏まつり。讃岐の農村地帯で行われる典型的な地区まつりで、地区の子どもたちの盆踊り・かき氷・金魚すくいの屋台が並ぶ。地元の婦人グループが作る讃岐うどん・やきそばの屋台は格安で人気が高く、夕暮れ時から始まる簡易花火が夜を彩る。都市化が進む三木町の中でも農村的な雰囲気が残る氷上地区の季節の風物詩。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.33,
+    "lng": 134.12,
+    "region": "中国・四国",
+    "heatScore": 2000,
+    "eventUrl": "https://www.town.miki.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg198",
+    "name": "多度津町 白方地区 白方神社 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第1日曜",
+    "description": "多度津町の白方地区の白方神社で行われる地区秋まつり。讃岐の小さな農漁村の地区まつりで、太鼓台の巡行と神輿渡御が地区内の道路を練り歩く。白方漁港近くの神社境内では、地元の漁師が水揚げした魚を使った浜焼き屋台が並び、地区の子どもたちの太鼓演奏奉納も行われる。農漁業が共存する多度津町の海辺の地区らしい、素朴で温かいコミュニティまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.27,
+    "lng": 133.76,
+    "region": "中国・四国",
+    "heatScore": 2000,
+    "eventUrl": "https://www.town.tadotsu.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg143",
+    "name": "綾川町 羽床上地区 夏まつり",
+    "category": "屋台",
+    "date": "毎年8月第2土曜",
+    "description": "綾川町（旧綾上町）の羽床上地区の公民館前で行われる小さな地区夏まつり。人口数百人の集落で、子どもたちが主役となる夏まつり。地区の女性グループが作る讃岐うどん・おにぎり・かき氷の屋台が並び、子ども盆踊りと花火が夏の一夜を飾る。過疎化が進む中山間地域で地域の絆を守るために住民が力を合わせて開く、小さくも温かいコミュニティまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.23,
+    "lng": 133.96,
+    "region": "中国・四国",
+    "heatScore": 1800,
+    "eventUrl": "https://www.town.ayagawa.kagawa.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg153",
+    "name": "まんのう町 琴南地区 こと南まつり",
+    "category": "屋台",
+    "date": "毎年11月第1日曜",
+    "description": "まんのう町旧琴南地区で行われる秋の収穫感謝まつり。四国山地の山麓に位置する琴南地区は清流・財田川の源流域にある農山村で、秋には地元農家が一年の農作業の苦労をねぎらい合うまつりを開く。地元産の米・野菜・栗・柿などの農産物直売、地区の郷土料理（山菜おこわ・猪汁）の屋台、子どもの芸能発表が一日かけて行われる山里の文化祭的まつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.105,
+    "lng": 133.895,
+    "region": "中国・四国",
+    "heatScore": 1800,
+    "eventUrl": "https://www.town.manno.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg199",
+    "name": "坂出市 鴨川地区 秋まつり",
+    "category": "祭り",
+    "date": "毎年10月第2土曜",
+    "description": "坂出市の内陸部・鴨川地区の神社で行われる秋まつり。坂出市は塩業と農業で発展した地域だが、鴨川地区は山寄りの農村で独自の農村文化を持つ。秋まつりでは地区の青年団が神輿を担ぎ、農道を巡行するスタイルが今も守られている。地元産の野菜と果物の直売、地区の長老が教える藁細工体験、子どもたちの盆踊りが一日のプログラムを彩る素朴なまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1570141657321-7299a910f545?w=800&q=80",
+    "lat": 34.32,
+    "lng": 133.86,
+    "region": "中国・四国",
+    "heatScore": 1800,
+    "eventUrl": "https://www.city.sakaide.lg.jp/",
+    "parking": []
+  },
+  {
+    "id": "md_kg200",
+    "name": "さぬき市 内場地区 内場池まつり",
+    "category": "屋台",
+    "date": "毎年9月第2日曜",
+    "description": "さぬき市旧大川郡の山間部・内場地区の内場池畔で行われる地域まつり。讃岐山脈の麓に位置する内場地区はため池が多い地域で、地区の農家・漁師・地域住民が集まる秋のまつりが池のほとりで開かれる。地元の淡水魚（ふな・なまず）を使った地場料理の屋台、農産物の直売と「ため池の恵み」に感謝するセレモニーがある。讃岐の水の文化に触れられる希少なまつり。",
+    "imageUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80",
+    "lat": 34.31,
+    "lng": 134.19,
+    "region": "中国・四国",
+    "heatScore": 1800,
+    "eventUrl": "https://www.city.sanuki.kagawa.jp/",
+    "parking": []
   },
   {
     "id": "yatai_y108",
