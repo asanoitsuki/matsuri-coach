@@ -14,10 +14,11 @@
 
 'use strict';
 
-const fs   = require('fs');
-const path = require('path');
-const vm   = require('vm');
-const https = require('https');
+const fs     = require('fs');
+const path   = require('path');
+const vm     = require('vm');
+const https  = require('https');
+const crypto = require('crypto');   // FCM JWT 署名用（npm 不要・Node 標準）
 
 // ── パス設定（このファイルがリポジトリルートにある前提）──────────────
 const ROOT        = __dirname;
@@ -206,6 +207,140 @@ function wikidataToEvent(binding, index) {
 }
 
 // ════════════════════════════════════════════════════════════════
+//  FCM HTTP v1 プッシュ通知
+//  GitHub Secret: FIREBASE_SERVICE_ACCOUNT（サービスアカウントJSON全文）
+// ════════════════════════════════════════════════════════════════
+const FCM_PROJECT_ID = 'matsuri-navi-a601f';
+const FCM_TOPIC      = 'matsuri-updates';      // アプリ側でこのトピックを購読
+
+/**
+ * サービスアカウント JSON から OAuth2 アクセストークンを取得
+ * Node.js 標準の crypto モジュールのみ使用（npm パッケージ不要）
+ */
+async function getFCMAccessToken(serviceAccount) {
+  const now    = Math.floor(Date.now() / 1000);
+  const header  = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
+  const payload = Buffer.from(JSON.stringify({
+    iss:   serviceAccount.client_email,
+    scope: 'https://www.googleapis.com/auth/firebase.messaging',
+    aud:   'https://oauth2.googleapis.com/token',
+    iat:   now,
+    exp:   now + 3600,
+  })).toString('base64url');
+
+  const sigInput = `${header}.${payload}`;
+  const sign     = crypto.createSign('RSA-SHA256');
+  sign.update(sigInput);
+  const signature = sign.sign(serviceAccount.private_key, 'base64url');
+  const jwt = `${sigInput}.${signature}`;
+
+  // JWT → Access Token 交換
+  const body = `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${jwt}`;
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      { hostname: 'oauth2.googleapis.com', path: '/token', method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' } },
+      (res) => {
+        let data = '';
+        res.on('data', c => data += c);
+        res.on('end', () => {
+          try   { resolve(JSON.parse(data).access_token); }
+          catch { reject(new Error('Access Token パース失敗: ' + data)); }
+        });
+      }
+    );
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+/**
+ * FCM HTTP v1 でトピック宛に通知を送信
+ * @param {number} newCount  今回追加された新規イベント数
+ */
+async function sendFCMNotification(newCount) {
+  // GitHub Secret が設定されていなければ静かにスキップ
+  const saRaw = process.env.FIREBASE_SERVICE_ACCOUNT;
+  if (!saRaw) {
+    console.warn('[FCM] FIREBASE_SERVICE_ACCOUNT 未設定 → 通知スキップ');
+    return;
+  }
+
+  let serviceAccount;
+  try {
+    serviceAccount = JSON.parse(saRaw);
+  } catch {
+    console.error('[FCM] FIREBASE_SERVICE_ACCOUNT の JSON パース失敗');
+    return;
+  }
+
+  console.log('[FCM] アクセストークン取得中...');
+  let accessToken;
+  try {
+    accessToken = await getFCMAccessToken(serviceAccount);
+  } catch (e) {
+    console.error('[FCM] トークン取得失敗:', e.message);
+    return;
+  }
+
+  // FCM HTTP v1 メッセージ本文
+  const message = {
+    message: {
+      topic: FCM_TOPIC,
+      notification: {
+        title: '🎆 新しいお祭りが追加されました！',
+        body:  `${newCount}件の新しいお祭り情報が更新されました。タップして確認しよう！`,
+      },
+      apns: {                       // iOS 向け追加設定
+        payload: { aps: { sound: 'default', badge: 1 } },
+      },
+      android: {                    // Android 向け追加設定
+        notification: { sound: 'default', channel_id: 'matsuri_updates' },
+      },
+      data: {                       // カスタムデータ（アプリ内で活用可）
+        type:      'new_matsuri',
+        count:     String(newCount),
+        timestamp: new Date().toISOString(),
+      },
+    },
+  };
+
+  const bodyStr = JSON.stringify(message);
+  const endpoint = `/v1/projects/${FCM_PROJECT_ID}/messages:send`;
+
+  return new Promise((resolve) => {
+    const req = https.request(
+      {
+        hostname: 'fcm.googleapis.com',
+        path:     endpoint,
+        method:   'POST',
+        headers: {
+          'Authorization':  `Bearer ${accessToken}`,
+          'Content-Type':   'application/json',
+          'Content-Length': Buffer.byteLength(bodyStr),
+        },
+      },
+      (res) => {
+        let data = '';
+        res.on('data', c => data += c);
+        res.on('end', () => {
+          if (res.statusCode === 200) {
+            console.log(`[FCM] ✅ 通知送信成功 → トピック: ${FCM_TOPIC}`);
+          } else {
+            console.warn(`[FCM] ⚠ 送信失敗 HTTP ${res.statusCode}:`, data);
+          }
+          resolve();
+        });
+      }
+    );
+    req.on('error', (e) => { console.warn('[FCM] 通信エラー:', e.message); resolve(); });
+    req.write(bodyStr);
+    req.end();
+  });
+}
+
+// ════════════════════════════════════════════════════════════════
 //  メイン処理
 // ════════════════════════════════════════════════════════════════
 async function main() {
@@ -260,6 +395,15 @@ async function main() {
   console.log('\n═══════════════════════════════════════════');
   console.log(` ✅ 完了！合計 ${allEvents.length} 件 → matsuri-data.json`);
   console.log('═══════════════════════════════════════════');
+
+  // ⑥ 新規イベントがあれば FCM でプッシュ通知を送信
+  const totalNew = accumulatedEvents.length + newWikiEvents.length;
+  if (totalNew > 0) {
+    console.log(`\n🔔 [Step 6] FCM プッシュ通知送信中 (新規 ${totalNew} 件)...`);
+    await sendFCMNotification(totalNew);
+  } else {
+    console.log('\n🔔 [Step 6] 新規イベントなし → 通知スキップ');
+  }
 }
 
 main().catch(err => {

@@ -34,7 +34,10 @@ jobs:
           node-version: '20'
 
       # ③ データ収集スクリプト実行（www/ サブフォルダにある）
-      - name: 🔍 祭りデータ収集 (www/fetch-matsuri.js)
+      - name: 🔍 祭りデータ収集 + FCM 通知 (www/fetch-matsuri.js)
+        env:
+          # Firebase サービスアカウント JSON（GitHub Secrets で設定）
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: node www/fetch-matsuri.js
 
       # ④ 変更があればコミット＆プッシュ

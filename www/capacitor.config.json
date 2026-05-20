@@ -1,16 +1,19 @@
 {
-  "appId": "com.matsurinavi.app",
+  "appId": "com.asano.matsurinavi",
   "appName": "MatsuriNavi",
   "webDir": "public",
   "plugins": {
     "GoogleAuth": {
       "scopes": ["profile", "email"],
-      "serverClientId": "YOUR_GOOGLE_CLIENT_ID_HERE",
+      "serverClientId": "982642152853-sj2t98l3obh57gu7ftpadivtc3kdck46.apps.googleusercontent.com",
       "forceCodeForRefreshToken": true
     },
     "LocalNotifications": {
       "smallIcon": "ic_stat_icon_config_sample",
       "iconColor": "#FF3040"
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
     }
   }
 }
