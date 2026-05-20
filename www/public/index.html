@@ -15,13 +15,12 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-    <script src="events-data.js?v=3"></script>
-    <script src="events-extra.js?v=3"></script>
-    <script src="events-yatai.js?v=3"></script>
-    <script src="kagawa_parking.js?v=3"></script>
-    <script src="matsuri_data.js?v=3"></script>
-    <script src="kagawa_minor200.js?v=3"></script>
-    <script src="kagawa_extra100.js?v=3"></script>
+    <script src="events-data.js?v=6"></script>
+    <script src="events-extra.js?v=6"></script>
+    <script src="events-yatai.js?v=6"></script>
+    <script src="kagawa_parking.js?v=6"></script>
+    <script src="matsuri_data.js?v=6"></script>
+    <script src="kagawa_all.js?v=6"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
@@ -445,7 +444,7 @@
                     padding:7px 13px; border-radius:9999px;
                     font-size:12px; font-weight:800; letter-spacing:0.3px;
                     box-shadow:0 4px 18px rgba(0,0,0,0.55);">
-            <i class="fa-regular fa-map mr-1"></i>0件
+            <i class="fa-regular fa-map mr-1"></i>読込中…
         </div>
     </div>
 
@@ -993,20 +992,17 @@ function triggerLogin() {
 // ════════════════════════════════════════════════════════════
 //  クラウドデータ取得
 // ════════════════════════════════════════════════════════════
+// ────────────────────────────────────────────────────────────
+// クラウドデータ取得は完全無効化（ローカルJSのみで動作）
+// 理由: GitHub Raw の matsuri-data.json (1014件) で window.allEvents が
+//       完全上書きされ、ローカルで追加した香川マイナーデータ等が消えていた。
+//       ローカルJSが既に全国 + 香川555件を持っているため、クラウド取得は不要。
+// ────────────────────────────────────────────────────────────
 async function loadCloudData() {
-    if (API_URL.includes('YOUR-CLOUD-SERVER')) return;
-    try {
-        const ctrl = new AbortController();
-        const tid = setTimeout(() => ctrl.abort(), 8000);
-        const res = await fetch(API_URL, { signal: ctrl.signal });
-        clearTimeout(tid);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) window.allEvents = data;
-        else throw new Error('空データ');
-    } catch(e) {
-        console.warn('[MatsuriNavi] クラウド取得失敗 → ローカル使用:', e.message);
-    }
+    const before = (window.allEvents || []).length;
+    console.log('[MatsuriNavi] cloud fetch disabled. local events =', before);
+    // 何もしない。window.allEvents はローカルJSのままにする。
+    return;
 }
 
 // ════════════════════════════════════════════════════════════
@@ -1022,15 +1018,13 @@ window.addEventListener('load', async function() {
     }).addTo(map);
 
     // ── マーカークラスタ設定 ──
-    // maxClusterRadius を小さく → 県レベルズームでもピンが分散して表示される
-    // disableClusteringAtZoom を低めに → 早めにクラスタ解除
+    // 近隣のピンをまとめて見やすくする（タップでズーム展開）
     markerLayer = L.markerClusterGroup({
-        maxClusterRadius: 30,
+        maxClusterRadius: 70,
         showCoverageOnHover: false,
         spiderfyOnMaxZoom: true,
         zoomToBoundsOnClick: true,
         chunkedLoading: true,
-        disableClusteringAtZoom: 10,
         removeOutsideVisibleBounds: false
     });
     map.addLayer(markerLayer);
