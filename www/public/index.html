@@ -1603,6 +1603,9 @@ function switchTab(name) {
      - Capacitor 環境のみ実行（Web プレビュー時はスキップ）
      ════════════════════════════════════════════════════════════ -->
 <script>
+// ════════════════════════════════════════════════════════════
+// AdMob（本番ID） + ATT（App Tracking Transparency）
+// ════════════════════════════════════════════════════════════
 (async function initAdMobIfNative() {
     try {
         const Capacitor = window.Capacitor;
@@ -1612,26 +1615,44 @@ function switchTab(name) {
         const AdMob = (Capacitor.Plugins && Capacitor.Plugins.AdMob) || null;
         if (!AdMob) { console.warn('[AdMob] plugin not registered'); return; }
 
+        // ── ATT 同意ダイアログ（iOS 14+ 必須） ──
+        try {
+            const trk = await AdMob.trackingAuthorizationStatus();
+            if (trk && trk.status === 'notDetermined') {
+                await AdMob.requestTrackingAuthorization();
+            }
+        } catch (_) { /* iOS 14未満は無視 */ }
+
         await AdMob.initialize({
-            initializeForTesting: true,
+            initializeForTesting: false,
             testingDevices: [],
             tagForChildDirectedTreatment: false,
             tagForUnderAgeOfConsent: false,
             maxAdContentRating: 'PG'
         });
-        // Google 公式テスト用バナーID
+
+        // ── 本番 AdMob 広告ユニットID ──
+        const PROD_BANNER_ID_IOS     = 'ca-app-pub-5649075434779979/8590909253';
+        const PROD_BANNER_ID_ANDROID = 'ca-app-pub-5649075434779979/8590909253';
+        // 開発用 Google 公式テストID（必要時に切替）
         const TEST_BANNER_ID_IOS     = 'ca-app-pub-3940256099942544/2934735716';
         const TEST_BANNER_ID_ANDROID = 'ca-app-pub-3940256099942544/6300978111';
+
+        // 本番モード（App Store 提出時はこちら）
+        const USE_PROD = true;
         const platform = Capacitor.getPlatform();
-        const adId = platform === 'ios' ? TEST_BANNER_ID_IOS : TEST_BANNER_ID_ANDROID;
+        const adId = USE_PROD
+            ? (platform === 'ios' ? PROD_BANNER_ID_IOS : PROD_BANNER_ID_ANDROID)
+            : (platform === 'ios' ? TEST_BANNER_ID_IOS : TEST_BANNER_ID_ANDROID);
+
         await AdMob.showBanner({
             adId: adId,
             adSize: 'BANNER',
             position: 'TOP_CENTER',
             margin: 0,
-            isTesting: true
+            isTesting: !USE_PROD
         });
-        console.log('[AdMob] banner shown (test)');
+        console.log('[AdMob] banner shown', USE_PROD ? '(production)' : '(test)');
     } catch (e) {
         console.warn('[AdMob] init failed (skip):', e && e.message);
     }
