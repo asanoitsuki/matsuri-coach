@@ -15,12 +15,13 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-    <script src="events-data.js"></script>
-    <script src="events-extra.js"></script>
-    <script src="events-yatai.js"></script>
-    <script src="kagawa_parking.js"></script>
-    <script src="matsuri_data.js"></script>
-    <script src="kagawa_minor200.js"></script>
+    <script src="events-data.js?v=3"></script>
+    <script src="events-extra.js?v=3"></script>
+    <script src="events-yatai.js?v=3"></script>
+    <script src="kagawa_parking.js?v=3"></script>
+    <script src="matsuri_data.js?v=3"></script>
+    <script src="kagawa_minor200.js?v=3"></script>
+    <script src="kagawa_extra100.js?v=3"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
@@ -334,6 +335,32 @@
         .parking-legend-dot {
             display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:3px; vertical-align:middle;
         }
+
+        /* ── いいねハートアイコン（祭り名横） ── */
+        .like-heart {
+            width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.4);
+            cursor: pointer; outline: none;
+            transition: all 0.18s ease;
+            font-size: 16px;
+        }
+        .like-heart:active { transform: scale(0.88); }
+        .like-heart.liked {
+            background: linear-gradient(135deg, rgba(255,80,108,0.18), rgba(255,120,140,0.08));
+            border-color: rgba(255,90,120,0.5);
+            color: #FF5A78;
+            box-shadow: 0 0 16px rgba(255,90,120,0.35);
+        }
+        .like-heart.liked i { animation: heartPop 0.4s ease-out; }
+        @keyframes heartPop {
+            0% { transform: scale(1); }
+            40% { transform: scale(1.4); }
+            70% { transform: scale(0.92); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body>
@@ -410,6 +437,16 @@
         </div>
         <!-- マップ本体 -->
         <div id="map" style="position:absolute; inset:0; width:100%; height:100%;"></div>
+        <!-- マップ表示件数バッジ -->
+        <div id="mapCountBadge"
+             style="position:absolute; right:18px; bottom:110px; z-index:1300;
+                    background:rgba(11,15,25,0.92); -webkit-backdrop-filter:blur(20px); backdrop-filter:blur(20px);
+                    border:1px solid rgba(201,168,76,0.35); color:#E8C882;
+                    padding:7px 13px; border-radius:9999px;
+                    font-size:12px; font-weight:800; letter-spacing:0.3px;
+                    box-shadow:0 4px 18px rgba(0,0,0,0.55);">
+            <i class="fa-regular fa-map mr-1"></i>0件
+        </div>
     </div>
 
     <!-- ══════════ リサーチタブ ══════════ -->
@@ -555,7 +592,14 @@
                 HOT 9000
             </span>
         </div>
-        <h3 id="sheetName" class="text-xl font-extrabold tracking-tight mb-2">イベント名</h3>
+        <div class="flex items-start gap-2 mb-2">
+            <h3 id="sheetName" class="text-xl font-extrabold tracking-tight flex-1 min-w-0">イベント名</h3>
+            <!-- いいねハートアイコン（名前横） -->
+            <button id="sheetHeartBtn" onclick="toggleLikeClick()"
+                class="like-heart shrink-0" aria-label="いいね">
+                <i id="sheetHeartIcon" class="fa-regular fa-heart"></i>
+            </button>
+        </div>
         <p id="sheetDesc" class="text-xs leading-relaxed mb-4" style="color:rgba(255,255,255,0.45)">詳細文</p>
 
         <!-- ── 駐車場セクション（確定実績のみ） ── -->
@@ -586,10 +630,10 @@
             </button>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <button id="sheetLikeBtn" onclick="toggleLikeClick()"
+            <button onclick="searchParkingNearby()"
                 class="py-3.5 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5"
-                style="border:1px solid var(--border); color:rgba(255,255,255,0.6)">
-                <i class="fa-regular fa-heart"></i> いいね
+                style="background:rgba(91,168,255,0.12); border:1px solid rgba(91,168,255,0.32); color:#7FB8FF">
+                <i class="fa-solid fa-square-parking"></i> 駐車場検索
             </button>
             <button id="sheetCalBtn" onclick="toggleCalClick()"
                 class="py-3.5 rounded-2xl font-bold text-xs flex items-center justify-center gap-1.5"
@@ -977,9 +1021,17 @@ window.addEventListener('load', async function() {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
+    // ── マーカークラスタ設定 ──
+    // maxClusterRadius を小さく → 県レベルズームでもピンが分散して表示される
+    // disableClusteringAtZoom を低めに → 早めにクラスタ解除
     markerLayer = L.markerClusterGroup({
-        maxClusterRadius: 70, showCoverageOnHover: false,
-        spiderfyOnMaxZoom: true, zoomToBoundsOnClick: true, chunkedLoading: true,
+        maxClusterRadius: 30,
+        showCoverageOnHover: false,
+        spiderfyOnMaxZoom: true,
+        zoomToBoundsOnClick: true,
+        chunkedLoading: true,
+        disableClusteringAtZoom: 10,
+        removeOutsideVisibleBounds: false
     });
     map.addLayer(markerLayer);
 
@@ -1127,7 +1179,8 @@ function getMapFilteredEvents() {
 
 function renderMapMarkers() {
     markerLayer.clearLayers();
-    getMapFilteredEvents().forEach(ev => {
+    const list = getMapFilteredEvents();
+    list.forEach(ev => {
         const svg = CAT_SVG[ev.category] || CAT_SVG_DEF;
         const icon = L.divIcon({
             html: `<div class="marker-pin">${svg}</div>`,
@@ -1137,6 +1190,9 @@ function renderMapMarkers() {
         m.on('click', () => openBottomSheet(ev));
         markerLayer.addLayer(m);
     });
+    // 件数バッジを更新
+    const badge = document.getElementById('mapCountBadge');
+    if (badge) badge.innerHTML = `<i class="fa-regular fa-map mr-1"></i>${list.length}件`;
 }
 
 // ════════════════════════════════════════════════════════════
@@ -1181,7 +1237,7 @@ function renderResearchList() {
         const d = daysDiff(e.date);
         const okD = resDays >= 365 || (d >= -1 && d <= resDays);
         return okR && okC && okK && okD;
-    }).sort((a, b) => daysDiff(a.date) - daysDiff(b.date)).slice(0, 150);
+    }).sort((a, b) => daysDiff(a.date) - daysDiff(b.date)).slice(0, 600);
 
     if (!events.length) {
         container.innerHTML = `
@@ -1362,13 +1418,13 @@ function updateSheetButtons() {
     const liked = likedIds.includes(currentSelectedEvent.id);
     const cal   = calendarIds.includes(currentSelectedEvent.id);
 
-    const lb = document.getElementById('sheetLikeBtn');
-    lb.style.cssText = liked
-        ? 'background:rgba(244,114,182,0.1);border:1px solid rgba(244,114,182,0.4);color:#f472b6'
-        : 'border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55)';
-    lb.innerHTML = liked
-        ? `<i class="fa-solid fa-heart"></i> いいね済`
-        : `<i class="fa-regular fa-heart"></i> いいね`;
+    // ハートアイコン（祭り名横）
+    const heart = document.getElementById('sheetHeartBtn');
+    const heartIcon = document.getElementById('sheetHeartIcon');
+    if (heart && heartIcon) {
+        heart.classList.toggle('liked', liked);
+        heartIcon.className = liked ? 'fa-solid fa-heart' : 'fa-regular fa-heart';
+    }
 
     const cb = document.getElementById('sheetCalBtn');
     cb.style.cssText = cal
@@ -1377,6 +1433,21 @@ function updateSheetButtons() {
     cb.innerHTML = cal
         ? `<i class="fa-regular fa-calendar-check"></i> 予定追加済`
         : `<i class="fa-regular fa-calendar-plus"></i> カレンダー登録`;
+}
+
+// 駐車場検索：現在選択中の祭り会場周辺の駐車場を純正マップで検索
+function searchParkingNearby() {
+    if (!currentSelectedEvent) return;
+    const lat = currentSelectedEvent.lat;
+    const lng = currentSelectedEvent.lng;
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+        // Apple Maps: 中心座標を sll で指定し、q=駐車場 で検索
+        window.location.href = `https://maps.apple.com/?q=${encodeURIComponent('駐車場')}&sll=${lat},${lng}&z=15`;
+    } else {
+        // Google Maps: クエリ「駐車場」を中心座標で検索
+        window.open(`https://www.google.com/maps/search/${encodeURIComponent('駐車場')}/@${lat},${lng},15z`, '_blank');
+    }
 }
 
 // ════════════════════════════════════════════════════════════
