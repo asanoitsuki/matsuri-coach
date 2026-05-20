@@ -578,21 +578,25 @@
         class="sheet-glass absolute bottom-0 left-0 right-0 rounded-t-[2.5rem] p-6 z-[6000] transform translate-y-full transition-transform duration-300 ease-out shadow-2xl">
         <div class="w-10 h-1 rounded-full mx-auto mb-4 cursor-pointer"
              style="background:rgba(255,255,255,0.14)" onclick="closeBottomSheet()"></div>
-        <div class="relative mb-4 rounded-2xl overflow-hidden">
-            <img id="sheetImage" src="" class="w-full h-48 object-cover" alt="">
-            <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,0.5),transparent 60%)"></div>
-        </div>
+        <!-- カテゴリ＆HOTバッジ（写真の代わりに高級感あるヘッダー帯） -->
         <div class="flex items-center justify-between mb-3">
-            <span id="sheetDate" class="date-badge">
-                <i class="fa-regular fa-calendar-days"></i> 開催日未定
+            <span id="sheetCatBadge" class="date-badge">
+                <i class="fa-solid fa-torii-gate"></i> 祭り
             </span>
             <span id="sheetScore" class="shrink-0 text-[10px] font-extrabold px-3 py-1.5 rounded-full"
                   style="background:linear-gradient(135deg,#C9A84C,#E8C882); color:#000">
                 HOT 9000
             </span>
         </div>
-        <div class="flex items-start gap-2 mb-2">
-            <h3 id="sheetName" class="text-xl font-extrabold tracking-tight flex-1 min-w-0">イベント名</h3>
+        <div class="flex items-start gap-2 mb-3">
+            <div class="flex-1 min-w-0">
+                <h3 id="sheetName" class="text-xl font-extrabold tracking-tight leading-snug">イベント名</h3>
+                <!-- 開催日（名前の真下） -->
+                <div id="sheetDate" class="mt-1 text-[11px] font-bold flex items-center gap-1.5"
+                     style="color:var(--gold-light)">
+                    <i class="fa-regular fa-calendar-days"></i><span id="sheetDateText">過去の開催日として</span>
+                </div>
+            </div>
             <!-- いいねハートアイコン（名前横） -->
             <button id="sheetHeartBtn" onclick="toggleLikeClick()"
                 class="like-heart shrink-0" aria-label="いいね">
@@ -1008,7 +1012,9 @@ async function loadCloudData() {
 // ════════════════════════════════════════════════════════════
 //  初期化
 // ════════════════════════════════════════════════════════════
-window.addEventListener('load', async function() {
+async function initApp() {
+    if (window.__matsuriAppInited) return;
+    window.__matsuriAppInited = true;
     await loadCloudData();
     if (!window.allEvents?.length) { console.error('allEvents 未ロード'); return; }
 
@@ -1050,7 +1056,15 @@ window.addEventListener('load', async function() {
     }
 
     setTimeout(() => initPushNotifications(), 3000);
-});
+}
+
+// ── 初期化発火（CDN遅延でload発火しない場合に備えて多重フォールバック） ──
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(initApp, 0);
+} else {
+    document.addEventListener('DOMContentLoaded', initApp);
+}
+window.addEventListener('load', initApp);
 
 // ════════════════════════════════════════════════════════════
 //  スライダー
@@ -1247,45 +1261,60 @@ function renderResearchList() {
                          '屋台':'fa-solid fa-store', '文化':'fa-solid fa-masks-theater' };
 
     events.forEach(ev => {
-        const img = getImg(ev);
         const iCls = catIconCls[ev.category] || 'fa-regular fa-circle-dot';
+        const liked = (window.likedIds || []).includes(ev.id);
         const card = document.createElement('div');
         card.className = 'event-card';
         card.innerHTML = `
-            <div class="relative cursor-pointer" onclick="openBottomSheetById('${ev.id}')">
-                <img src="${img}" class="w-full h-44 object-cover" loading="lazy" alt="${ev.name}"
-                     onerror="this.src='${FALLBACK_ANY[0]}'">
-                <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,0.68) 0%,transparent 55%)"></div>
-                <span class="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1.5"
-                      style="background:rgba(11,15,25,0.7);border:1px solid rgba(201,168,76,0.28);color:#E8C882;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)">
-                    <i class="${iCls}"></i> ${ev.category}
-                </span>
-                <span class="absolute top-3 right-3 text-[10px] font-bold px-2.5 py-1 rounded-full"
-                      style="background:linear-gradient(135deg,#C9A84C,#E8C882);color:#000">
-                    HOT ${ev.heatScore}
-                </span>
-            </div>
-            <div class="p-4">
-                <h4 class="text-sm font-extrabold tracking-wide mb-2">${ev.name}</h4>
-                <div class="date-badge mb-3">
-                    <i class="fa-regular fa-calendar-days"></i>
-                    <span>${ev.date || '開催日未定'}</span>
+            <div class="cursor-pointer p-4" onclick="openBottomSheetById('${ev.id}')">
+                <!-- カテゴリ + HOTバッジ -->
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1.5"
+                          style="background:rgba(201,168,76,0.13);border:1px solid rgba(201,168,76,0.32);color:#E8C882">
+                        <i class="${iCls}"></i> ${ev.category}
+                    </span>
+                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full"
+                          style="background:linear-gradient(135deg,#C9A84C,#E8C882);color:#000">
+                        HOT ${ev.heatScore}
+                    </span>
                 </div>
-                <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.42)">${ev.description}</p>
+                <!-- タイトル + ハート + 開催日 -->
+                <div class="flex items-start gap-2 mb-2">
+                    <div class="flex-1 min-w-0">
+                        <h4 class="text-sm font-extrabold tracking-wide leading-snug">${ev.name}</h4>
+                        <div class="mt-1 text-[11px] font-bold flex items-center gap-1.5" style="color:var(--gold-light)">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span>${formatEventDate(ev.date)}</span>
+                        </div>
+                    </div>
+                    <button class="like-heart shrink-0 ${liked ? 'liked' : ''}"
+                            onclick="event.stopPropagation();toggleLikeFromCard('${ev.id}', this)" aria-label="いいね">
+                        <i class="${liked ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
+                    </button>
+                </div>
+                <p class="text-xs leading-relaxed mb-3 mt-2" style="color:rgba(255,255,255,0.45)">${ev.description}</p>
                 <div class="flex items-center justify-between pt-2.5" style="border-top:1px solid rgba(255,255,255,0.05)">
                     <span class="text-[10px] font-bold flex items-center gap-1" style="color:rgba(255,255,255,0.3)">
                         <i class="fa-regular fa-location-dot"></i>${ev.region||''}
                     </span>
-                    <div class="flex items-center gap-4 text-lg" style="color:rgba(255,255,255,0.28)">
-                        <i class="fa-regular fa-heart cursor-pointer hover:text-pink-400 transition-colors"
-                           onclick="event.stopPropagation();openBottomSheetById('${ev.id}')"></i>
-                        <i class="fa-regular fa-calendar-plus cursor-pointer hover:text-white transition-colors"
-                           onclick="event.stopPropagation();openBottomSheetById('${ev.id}')"></i>
-                    </div>
                 </div>
             </div>`;
         container.appendChild(card);
     });
+}
+
+// カード内ハートからのトグル（ボトムシートを開かず即トグル）
+async function toggleLikeFromCard(id, btn) {
+    if (!isLoggedIn) { triggerLogin(); return; }
+    const was = (window.likedIds || []).includes(id);
+    likedIds = was ? likedIds.filter(i => i !== id) : [...likedIds, id];
+    await hapticImpact(was ? 'Light' : 'Medium');
+    if (btn) {
+        btn.classList.toggle('liked', !was);
+        const icon = btn.querySelector('i');
+        if (icon) icon.className = (!was ? 'fa-solid' : 'fa-regular') + ' fa-heart';
+    }
+    renderMyPageList();
 }
 
 // ════════════════════════════════════════════════════════════
@@ -1361,14 +1390,32 @@ function renderParkingList(ev) {
     });
 }
 
+// ── 開催日フォーマット（未定の場合は「過去の開催日として」） ──
+function formatEventDate(dateStr) {
+    if (!dateStr) return '過去の開催日として';
+    const s = String(dateStr).trim();
+    if (!s || s.includes('未定') || s === '不明' || s.includes('TBD')) {
+        return '過去の開催日として';
+    }
+    return s;
+}
+
+// ── カテゴリ別アイコン（写真の代わりに表示） ──
+const CAT_ICON = {
+    '祭り': '<i class="fa-solid fa-torii-gate"></i>',
+    '花火': '<i class="fa-solid fa-sparkles"></i>',
+    '屋台': '<i class="fa-solid fa-store"></i>',
+    '文化': '<i class="fa-solid fa-landmark"></i>'
+};
+
 function openBottomSheet(ev) {
     currentSelectedEvent = ev;
-    const imgEl = document.getElementById('sheetImage');
-    imgEl.src = getImg(ev);
-    imgEl.onerror = () => { imgEl.src = placeholderDataUrl(ev); };
     document.getElementById('sheetName').textContent = ev.name;
-    document.getElementById('sheetDate').innerHTML =
-        `<i class="fa-regular fa-calendar-days"></i> ${ev.date || '開催日未定'}`;
+    // 開催日（祭り名の真下）
+    document.getElementById('sheetDateText').textContent = formatEventDate(ev.date);
+    // カテゴリバッジ（写真の代わりにヘッダー帯）
+    const catEl = document.getElementById('sheetCatBadge');
+    if (catEl) catEl.innerHTML = `${CAT_ICON[ev.category] || '<i class="fa-regular fa-circle-dot"></i>'} ${ev.category || ''}`;
     document.getElementById('sheetScore').textContent = `HOT ${ev.heatScore}`;
     document.getElementById('sheetDesc').textContent = ev.description || '';
     document.getElementById('sheetWebBtn').href = ev.eventUrl || '#';
@@ -1506,13 +1553,18 @@ function renderMyPageList() {
         row.className = 'flex items-center gap-3 p-2.5 rounded-2xl cursor-pointer';
         row.style.cssText = 'background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07)';
         row.onclick = () => openBottomSheet(ev);
+        const catIcon = { '祭り':'fa-solid fa-torii-gate', '花火':'fa-solid fa-sparkles',
+                          '屋台':'fa-solid fa-store', '文化':'fa-solid fa-landmark' };
+        const iCls = catIcon[ev.category] || 'fa-regular fa-circle-dot';
         row.innerHTML = `
-            <img src="${getImg(ev)}" class="w-12 h-12 object-cover rounded-xl" loading="lazy"
-                 onerror="this.src='${FALLBACK_ANY[0]}'">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+                 style="background:linear-gradient(135deg,rgba(201,168,76,0.18),rgba(232,200,130,0.06));border:1px solid rgba(201,168,76,0.32);color:#E8C882;font-size:18px">
+                <i class="${iCls}"></i>
+            </div>
             <div class="flex-1 min-w-0">
                 <h5 class="text-sm font-bold truncate">${ev.name}</h5>
                 <p class="text-[10px] font-bold mt-0.5 flex items-center gap-1" style="color:var(--gold-light)">
-                    <i class="fa-regular fa-calendar-days"></i>${ev.date || '開催日未定'}
+                    <i class="fa-regular fa-calendar-days"></i>${formatEventDate(ev.date)}
                 </p>
             </div>
             <i class="fa-regular fa-chevron-right text-xs" style="color:rgba(255,255,255,0.2)"></i>`;
